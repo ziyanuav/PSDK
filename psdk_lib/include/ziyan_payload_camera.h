@@ -725,6 +725,43 @@ typedef struct {
     T_ZiyanReturnCode (*TapZoomAtTarget)(T_ZiyanCameraPointInScreen target);
 } T_ZiyanCameraTapZoomHandler;
 
+
+/**
+ * @brief Prototype of handler functions for Extend function.
+ * @note User can not execute blocking style operations or functions in callback function, like ziyanXPort_RotateSync()
+ * function, because that will block ziyan root thread, causing problems such as slow system response, payload
+ * disconnection or infinite loop.
+ */
+typedef struct {
+    /**
+     * @brief Prototype of callback function used to enable or disable range finder.
+     * @details User can enable or disable range finder in screen of mobile end, this callback function will be called. 
+     * Then ziyan application should response range finder command.
+     * @param enable: User can enable or disable range finder.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*SetRangeFinderSwitch)(bool enable);
+
+    /**
+     * @brief Prototype of callback function used to get range finder switch.
+     * @details User can enable or disable range finder in screen of mobile end, this callback function will be called. 
+     * Then ziyan application should response range finder command.
+     * @param enable: User can enable or disable range finder.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*GetRangeFinderSwitch)(bool* enable);
+
+    /**
+     * @brief Prototype of callback function used to get range finder data.
+     * @details User can enable or disable range finder in screen of mobile end, this callback function will be called. 
+     * Then ziyan application should response range finder command.
+     * @param distance: distance of range finder.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*GetRangeFinderData)(ziyan_f32_t* distance);
+
+} T_ZiyanCameraExtendHandler;
+
 /* Exported functions --------------------------------------------------------*/
 /**
  * @brief Initialize the payload camera module.
@@ -795,6 +832,16 @@ T_ZiyanReturnCode ZiyanPayloadCamera_RegOpticalZoomHandler(const T_ZiyanCameraOp
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanPayloadCamera_RegTapZoomHandler(const T_ZiyanCameraTapZoomHandler *cameraTapZoomHandler);
+
+/**
+ * @brief Register the handler for payload camera extend function interfaces.
+ * @note This interface registers the camera's extend interface, which includes setting and acquiring the range finder
+ * switch. Registering the load on this interface requires support for range finder. Registration of this interface
+ * needs to be after ZiyanPayloadCamera_Init.
+ * @param cameraExtendHandler: pointer to the handler for payload camera extend functions.
+ * @return Execution result.
+*/
+T_ZiyanReturnCode ZiyanPayloadCamera_RegExtendHandler(const T_ZiyanCameraExtendHandler *cameraExtendHandler);
 
 /**
  * @brief Set the type of camera video stream.

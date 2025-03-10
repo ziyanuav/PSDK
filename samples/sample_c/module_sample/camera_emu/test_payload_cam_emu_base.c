@@ -81,6 +81,7 @@ static T_ZiyanCameraFocusHandler s_focusHandler;
 static T_ZiyanCameraDigitalZoomHandler s_digitalZoomHandler;
 static T_ZiyanCameraOpticalZoomHandler s_opticalZoomHandler;
 static T_ZiyanCameraTapZoomHandler s_tapZoomHandler;
+static T_ZiyanCameraExtendHandler s_extendHander;
 
 static T_ZiyanTaskHandle s_userCameraThread;
 
@@ -118,6 +119,9 @@ static T_TestCameraGimbalRotationArgument s_tapZoomNewestGimbalRotationArgument 
 static uint32_t s_tapZoomNewestTargetHybridFocalLength = 0; // unit: 0.1mm
 static T_ZiyanMutexHandle s_tapZoomMutex = NULL;
 static E_ZiyanCameraVideoStreamType s_cameraVideoStreamType;
+
+static bool range_finder_switch = true;
+static ziyan_f32_t range_finder_distance = 0;
 
 /* Private functions declaration ---------------------------------------------*/
 static T_ZiyanReturnCode GetSystemState(T_ZiyanCameraSystemState *systemState);
@@ -164,6 +168,10 @@ static T_ZiyanReturnCode GetTapZoomMultiplier(uint8_t *multiplier);
 static T_ZiyanReturnCode TapZoomAtTarget(T_ZiyanCameraPointInScreen target);
 static T_ZiyanReturnCode ZiyanTest_CameraHybridZoom(uint32_t focalLength);
 static T_ZiyanReturnCode ZiyanTest_CameraRotationGimbal(T_TestCameraGimbalRotationArgument gimbalRotationArgument);
+
+static T_ZiyanReturnCode SetRangeFinderSwitch(bool enable);
+static T_ZiyanReturnCode GetRangeFinderSwitch(bool* enable);
+static T_ZiyanReturnCode GetRangeFinderData(ziyan_f32_t* distance);
 
 static void *UserCamera_Task(void *arg);
 
@@ -2845,6 +2853,16 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuBaseStartService(void)
     }
 #endif
 
+    s_extendHander.GetRangeFinderSwitch = GetRangeFinderSwitch;
+    s_extendHander.SetRangeFinderSwitch = SetRangeFinderSwitch;
+    s_extendHander.GetRangeFinderData   = GetRangeFinderData;
+
+    returnCode = ZiyanPayloadCamera_RegExtendHandler(&s_extendHander);
+    if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("camera register extend handler error:0x%08llX", returnCode);
+        return returnCode;
+    }
+
     
     T_ZiyanTaskHandle handle_test;
     osalHandler->TaskCreate("camera_vedio_task", push_video_stream8,
@@ -2964,6 +2982,35 @@ T_ZiyanReturnCode ZiyanTest_CameraGetVideoStreamType(E_ZiyanCameraVideoStreamTyp
 bool ZiyanTest_CameraIsInited(void)
 {
     return s_isCamInited;
+}
+
+
+T_ZiyanReturnCode SetRangeFinderSwitch(bool enable)
+{
+    range_finder_switch = enable;
+    USER_LOG_INFO("Set range finder switch:%d.", range_finder_switch);
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+T_ZiyanReturnCode GetRangeFinderSwitch(bool* enable)
+{
+    if (enable == NULL){
+        return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
+    }
+
+    *enable = range_finder_switch;
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+T_ZiyanReturnCode GetRangeFinderData(ziyan_f32_t* distance)
+{
+    if (distance == NULL){
+        return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
+    }
+
+    range_finder_distance += 0.1f;
+    *distance = range_finder_distance;
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
 
 /****************** (C) COPYRIGHT ZIYAN Innovations *****END OF FILE****/
