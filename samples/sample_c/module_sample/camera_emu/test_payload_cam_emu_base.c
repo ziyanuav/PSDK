@@ -122,6 +122,7 @@ static E_ZiyanCameraVideoStreamType s_cameraVideoStreamType;
 
 static bool range_finder_switch = true;
 static ziyan_f32_t range_finder_distance = 0;
+static T_ZiyanLocation range_finder_target_location = {0};
 
 /* Private functions declaration ---------------------------------------------*/
 static T_ZiyanReturnCode GetSystemState(T_ZiyanCameraSystemState *systemState);
@@ -172,6 +173,7 @@ static T_ZiyanReturnCode ZiyanTest_CameraRotationGimbal(T_TestCameraGimbalRotati
 static T_ZiyanReturnCode SetRangeFinderSwitch(bool enable);
 static T_ZiyanReturnCode GetRangeFinderSwitch(bool* enable);
 static T_ZiyanReturnCode GetRangeFinderData(ziyan_f32_t* distance);
+static T_ZiyanReturnCode GetRangeFinderLocation(T_ZiyanLocation* location);
 
 static void *UserCamera_Task(void *arg);
 
@@ -2856,6 +2858,7 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuBaseStartService(void)
     s_extendHander.GetRangeFinderSwitch = GetRangeFinderSwitch;
     s_extendHander.SetRangeFinderSwitch = SetRangeFinderSwitch;
     s_extendHander.GetRangeFinderData   = GetRangeFinderData;
+    s_extendHander.GetRangeFinderLocation = GetRangeFinderLocation;
 
     returnCode = ZiyanPayloadCamera_RegExtendHandler(&s_extendHander);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -3010,6 +3013,19 @@ T_ZiyanReturnCode GetRangeFinderData(ziyan_f32_t* distance)
 
     range_finder_distance += 0.1f;
     *distance = range_finder_distance;
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+T_ZiyanReturnCode GetRangeFinderLocation(T_ZiyanLocation* location)
+{
+    if (location == NULL){
+        return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
+    }
+
+    range_finder_target_location.latitude += 0.0001f;
+    range_finder_target_location.longitude += 0.0001f;
+    range_finder_target_location.altitude += 0.1f;
+    *location = range_finder_target_location;
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
 

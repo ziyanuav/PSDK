@@ -182,6 +182,15 @@ typedef struct {
 } T_ZiyanCameraSystemState;
 
 /**
+ * @brief Camera tracking state.
+ */
+typedef struct {
+    bool isTraking; /*!< Specifies if the camera is in tracking status. This parameter is boolean type. */
+    T_ZiyanCameraPointInScreen targetPoint;
+    T_ZiyanLocation targetLocation;
+} T_ZiyanCameraTrackState;
+
+/**
  * @brief Camera focus assistant settings.
  */
 typedef struct {
@@ -753,12 +762,47 @@ typedef struct {
 
     /**
      * @brief Prototype of callback function used to get range finder data.
-     * @details User can enable or disable range finder in screen of mobile end, this callback function will be called. 
+     * @details User can receive range finder distance, this callback function will be called at regular intervals. 
      * Then ziyan application should response range finder command.
      * @param distance: distance of range finder.
      * @return Execution result.
      */
     T_ZiyanReturnCode (*GetRangeFinderData)(ziyan_f32_t* distance);
+
+    /**
+     * @brief Prototype of callback function used to get range finder data.
+     * @details User should receive location of camera screen center, this callback function will be called 
+     * at regular intervals when range finder switch is enabled.
+     * @param location: location of camera screen center. unit: WGS-84.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*GetRangeFinderLocation)(T_ZiyanLocation* location);
+
+    /**
+     * @brief Prototype of callback function used to track target.
+     * @details User can select desired target by tap screen or manual draw a bounding box, this callback function
+     *  will be called when User select target on the application or GSDK.
+     * @param target_begin: begin point of target. Range: 0 to 1.
+     * @param target_end: end point of target. Range: 0 to 1.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*TrackTarget)(T_ZiyanCameraPointInScreen target_begin, T_ZiyanCameraPointInScreen target_end);
+
+    /**
+     * @brief Prototype of callback function used to stop track target.
+     * @details User can stop track target by tap screen or manual draw a bounding box, this callback function
+     * will be called when User stop track target on the application or GSDK.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*StopTrack)();
+
+    /**
+     * @brief Prototype of callback function used to get track state.
+     * @details User can get track state, this callback function will be called at regular intervals.
+     * @param state: pointer to memory space used to store track state.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*GetTrackState)(T_ZiyanCameraTrackState* state);
 
 } T_ZiyanCameraExtendHandler;
 

@@ -261,9 +261,9 @@ typedef enum {
     ZIYAN_CAMERA_BURST_COUNT_5                    = 5,
     /*! The burst mode can capture 7 pictures per trigger. */
     ZIYAN_CAMERA_BURST_COUNT_7                    = 7,
-    /*! Supports capturing 10 pictures per trigger, only supported by X4S, X5S cameras, and Phantom 4 Pro. */
+    /*! Supports capturing 10 pictures per trigger. */
     ZIYAN_CAMERA_BURST_COUNT_10                   = 10,
-    /*! Supports capturing 14 pictures per trigger, only supported by X4S, X5S cameras, and Phantom 4 Pro. */
+    /*! Supports capturing 14 pictures per trigger. */
     ZIYAN_CAMERA_BURST_COUNT_14                   = 14,
     /*! Unknown burst count. */
     ZIYAN_CAMERA_BURST_COUNT_KNOWN                = 0xFF,
