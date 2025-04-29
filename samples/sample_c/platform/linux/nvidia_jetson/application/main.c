@@ -41,6 +41,8 @@
 #include "widget/test_widget.h"
 #include "ziyan_sdk_config.h"
 
+
+
 /* Private constants ---------------------------------------------------------*/
 #define ZIYAN_LOG_PATH                    "Logs/ZIYAN"
 #define ZIYAN_LOG_INDEX_FILE_NAME         "Logs/latest"
@@ -61,8 +63,8 @@ typedef struct {
 } T_ThreadAttribute;
 
 /* Private values -------------------------------------------------------------*/
-static FILE *s_djiLogFile;
-static FILE *s_djiLogFileCnt;
+static FILE *s_ziyanLogFile;
+static FILE *s_ziyanLogFileCnt;
 static pthread_t s_monitorThread = 0;
 
 /* Private functions declaration ---------------------------------------------*/
@@ -105,7 +107,7 @@ int main(int argc, char **argv)
 
     USER_LOG_INFO("run main test: %d:%d", 111, __LINE__);
 
-    /*!< Step 2: Fill your application information in dji_sdk_app_info.h and use this interface to fill it. */
+    /*!< Step 2: Fill your application information in ziyan_sdk_app_info.h and use this interface to fill it. */
     returnCode = ZiyanUser_FillInUserInfo(&userInfo);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
         USER_LOG_ERROR("Fill user info error, please check user info config");
@@ -152,7 +154,7 @@ int main(int argc, char **argv)
     //     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     // }
 
-//     /*!< Step 4: Initialize the selected modules by macros in dji_sdk_config.h . */
+//     /*!< Step 4: Initialize the selected modules by macros in ziyan_sdk_config.h . */
 // #ifdef CONFIG_MODULE_SAMPLE_POWER_MANAGEMENT_ON
 //     T_ZiyanTestApplyHighPowerHandler applyHighPowerHandler = {
 //         .pinInit = ZiyanTest_HighPowerApplyPinInit,
@@ -221,7 +223,7 @@ int main(int argc, char **argv)
 #endif
 
 // #ifdef CONFIG_MODULE_SAMPLE_XPORT_ON
-//         if (aircraftInfoBaseInfo.djiAdapterType == ZIYAN_SDK_ADAPTER_TYPE_XPORT) {
+//         if (aircraftInfoBaseInfo.ziyanAdapterType == ZIYAN_SDK_ADAPTER_TYPE_XPORT) {
 //             if (ZiyanTest_XPortStartService() != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
 //                 USER_LOG_ERROR("psdk xport init error");
 //             }
@@ -257,8 +259,8 @@ int main(int argc, char **argv)
 // #endif
 
 // #ifdef CONFIG_MODULE_SAMPLE_PAYLOAD_COLLABORATION_ON
-//         if (aircraftInfoBaseInfo.djiAdapterType == ZIYAN_SDK_ADAPTER_TYPE_SKYPORT_V2 ||
-//             aircraftInfoBaseInfo.djiAdapterType == ZIYAN_SDK_ADAPTER_TYPE_XPORT) {
+//         if (aircraftInfoBaseInfo.ziyanAdapterType == ZIYAN_SDK_ADAPTER_TYPE_SKYPORT_V2 ||
+//             aircraftInfoBaseInfo.ziyanAdapterType == ZIYAN_SDK_ADAPTER_TYPE_XPORT) {
 //             returnCode = ZiyanTest_PayloadCollaborationStartService();
 //             if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
 //                 USER_LOG_ERROR("Payload collaboration sample init error\n");
@@ -498,7 +500,7 @@ static T_ZiyanReturnCode ZiyanUser_FillInUserInfo(T_ZiyanUserInfo *userInfo)
         !strcmp(USER_DEVELOPER_ACCOUNT, "your_developer_account") ||
         !strcmp(USER_BAUD_RATE, "your_baud_rate")) {
         USER_LOG_ERROR(
-            "Please fill in correct user information to 'samples/sample_c/platform/linux/manifold2/application/dji_sdk_app_info.h' file.");
+            "Please fill in correct user information to 'samples/sample_c/platform/linux/manifold2/application/ziyan_sdk_app_info.h' file.");
         sleep(1);
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
     }
@@ -527,12 +529,12 @@ static T_ZiyanReturnCode ZiyanUser_LocalWrite(const uint8_t *data, uint16_t data
 {
     uint32_t realLen;
 
-    if (s_djiLogFile == NULL) {
+    if (s_ziyanLogFile == NULL) {
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_UNKNOWN;
     }
 
-    realLen = fwrite(data, 1, dataLen, s_djiLogFile);
-    fflush(s_djiLogFile);
+    realLen = fwrite(data, 1, dataLen, s_ziyanLogFile);
+    fflush(s_ziyanLogFile);
     if (realLen == dataLen) {
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
     } else {
@@ -542,7 +544,7 @@ static T_ZiyanReturnCode ZiyanUser_LocalWrite(const uint8_t *data, uint16_t data
 
 static T_ZiyanReturnCode ZiyanUser_LocalWriteFsInit(const char *path)
 {
-    T_ZiyanReturnCode djiReturnCode = ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+    T_ZiyanReturnCode ziyanReturnCode = ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
     char filePath[ZIYAN_LOG_PATH_MAX_SIZE];
     char systemCmd[ZIYAN_SYSTEM_CMD_STR_MAX_SIZE];
     char folderName[ZIYAN_LOG_FOLDER_NAME_MAX_SIZE];
@@ -565,20 +567,20 @@ static T_ZiyanReturnCode ZiyanUser_LocalWriteFsInit(const char *path)
         }
     }
 
-    s_djiLogFileCnt = fopen(ZIYAN_LOG_INDEX_FILE_NAME, "rb+");
-    if (s_djiLogFileCnt == NULL) {
-        s_djiLogFileCnt = fopen(ZIYAN_LOG_INDEX_FILE_NAME, "wb+");
-        if (s_djiLogFileCnt == NULL) {
+    s_ziyanLogFileCnt = fopen(ZIYAN_LOG_INDEX_FILE_NAME, "rb+");
+    if (s_ziyanLogFileCnt == NULL) {
+        s_ziyanLogFileCnt = fopen(ZIYAN_LOG_INDEX_FILE_NAME, "wb+");
+        if (s_ziyanLogFileCnt == NULL) {
             return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
         }
     } else {
-        ret = fseek(s_djiLogFileCnt, 0, SEEK_SET);
+        ret = fseek(s_ziyanLogFileCnt, 0, SEEK_SET);
         if (ret != 0) {
             printf("Seek log count file error, ret: %d, errno: %d.\r\n", ret, errno);
             return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
         }
 
-        ret = fread((uint16_t *) &logFileIndex, 1, sizeof(uint16_t), s_djiLogFileCnt);
+        ret = fread((uint16_t *) &logFileIndex, 1, sizeof(uint16_t), s_ziyanLogFileCnt);
         if (ret != sizeof(uint16_t)) {
             printf("Read log file index error.\r\n");
         }
@@ -587,27 +589,27 @@ static T_ZiyanReturnCode ZiyanUser_LocalWriteFsInit(const char *path)
     currentLogFileIndex = logFileIndex;
     logFileIndex++;
 
-    ret = fseek(s_djiLogFileCnt, 0, SEEK_SET);
+    ret = fseek(s_ziyanLogFileCnt, 0, SEEK_SET);
     if (ret != 0) {
         printf("Seek log file error, ret: %d, errno: %d.\r\n", ret, errno);
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     }
 
-    ret = fwrite((uint16_t *) &logFileIndex, 1, sizeof(uint16_t), s_djiLogFileCnt);
+    ret = fwrite((uint16_t *) &logFileIndex, 1, sizeof(uint16_t), s_ziyanLogFileCnt);
     if (ret != sizeof(uint16_t)) {
         printf("Write log file index error.\r\n");
-        fclose(s_djiLogFileCnt);
+        fclose(s_ziyanLogFileCnt);
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     }
 
-    fclose(s_djiLogFileCnt);
+    fclose(s_ziyanLogFileCnt);
 
     sprintf(filePath, "%s_%04d_%04d%02d%02d_%02d-%02d-%02d.log", path, currentLogFileIndex,
             localTime->tm_year + 1900, localTime->tm_mon + 1, localTime->tm_mday,
             localTime->tm_hour, localTime->tm_min, localTime->tm_sec);
 
-    s_djiLogFile = fopen(filePath, "wb+");
-    if (s_djiLogFile == NULL) {
+    s_ziyanLogFile = fopen(filePath, "wb+");
+    if (s_ziyanLogFile == NULL) {
         USER_LOG_ERROR("Open filepath time error.");
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     }
@@ -621,7 +623,7 @@ static T_ZiyanReturnCode ZiyanUser_LocalWriteFsInit(const char *path)
         }
     }
 
-    return djiReturnCode;
+    return ziyanReturnCode;
 }
 
 // #pragma GCC diagnostic push

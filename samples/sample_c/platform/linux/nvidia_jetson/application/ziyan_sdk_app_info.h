@@ -1,6 +1,6 @@
 /**
  ********************************************************************
- * @file    dji_sdk_app_info.h
+ * @file    ziyan_sdk_app_info.h
  * @brief   This is the header file for defining the structure and (exported) function prototypes.
  *
  * @copyright (c) 2018 ZIYAN. All rights reserved.
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* Exported constants --------------------------------------------------------*/
-// ATTENTION: User must goto https://developer.dji.com/user/apps/#all to create your own dji sdk application, get dji sdk application
+// ATTENTION: User must goto https://developer.ziyan.com/user/apps/#all to create your own ziyan sdk application, get ziyan sdk application
 // information then fill in the application information here.
 #define USER_APP_NAME               "app_name_ziyan"
 #define USER_APP_ID                 "app_id_ziyan"

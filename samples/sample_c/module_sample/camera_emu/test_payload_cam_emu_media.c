@@ -763,13 +763,13 @@ static T_ZiyanReturnCode GetMediaFileDir(char *dirPath)
     char curFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX];
     char tempPath[ZIYAN_FILE_PATH_SIZE_MAX];
 
-    returnCode = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, ZIYAN_FILE_PATH_SIZE_MAX, curFileDirPath);
+    returnCode = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, sizeof(curFileDirPath), curFileDirPath);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
         USER_LOG_ERROR("Get file current path error, stat = 0x%08llX", returnCode);
         return returnCode;
     }
 
-    snprintf(dirPath, ZIYAN_FILE_PATH_SIZE_MAX, "%smedia_file", curFileDirPath);
+    snprintf(dirPath, ZIYAN_FILE_PATH_SIZE_MAX + 32, "%smedia_file", curFileDirPath);
 
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }

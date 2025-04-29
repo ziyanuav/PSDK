@@ -8,6 +8,13 @@ set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
 add_definitions(-D_GNU_SOURCE)
 
+
+#Strengthen Compilation Warnings - Treat All Warnings as Errors
+#Purpose: Minimize potential issues caused by syntax and compiler-specific features
+# add_definitions(-Werror)
+# add_definitions(-Wno-error=implicit-function-declaration)
+
+
 if (NOT USE_SYSTEM_ARCH)
     add_definitions(-DSYSTEM_ARCH_LINUX)
 endif ()
@@ -103,26 +110,40 @@ endif (LIBUSB_FOUND)
 
 
 
-# 查找 FFmpeg 库
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(AVFORMAT REQUIRED libavformat)
-pkg_check_modules(AVCODEC REQUIRED libavcodec)
-pkg_check_modules(AVUTIL REQUIRED libavutil)
+find_package(FFMPEG REQUIRED)
+if(FFMPEG_FOUND)
+    message(STATUS "Found FFMPEG installed in the system")
+    message(STATUS " - Includes: ${FFMPEG_INCLUDE_DIR}")
+    message(STATUS " - Libraries: ${FFMPEG_LIBRARIES}")
 
-# 包含 FFmpeg 头文件路径
-include_directories(${AVFORMAT_INCLUDE_DIRS})
-include_directories(${AVCODEC_INCLUDE_DIRS})
-include_directories(${AVUTIL_INCLUDE_DIRS})
-
-# 链接 FFmpeg 库
-target_link_libraries(${PROJECT_NAME} ${AVFORMAT_LIBRARIES} ${AVCODEC_LIBRARIES} ${AVUTIL_LIBRARIES})
+    ADD_DEFINITIONS(-DFFMPEG_INSTALLED)
+    target_link_libraries(${PROJECT_NAME} ${FFMPEG_LIBRARIES} m stdc++)
+else ()
+    message(FATAL_ERROR "Cannot Find FFMPEG")
+endif (FFMPEG_FOUND)
 
 
-target_link_libraries(${PROJECT_NAME} m)
 
-target_link_libraries(${PROJECT_NAME} stdc++)
+# # 查找 FFmpeg 库
+# find_package(PkgConfig REQUIRED)
+# pkg_check_modules(AVFORMAT REQUIRED libavformat)
+# pkg_check_modules(AVCODEC REQUIRED libavcodec)
+# pkg_check_modules(AVUTIL REQUIRED libavutil)
 
-add_custom_command(TARGET ${PROJECT_NAME}
-        PRE_LINK COMMAND cmake ..
-        WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+# # 包含 FFmpeg 头文件路径
+# include_directories(${AVFORMAT_INCLUDE_DIRS})
+# include_directories(${AVCODEC_INCLUDE_DIRS})
+# include_directories(${AVUTIL_INCLUDE_DIRS})
+
+# # 链接 FFmpeg 库
+# target_link_libraries(${PROJECT_NAME} ${AVFORMAT_LIBRARIES} ${AVCODEC_LIBRARIES} ${AVUTIL_LIBRARIES})
+
+
+# target_link_libraries(${PROJECT_NAME} m)
+
+# target_link_libraries(${PROJECT_NAME} stdc++)
+
+# add_custom_command(TARGET ${PROJECT_NAME}
+#         PRE_LINK COMMAND cmake ..
+#         WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
 

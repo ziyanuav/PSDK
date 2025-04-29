@@ -43,7 +43,7 @@ typedef enum {
      * @note This transfer type only support linux platform and use network port. Users need to deploy FTP service on
      * payload. The ftp user info used to transfer upgrade firmware is :
      * username:ziyan_payload_ftp
-     * password:DJi_#$31
+     * password:Ziyan_#$31
      * You can get guide about FTP service deployment on https://developer.ziyan.com/payload-sdk/documentation
      */
     ZIYAN_FIRMWARE_TRANSFER_TYPE_FTP = 0,

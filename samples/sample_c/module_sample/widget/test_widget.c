@@ -89,17 +89,17 @@ T_ZiyanReturnCode ZiyanTest_WidgetStartService(void)
 #ifdef SYSTEM_ARCH_LINUX
     //Step 2 : Set UI Config (Linux environment)
     char curFileDirPath[WIDGET_DIR_PATH_LEN_MAX];
-    char tempPath[WIDGET_DIR_PATH_LEN_MAX];
-    ziyanStat = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, WIDGET_DIR_PATH_LEN_MAX, curFileDirPath);
+    char tempPath[2 * WIDGET_DIR_PATH_LEN_MAX + 64];
+    ziyanStat = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, sizeof(curFileDirPath), curFileDirPath);
     if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
         USER_LOG_ERROR("Get file current path error, stat = 0x%08llX", ziyanStat);
         return ziyanStat;
     }
 
     if (s_isWidgetFileDirPathConfigured == true) {
-        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/en_big_screen", s_widgetFileDirPath);
+        snprintf(tempPath, sizeof(tempPath), "%swidget_file/en_big_screen", s_widgetFileDirPath);
     } else {
-        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/en_big_screen", curFileDirPath);
+        snprintf(tempPath, sizeof(tempPath), "%swidget_file/en_big_screen", curFileDirPath);
     }
 
     //set default ui config path
@@ -120,9 +120,9 @@ T_ZiyanReturnCode ZiyanTest_WidgetStartService(void)
 
     //set ui config for Chinese language
     if (s_isWidgetFileDirPathConfigured == true) {
-        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/cn_big_screen", s_widgetFileDirPath);
+        snprintf(tempPath, sizeof(tempPath), "%swidget_file/cn_big_screen", s_widgetFileDirPath);
     } else {
-        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/cn_big_screen", curFileDirPath);
+        snprintf(tempPath, sizeof(tempPath), "%swidget_file/cn_big_screen", curFileDirPath);
     }
 
     ziyanStat = ZiyanWidget_RegUiConfigByDirPath(ZIYAN_MOBILE_APP_LANGUAGE_CHINESE,

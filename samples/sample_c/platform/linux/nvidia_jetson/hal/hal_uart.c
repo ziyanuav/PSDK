@@ -27,8 +27,8 @@
 #include "hal_uart.h"
 
 /* Private constants ---------------------------------------------------------*/
-#define UART_DEV_NAME_STR_SIZE             (128)
-#define ZIYAN_SYSTEM_CMD_STR_MAX_SIZE        (64)
+#define UART_DEV_NAME_STR_SIZE               (128)
+#define ZIYAN_SYSTEM_CMD_STR_MAX_SIZE        (128)
 #define ZIYAN_SYSTEM_RESULT_STR_MAX_SIZE     (128)
 
 /* Private types -------------------------------------------------------------*/
@@ -48,7 +48,7 @@ T_ZiyanReturnCode HalUart_Init(E_ZiyanHalUartNum uartNum, uint32_t baudRate, T_Z
     struct flock lock;
     T_ZiyanReturnCode returnCode = ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
     char uartName[UART_DEV_NAME_STR_SIZE];
-    char systemCmd[ZIYAN_SYSTEM_CMD_STR_MAX_SIZE];
+    char systemCmd[ZIYAN_SYSTEM_CMD_STR_MAX_SIZE + 32];
     char *ret = NULL;
     char lineBuf[ZIYAN_SYSTEM_RESULT_STR_MAX_SIZE] = {0};
     FILE *fp;

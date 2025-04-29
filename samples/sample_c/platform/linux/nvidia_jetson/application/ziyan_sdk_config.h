@@ -1,7 +1,7 @@
 /**
  ********************************************************************
- * @file    dji_sdk_config.h
- * @brief   This is the header file for "dji_config.c", defining the structure and
+ * @file    ziyan_sdk_config.h
+ * @brief   This is the header file for "ziyan_config.c", defining the structure and
  * (exported) function prototypes.
  *
  * @copyright (c) 2021 ZIYAN. All rights reserved.

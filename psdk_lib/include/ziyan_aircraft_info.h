@@ -1,7 +1,7 @@
 /**
  ********************************************************************
- * @file    dji_aircraft_info.h
- * @brief   This is the header file for "dji_aircraft_info.c", defining the structure and
+ * @file    ziyan_aircraft_info.h
+ * @brief   This is the header file for "ziyan_aircraft_info.c", defining the structure and
  * (exported) function prototypes.
  *
  * @copyright (c) 2021 ZIYAN. All rights reserved.
