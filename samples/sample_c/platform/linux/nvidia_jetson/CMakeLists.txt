@@ -67,6 +67,8 @@ add_executable(${PROJECT_NAME}
         ${MODULE_COMMON_SRC}
         ${MODULE_HAL_SRC})
 
+target_link_libraries(${PROJECT_NAME} m stdc++)
+
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../common/3rdparty)
 find_package(OPUS REQUIRED)
 if (OPUS_FOUND)
@@ -81,17 +83,17 @@ else ()
 endif (OPUS_FOUND)
 
 
-find_package(ALSA REQUIRED)
-if (ALSA_FOUND)
-    message(STATUS "Found ALSA installed in the system")
-    message(STATUS " - Includes: ${ALSA_INCLUDE_DIR}")
-    message(STATUS " - Libraries: ${ALSA_LIBRARY}")
+find_package(ASOUND REQUIRED)
+if (ASOUND_FOUND)
+    message(STATUS "Found ASOUND installed in the system")
+    message(STATUS " - Includes: ${ASOUND_INCLUDE_DIR}")
+    message(STATUS " - Libraries: ${ASOUND_LIBRARY}")
 
-    add_definitions(-DALSA_INSTALLED)
-    include_directories(${ALSA_INCLUDE_DIR})
-    target_link_libraries(${PROJECT_NAME} ${ALSA_LIBRARIES})
+    add_definitions(-DASOUND_INSTALLED)
+    include_directories(${ASOUND_INCLUDE_DIR})
+    target_link_libraries(${PROJECT_NAME} ${ASOUND_LIBRARIES})
 else()
-    message(FATAL_ERROR "Cannot Find ALSA")
+    message(STATUS "Cannot Find ASOUND")
 endif()
 
 
@@ -119,7 +121,7 @@ if(FFMPEG_FOUND)
     ADD_DEFINITIONS(-DFFMPEG_INSTALLED)
     target_link_libraries(${PROJECT_NAME} ${FFMPEG_LIBRARIES} m stdc++)
 else ()
-    message(FATAL_ERROR "Cannot Find FFMPEG")
+    message(STATUS "Cannot Find FFMPEG")
 endif (FFMPEG_FOUND)
 
 

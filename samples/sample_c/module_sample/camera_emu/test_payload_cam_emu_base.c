@@ -207,7 +207,7 @@ void* push_video_stream8(void* arg)
     while(1){
 
         // Initialize FFmpeg libraries
-        av_register_all();
+        // av_register_all();
         avformat_network_init();
 
         AVFormatContext *input_format_context = NULL;

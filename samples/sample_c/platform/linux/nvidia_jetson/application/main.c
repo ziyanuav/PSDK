@@ -105,8 +105,6 @@ int main(int argc, char **argv)
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     }
 
-    USER_LOG_INFO("run main test: %d:%d", 111, __LINE__);
-
     /*!< Step 2: Fill your application information in ziyan_sdk_app_info.h and use this interface to fill it. */
     returnCode = ZiyanUser_FillInUserInfo(&userInfo);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {

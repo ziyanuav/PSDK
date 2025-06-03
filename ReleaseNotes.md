@@ -1,5 +1,23 @@
 # Ziyan Payload SDK Release Log
 
+## V1.0.0.4-20250603-Release 
+**[Note]**: 
+* Added new module.
+* Fixed some known issues.
+
+**[Added]**:
+* Add support for the speaker module.
+
+**[Optimized]**:
+* Optimize the core initialization process and provide more log information to support developers in quickly identifying the cause of exceptions during the adaptation process. 
+
+**[Fixed]**:
+* Fix issues that may cause abnormal program termination in specific communication scenarios.
+* Fix the issue of strong coupling between the sample program and the system environment
+---
+
+
+
 
 ## V1.0.0.3-20250429-Release 
 **[Note]**: 
