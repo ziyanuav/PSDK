@@ -39,18 +39,11 @@
 
 #endif
 
-#ifdef ALSA_INSTALLED
-
-#include <alsa/asoundlib.h>
-
-#endif
-
 /* Private constants ---------------------------------------------------------*/
 #define WIDGET_SPEAKER_TASK_STACK_SIZE          (2048)
 
 /*! Attention: replace your audio device name here. */
-// #define WIDGET_SPEAKER_USB_AUDIO_DEVICE_NAME    "alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo"
-#define WIDGET_SPEAKER_USB_AUDIO_DEVICE_NAME    "alsa_card.usb-GeneralPlus_USB_Audio_Device-00"
+#define WIDGET_SPEAKER_USB_AUDIO_DEVICE_NAME    "alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo"
 
 #define WIDGET_SPEAKER_AUDIO_OPUS_FILE_NAME     "test_audio.opus"
 #define WIDGET_SPEAKER_AUDIO_PCM_FILE_NAME      "test_audio.pcm"
@@ -84,12 +77,6 @@ static FILE *s_audioFile = NULL;
 static FILE *s_ttsFile = NULL;
 static bool s_isDecodeFinished = true;
 static uint16_t s_decodeBitrate = 0;
-
-#ifdef ALSA_INSTALLED
-    snd_pcm_t           *pcm_handle = NULL;
-    snd_pcm_hw_params_t *hw_params  = NULL;
-    snd_pcm_sw_params_t *sw_params  = NULL;
-#endif
 
 /* Private functions declaration ---------------------------------------------*/
 static void SetSpeakerState(E_ZiyanWidgetSpeakerState speakerState);
@@ -174,81 +161,6 @@ T_ZiyanReturnCode ZiyanTest_WidgetSpeakerStartService(void)
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
 
-#ifdef ALSA_INSTALLED
-T_ZiyanReturnCode ZiyanTest_AsoundInit()
-{
-    // 打开默认音频设备
-    if (snd_pcm_open(&pcm_handle, "default", SND_PCM_STREAM_PLAYBACK, 0) < 0) {
-        fprintf(stderr, "无法打开音频设备\n");
-        return 1;
-    }
-
-    // 分配硬件参数结构体
-    snd_pcm_hw_params_alloca(&hw_params);
-    snd_pcm_hw_params_any(pcm_handle, hw_params);
-
-    // 设置硬件参数
-    snd_pcm_hw_params_set_access(pcm_handle,   hw_params, SND_PCM_ACCESS_RW_INTERLEAVED);
-    snd_pcm_hw_params_set_format(pcm_handle,   hw_params, SND_PCM_FORMAT_S16_LE);  // 16-bit little-endian
-    snd_pcm_hw_params_set_rate(pcm_handle,     hw_params, WIDGET_SPEAKER_AUDIO_OPUS_SAMPLE_RATE, 0); // 设置采样率为 16kHz
-    snd_pcm_hw_params_set_channels(pcm_handle, hw_params, WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS); // 设置单声道
-    snd_pcm_hw_params_set_buffer_size(pcm_handle, hw_params, 16000 * 8);
-    snd_pcm_hw_params_set_period_size(pcm_handle, hw_params, 1280, 0);
-
-    // 应用硬件参数
-    if (snd_pcm_hw_params(pcm_handle, hw_params) < 0) {
-        fprintf(stderr, "无法设置硬件参数\n");
-        return 1;
-    }
-
-    // 设置软件参数
-    snd_pcm_sw_params_alloca(&sw_params);
-    snd_pcm_sw_params_current(pcm_handle, sw_params);
-    snd_pcm_sw_params_set_avail_min(pcm_handle, sw_params, 1280);
-    snd_pcm_sw_params_set_start_threshold(pcm_handle, sw_params, 0);
-
-    // 应用软件参数
-    if (snd_pcm_sw_params(pcm_handle, sw_params) < 0) {
-        fprintf(stderr, "无法设置软件参数\n");
-        return 1;
-    }
-
-    // snd_pcm_prepare(pcm_handle);
-
-    return 0;
-}
-#endif
-
-
-T_ZiyanReturnCode ZiyanTest_PcmPlay(uint8_t* pcm_data, uint64_t size)
-{
-#ifdef ALSA_INSTALLED
-    if((pcm_handle != NULL)){
-        int err = snd_pcm_writei(pcm_handle, pcm_data, size);
-
-        snd_pcm_sframes_t avail = snd_pcm_avail(pcm_handle);
-        if((16000 * 8 - avail) <= 16000){
-
-            uint8_t pcm_empty[16000];
-            memset(pcm_empty, 0, sizeof(pcm_empty));
-            snd_pcm_writei(pcm_handle, pcm_empty, sizeof(pcm_empty));
-        }
-        // snd_pcm_sframes_t avail = 0;
-        printf("play pcm %d : %ld : %ld\n", err, size, avail);
-
-        // 错误处理
-        if (err == -EPIPE) {
-            fprintf(stderr, "发生缓冲区溢出错误！\n");
-            snd_pcm_prepare(pcm_handle);
-        } else if (err < 0) {
-            fprintf(stderr, "播放失败: %s\n", snd_strerror(err));
-        } else if (err < 640) {
-            fprintf(stderr, "警告: 写入的帧数少于预期\n");
-        }
-    }
-#endif
-}
-
 /* Private functions definition-----------------------------------------------*/
 #ifdef SYSTEM_ARCH_LINUX
 
@@ -320,7 +232,7 @@ static T_ZiyanReturnCode ZiyanTest_DecodeAudioData(void)
         goto close_fin;
     }
 
-    fout = fopen(WIDGET_SPEAKER_AUDIO_PCM_FILE_NAME, "a+");
+    fout = fopen(WIDGET_SPEAKER_AUDIO_PCM_FILE_NAME, "w");
     if (fout == NULL) {
         fprintf(stderr, "failed to open output file: %s\n", strerror(errno));
         goto close_fin;
@@ -328,12 +240,14 @@ static T_ZiyanReturnCode ZiyanTest_DecodeAudioData(void)
 
     while (1) {
         int i;
-        unsigned char pcm_bytes[WIDGET_SPEAKER_AUDIO_OPUS_MAX_FRAME_SIZE * WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS * 4] = {0};
+        unsigned char pcm_bytes[WIDGET_SPEAKER_AUDIO_OPUS_MAX_FRAME_SIZE * WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS * 2];
         int frame_size;
 
         /* Read a 16 bits/sample audio frame. */
         nbBytes = fread(cbits, 1, s_decodeBitrate / WIDGET_SPEAKER_AUDIO_OPUS_DECODE_BITRATE_8KBPS *
-                                  WIDGET_SPEAKER_AUDIO_OPUS_DECODE_FRAME_SIZE_8KBPS * 8, fin);
+                                  WIDGET_SPEAKER_AUDIO_OPUS_DECODE_FRAME_SIZE_8KBPS, fin);
+        if (feof(fin))
+            break;
 
         /* Decode the data. In this example, frame_size will be constant because
            the encoder is using a constant frame size. However, that may not
@@ -345,6 +259,7 @@ static T_ZiyanReturnCode ZiyanTest_DecodeAudioData(void)
             goto close_fout;
         }
 
+        USER_LOG_DEBUG("decode data to file: %d\r\n", frame_size * WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS);
         /* Convert to little-endian ordering. */
         for (i = 0; i < WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS * frame_size; i++) {
             pcm_bytes[2 * i] = out[i] & 0xFF;
@@ -352,12 +267,6 @@ static T_ZiyanReturnCode ZiyanTest_DecodeAudioData(void)
         }
         /* Write the decoded audio to file. */
         fwrite(pcm_bytes, sizeof(short), frame_size * WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS, fout);
-#ifdef ALSA_INSTALLED
-        ZiyanTest_PcmPlay(pcm_bytes, frame_size * WIDGET_SPEAKER_AUDIO_OPUS_CHANNELS);
-#endif
-
-        if (feof(fin))
-            break;
     }
 
     USER_LOG_INFO("Decode Finished...");
@@ -701,9 +610,10 @@ static T_ZiyanReturnCode ReceiveTtsData(E_ZiyanWidgetTransmitDataEvent event,
 {
     uint16_t writeLen;
     T_ZiyanReturnCode returnCode;
+    USER_LOG_WARN("tts data %d: offset %d, size %d", event, offset, size);
 
     if (event == ZIYAN_WIDGET_TRANSMIT_DATA_EVENT_START) {
-        USER_LOG_INFO("Create tts file.");
+        USER_LOG_WARN("Create tts file.");
 #ifdef SYSTEM_ARCH_LINUX
         s_ttsFile = fopen(WIDGET_SPEAKER_TTS_FILE_NAME, "wb");
         if (s_ttsFile == NULL) {
@@ -714,7 +624,7 @@ static T_ZiyanReturnCode ReceiveTtsData(E_ZiyanWidgetTransmitDataEvent event,
             SetSpeakerState(ZIYAN_WIDGET_SPEAKER_STATE_TRANSMITTING);
         }
     } else if (event == ZIYAN_WIDGET_TRANSMIT_DATA_EVENT_TRANSMIT) {
-        USER_LOG_INFO("Transmit tts file, offset: %d, size: %d", offset, size);
+        USER_LOG_WARN("Transmit tts file, offset: %d, size: %d", offset, size);
 #ifdef SYSTEM_ARCH_LINUX
         if (s_ttsFile != NULL) {
             fseek(s_ttsFile, offset, SEEK_SET);
@@ -728,7 +638,7 @@ static T_ZiyanReturnCode ReceiveTtsData(E_ZiyanWidgetTransmitDataEvent event,
             SetSpeakerState(ZIYAN_WIDGET_SPEAKER_STATE_TRANSMITTING);
         }
     } else if (event == ZIYAN_WIDGET_TRANSMIT_DATA_EVENT_FINISH) {
-        USER_LOG_INFO("Close tts file.");
+        USER_LOG_WARN("Close tts file.");
 #ifdef SYSTEM_ARCH_LINUX
         if (s_ttsFile != NULL) {
             fclose(s_ttsFile);
@@ -754,6 +664,8 @@ static T_ZiyanReturnCode ReceiveAudioData(E_ZiyanWidgetTransmitDataEvent event,
     uint16_t writeLen;
     T_ZiyanReturnCode returnCode;
     T_ZiyanWidgetTransDataContent transDataContent = {0};
+
+    USER_LOG_WARN("Vioce data %d: offset %d, size %d", event, offset, size);
 
     if (event == ZIYAN_WIDGET_TRANSMIT_DATA_EVENT_START) {
         s_isDecodeFinished = false;
@@ -822,10 +734,6 @@ static void *ZiyanTest_WidgetSpeakerTask(void *arg)
 {
     T_ZiyanReturnCode ziyanReturnCode;
     T_ZiyanOsalHandler *osalHandler = ZiyanPlatform_GetOsalHandler();
-
-#ifdef ALSA_INSTALLED
-    ZiyanTest_AsoundInit();
-#endif
 
     USER_UTIL_UNUSED(arg);
 

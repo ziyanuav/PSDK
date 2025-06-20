@@ -53,6 +53,11 @@ typedef void *T_ZiyanUsbBulkHandle;
 typedef void *T_ZiyanNetworkHandle;
 
 /**
+* @brief Platform handle of i2c device operation.
+*/
+typedef void *T_ZiyanI2cHandle;
+
+/**
 * @brief Platform handle of thread task operation.
 */
 typedef void *T_ZiyanTaskHandle;
@@ -195,6 +200,23 @@ typedef struct {
 } T_ZiyanHalNetworkHandler;
 
 typedef struct {
+    uint32_t i2cSpeed;
+    uint16_t devAddress;
+} T_ZiyanHalI2cConfig;
+
+typedef struct {
+    T_ZiyanReturnCode (*I2cInit)(T_ZiyanHalI2cConfig i2cConfig, T_ZiyanI2cHandle *i2cHandle);
+
+    T_ZiyanReturnCode (*I2cDeInit)(T_ZiyanI2cHandle *i2cHandle);
+
+    T_ZiyanReturnCode (*I2cWriteData)(T_ZiyanI2cHandle *i2cHandle, uint16_t devAddress, const uint8_t *buf,
+                                    uint32_t len, uint32_t *realLen);
+
+    T_ZiyanReturnCode (*I2cReadData)(T_ZiyanI2cHandle *i2cHandle, uint16_t devAddress, uint8_t *buf,
+                                   uint32_t len, uint32_t *realLen);
+} T_ZiyanHalI2cHandler;
+
+typedef struct {
     T_ZiyanReturnCode (*TaskCreate)(const char *name, void *(*taskFunc)(void *),
                                   uint32_t stackSize, void *arg, T_ZiyanTaskHandle *task);
 
@@ -318,6 +340,19 @@ T_ZiyanReturnCode ZiyanPlatform_RegHalUsbBulkHandler(const T_ZiyanHalUsbBulkHand
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanPlatform_RegHalNetworkHandler(const T_ZiyanHalNetworkHandler *halNetworkHandler);
+
+/**
+ * @brief Register the handler for hal i2c master mode interfaces by your platform.
+ * @note It should be noted that the interface in hal is written and tested well. Users need to implement all the
+ * interfaces. Otherwise, the user interface cannot be successfully registered, and then the user interface is registered
+ * through the interface. If the registration fails, it needs to be based on the return code. To judge the problem. Make
+ * sure that the feature is available after a successful registration.
+ * @attention The interface needs to be called at the beginning of the application for registration, otherwise, the
+ * subsequent functions will not work properly.
+ * @param halI2cHandler: pointer to the handler for hal i2c handler interfaces by your platform.
+ * @return Execution result.
+ */
+T_ZiyanReturnCode ZiyanPlatform_RegHalI2cHandler(const T_ZiyanHalI2cHandler *halI2cHandler);
 
 /**
  * @brief Register the handler for osal interfaces by your platform.

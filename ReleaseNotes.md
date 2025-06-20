@@ -1,5 +1,27 @@
 # Ziyan Payload SDK Release Log
 
+## V1.1.0.0-20250620-Release
+**[Note]**:
+* Introduced a new self-checking mechanism.
+* Fixed several known issues.
+
+**[Added]**:
+* Added support for the self-checking mechanism. Users will now be prompted to update their PSPK version in the event of communication or version mismatches.
+* Added support for the I2C communication protocol.
+
+**[Optimized]**:
+* Optimized the widget configuration file loading method. UAVs can now load configuration files dynamically.
+* Optimized the speaker module to improve real-time speaker and TTS (text-to-speech) transmission logic.
+* Refined the core initialization logic.
+
+**[Fixed]**:
+* Fixed an issue where the widget module occasionally failed to load the configuration file, causing the Ziyan app to not display payload widget information.
+* Fixed an issue where log timestamps were displayed abnormally.
+---
+
+
+
+
 ## V1.0.0.4-20250603-Release 
 **[Note]**: 
 * Added new module.
