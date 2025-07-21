@@ -81,7 +81,7 @@ static T_ZiyanCameraFocusHandler s_focusHandler;
 static T_ZiyanCameraDigitalZoomHandler s_digitalZoomHandler;
 static T_ZiyanCameraOpticalZoomHandler s_opticalZoomHandler;
 static T_ZiyanCameraTapZoomHandler s_tapZoomHandler;
-static T_ZiyanCameraExtendHandler s_extendHander;
+static T_ZiyanCameraRangeFinderHandler s_rangeFinderHander;
 
 static T_ZiyanTaskHandle s_userCameraThread;
 
@@ -225,13 +225,13 @@ void* push_video_stream8(void* arg)
 
         if (access(file_path, F_OK) == 0) {
             memcpy(input_file, file_path, strlen(file_path));
-            printf("select: %s\n", file_path);
+            USER_LOG_INFO("select: %s", file_path);
         } else {
             memcpy(input_file, INPUT_FILE, strlen(INPUT_FILE));
-            printf("select: %s\n", INPUT_FILE);
+            USER_LOG_INFO("select: %s", INPUT_FILE);
         }
         
-        printf("input file: %s\n", input_file);
+        USER_LOG_INFO("input file: %s", input_file);
 
         // Open the input MP4 file
         if (avformat_open_input(&input_format_context, input_file, NULL, NULL) < 0) {
@@ -1481,14 +1481,14 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuBaseStartService(void)
     }
 #endif
 
-    s_extendHander.GetRangeFinderSwitch = GetRangeFinderSwitch;
-    s_extendHander.SetRangeFinderSwitch = SetRangeFinderSwitch;
-    s_extendHander.GetRangeFinderData   = GetRangeFinderData;
-    s_extendHander.GetRangeFinderLocation = GetRangeFinderLocation;
+    s_rangeFinderHander.GetRangeFinderSwitch = GetRangeFinderSwitch;
+    s_rangeFinderHander.SetRangeFinderSwitch = SetRangeFinderSwitch;
+    s_rangeFinderHander.GetRangeFinderData   = GetRangeFinderData;
+    s_rangeFinderHander.GetRangeFinderLocation = GetRangeFinderLocation;
 
-    returnCode = ZiyanPayloadCamera_RegExtendHandler(&s_extendHander);
+    returnCode = ZiyanPayloadCamera_RegRangeFinderHandler(&s_rangeFinderHander);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-        USER_LOG_ERROR("camera register extend handler error:0x%08llX", returnCode);
+        USER_LOG_ERROR("camera register range finder handler error:0x%08llX", returnCode);
         return returnCode;
     }
 

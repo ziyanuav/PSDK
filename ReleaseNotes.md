@@ -1,5 +1,26 @@
 # Ziyan Payload SDK Release Log
 
+## V1.1.1.0-20250721-Release
+**[Note]**: 
+* Refactored the camera range finder handler and separated it into an independent interface.
+* Introduced a new camera API to support the camera tracker.
+* Resolved several known issues.
+
+**[Added]**: 
+* Added support for the camera tracker feature. Introduced new APIs for controlling the camera tracker integrated with the payload camera, and exposed additional tracking status feedback data.
+* Separated the camera range finder into a dedicated interface to improve modularity.
+
+**[Optimized]**: 
+* Optimized the video streaming transmission mechanism for improved efficiency and stability.
+* Enhanced core task monitoring by periodically reporting tasks with abnormal execution time, ensuring stable and reliable system behavior.
+
+**[Fixed]**: 
+* Fixed an issue where the widget module ignored items with an index greater than 256.
+----
+
+
+
+
 ## V1.1.0.0-20250620-Release
 **[Note]**:
 * Introduced a new self-checking mechanism.

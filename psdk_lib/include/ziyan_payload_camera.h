@@ -182,12 +182,42 @@ typedef struct {
 } T_ZiyanCameraSystemState;
 
 /**
+ * @brief Camera tracking target state.
+ */
+typedef enum {
+    ZIYAN_CAMERA_TRACKING_TARGET_STATUS_READY = 0,
+    ZIYAN_CAMERA_TRACKING_TARGET_STATUS_FAILED = 1,
+    ZIYAN_CAMERA_TRACKING_TARGET_STATUS_TRACKING = 2,
+    ZIYAN_CAMERA_TRACKING_TARGET_STATUS_LOST = 3,
+} E_ZiyanCameraTrackingTargetState;
+/**
  * @brief Camera tracking state.
  */
 typedef struct {
-    bool isTraking; /*!< Specifies if the camera is in tracking status. This parameter is boolean type. */
-    T_ZiyanCameraPointInScreen targetPoint;
-    T_ZiyanLocation targetLocation;
+    E_ZiyanCameraTrackingTargetState status; /*!< Specifies track the status of the target, #E_ZiyanCameraTrackingTargetState. */
+    float startX; /*!< Specifies the ratio of the x-coordinate of the starting point to the maximum horizontal pixel, This parameter is float type. */
+    float startY; /*!< Specifies the ratio of the y-coordinate of the starting point to the maximum vertical pixel, This parameter is float type. */
+    float endX; /*!< Specifies the ratio of the x-coordinate of the endpoint to the maximum horizontal pixel, This parameter is float type. */
+    float endY; /*!< Specifies the ratio of the y-coordinate of the endpoint to the maximum vertical pixel, This parameter is float type. */
+    float centerX;/*!< Specifies the x-coordinate of the center point of the tracked target, This parameter is float type. */
+    float centerY;/*!< Specifies the y-coordinate of the center point of the tracked target, This parameter is float type. */
+    double longitude; /*!< Specifies track the longitude of the center of the target object, This parameter is double type. */
+    double latitude; /*!< Specifies track the latitude of the center of the target object, This parameter is double type. */
+    double altitude; /*!< Specifies track the altitude of the center of the target object, This parameter is double type. unit: m*/
+    float coorN; /*!< Specifies tracking the northbound velocity of the target object center in the WGS-84 coordinate system, This parameter is float type. */
+    float coorE; /*!< Specifies tracking the eastward velocity of the center of the target object in the WGS-84 coordinate system, This parameter is float type. */
+    float coorD; /*!< Specifies tracking the radial velocity of the center of the target object in the WGS-84 coordinate system, This parameter is float type. */
+    float bodyX; /*!< Specifies tracking the velocity of the center of the target object in the x-axis direction of the body coordinates, This parameter is float type. */
+    float bodyY; /*!< Specifies tracking the velocity of the center of the target object in the y-axis direction of the body coordinates, This parameter is float type. */
+    float bodyZ; /*!< Specifies tracking the velocity of the center of the target object in the z-axis direction of the body coordinates, This parameter is float type. */
+    char targetName[17];  /*!< Specifies target recognition name for tracking, This parameter is string type. */
+    int confidence;  /*!< Specifies confidence level of tracked targets, This parameter is int type. */
+    char targetType[17];  /*!< Specifies the type name of the tracked target, This parameter is string type. */
+
+    /* The following variables will be deprecated! */
+    bool isTraking; /*!< Deprecated! Specifies if the camera is in tracking status. This parameter is boolean type. */
+    T_ZiyanCameraPointInScreen targetPoint; /*!< Deprecated! */
+    T_ZiyanLocation targetLocation; /*!< Deprecated! */
 } T_ZiyanCameraTrackState;
 
 /**
@@ -736,7 +766,7 @@ typedef struct {
 
 
 /**
- * @brief Prototype of handler functions for Extend function.
+ * @brief Prototype of handler functions for Range finder function.
  * @note User can not execute blocking style operations or functions in callback function, like ziyanXPort_RotateSync()
  * function, because that will block ziyan root thread, causing problems such as slow system response, payload
  * disconnection or infinite loop.
@@ -777,7 +807,15 @@ typedef struct {
      * @return Execution result.
      */
     T_ZiyanReturnCode (*GetRangeFinderLocation)(T_ZiyanLocation* location);
+} T_ZiyanCameraRangeFinderHandler;
 
+/**
+ * @brief Prototype of handler functions for Tracking function.
+ * @note User can not execute blocking style operations or functions in callback function, like ziyanXPort_RotateSync()
+ * function, because that will block ziyan root thread, causing problems such as slow system response, payload
+ * disconnection or infinite loop.
+ */
+typedef struct {
     /**
      * @brief Prototype of callback function used to track target.
      * @details User can select desired target by tap screen or manual draw a bounding box, this callback function
@@ -786,7 +824,16 @@ typedef struct {
      * @param target_end: end point of target. Range: 0 to 1.
      * @return Execution result.
      */
-    T_ZiyanReturnCode (*TrackTarget)(T_ZiyanCameraPointInScreen target_begin, T_ZiyanCameraPointInScreen target_end);
+    T_ZiyanReturnCode (*TrackTarget)(T_ZiyanCameraPointInScreen targetBegin, T_ZiyanCameraPointInScreen targetEnd);
+    
+    /**
+     * @brief Prototype of callback function used to track target.
+     * @details Users can input the target recognition name, this callback function
+     *  will be called when User select target on the application or GSDK.
+     * @param targetName: Target recognition name.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*TrackTargetByName)(const char *targetName);
 
     /**
      * @brief Prototype of callback function used to stop track target.
@@ -804,7 +851,7 @@ typedef struct {
      */
     T_ZiyanReturnCode (*GetTrackState)(T_ZiyanCameraTrackState* state);
 
-} T_ZiyanCameraExtendHandler;
+} T_ZiyanCameraTrackingHandler;
 
 /* Exported functions --------------------------------------------------------*/
 /**
@@ -878,14 +925,24 @@ T_ZiyanReturnCode ZiyanPayloadCamera_RegOpticalZoomHandler(const T_ZiyanCameraOp
 T_ZiyanReturnCode ZiyanPayloadCamera_RegTapZoomHandler(const T_ZiyanCameraTapZoomHandler *cameraTapZoomHandler);
 
 /**
- * @brief Register the handler for payload camera extend function interfaces.
- * @note This interface registers the camera's extend interface, which includes setting and acquiring the range finder
+ * @brief Register the handler for payload camera range finder function interfaces.
+ * @note This interface registers the camera's range finder interface, which includes setting and acquiring the range finder
  * switch. Registering the load on this interface requires support for range finder. Registration of this interface
  * needs to be after ZiyanPayloadCamera_Init.
- * @param cameraExtendHandler: pointer to the handler for payload camera extend functions.
+ * @param cameraRangeFinderHandler: pointer to the handler for payload camera range finder functions.
  * @return Execution result.
 */
-T_ZiyanReturnCode ZiyanPayloadCamera_RegExtendHandler(const T_ZiyanCameraExtendHandler *cameraExtendHandler);
+T_ZiyanReturnCode ZiyanPayloadCamera_RegRangeFinderHandler(const T_ZiyanCameraRangeFinderHandler *cameraRangeFinderHandler);
+
+/**
+ * @brief Register the handler for payload camera tracking function interfaces.
+ * @note This interface registers the camera's tracking interface, which includes setting and acquiring the tracking
+ * switch. Registering the load on this interface requires support for tracking. Registration of this interface
+ * needs to be after ZiyanPayloadCamera_Init.
+ * @param cameraTrackingHandler: pointer to the handler for payload camera tracking functions.
+ * @return Execution result.
+*/
+T_ZiyanReturnCode ZiyanPayloadCamera_RegTrackingHandler(const T_ZiyanCameraTrackingHandler *cameraTrackingHandler);
 
 /**
  * @brief Set the type of camera video stream.

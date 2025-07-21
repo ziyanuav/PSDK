@@ -89,17 +89,17 @@ T_ZiyanReturnCode ZiyanTest_WidgetStartService(void)
 #ifdef SYSTEM_ARCH_LINUX
     //Step 2 : Set UI Config (Linux environment)
     char curFileDirPath[WIDGET_DIR_PATH_LEN_MAX];
-    char tempPath[2 * WIDGET_DIR_PATH_LEN_MAX + 64];
-    ziyanStat = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, sizeof(curFileDirPath), curFileDirPath);
+    char tempPath[WIDGET_DIR_PATH_LEN_MAX];
+    ziyanStat = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, WIDGET_DIR_PATH_LEN_MAX, curFileDirPath);
     if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
         USER_LOG_ERROR("Get file current path error, stat = 0x%08llX", ziyanStat);
         return ziyanStat;
     }
 
     if (s_isWidgetFileDirPathConfigured == true) {
-        snprintf(tempPath, sizeof(tempPath), "%swidget_file/en_big_screen", s_widgetFileDirPath);
+        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/en_big_screen", s_widgetFileDirPath);
     } else {
-        snprintf(tempPath, sizeof(tempPath), "%swidget_file/en_big_screen", curFileDirPath);
+        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/en_big_screen", curFileDirPath);
     }
 
     //set default ui config path
@@ -120,9 +120,9 @@ T_ZiyanReturnCode ZiyanTest_WidgetStartService(void)
 
     //set ui config for Chinese language
     if (s_isWidgetFileDirPathConfigured == true) {
-        snprintf(tempPath, sizeof(tempPath), "%swidget_file/cn_big_screen", s_widgetFileDirPath);
+        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/cn_big_screen", s_widgetFileDirPath);
     } else {
-        snprintf(tempPath, sizeof(tempPath), "%swidget_file/cn_big_screen", curFileDirPath);
+        snprintf(tempPath, WIDGET_DIR_PATH_LEN_MAX, "%swidget_file/cn_big_screen", curFileDirPath);
     }
 
     ziyanStat = ZiyanWidget_RegUiConfigByDirPath(ZIYAN_MOBILE_APP_LANGUAGE_CHINESE,
@@ -145,6 +145,14 @@ T_ZiyanReturnCode ZiyanTest_WidgetStartService(void)
         USER_LOG_ERROR("Add default widget ui config error, stat = 0x%08llX", ziyanStat);
         return ziyanStat;
     }
+
+    // set english ui config
+    ziyanStat = ZiyanWidget_RegUiConfigByBinaryArray(ZIYAN_MOBILE_APP_LANGUAGE_ENGLISH, ZIYAN_MOBILE_APP_SCREEN_TYPE_BIG_SCREEN, &enWidgetBinaryArrayConfig);
+    if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("Add english widget ui config error, stat = 0x%08llX", ziyanStat);
+        return ziyanStat;
+    }
+
 #endif
     //Step 3 : Set widget handler list
     ziyanStat = ZiyanWidget_RegHandlerList(s_widgetHandlerList, s_widgetHandlerListCount);
@@ -213,7 +221,7 @@ static void *ZiyanTest_WidgetTask(void *arg)
 
         ziyanStat = ZiyanWidgetFloatingWindow_ShowMessage(message);
         if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-            // USER_LOG_ERROR("Floating window show message error, stat = 0x%08llX", ziyanStat);
+            USER_LOG_ERROR("Floating window show message error, stat = 0x%08llX", ziyanStat);
         }
 
         osalHandler->TaskSleepMs(1000);
@@ -224,9 +232,6 @@ static void *ZiyanTest_WidgetTask(void *arg)
 #pragma GCC diagnostic pop
 #endif
 
-#include <stdio.h>
-#include <stdlib.h>
-
 static T_ZiyanReturnCode ZiyanTestWidget_SetWidgetValue(E_ZiyanWidgetType widgetType, uint32_t index, int32_t value,
                                                     void *userData)
 {
@@ -235,97 +240,6 @@ static T_ZiyanReturnCode ZiyanTestWidget_SetWidgetValue(E_ZiyanWidgetType widget
     USER_LOG_INFO("Set widget value, widgetType = %s, widgetIndex = %d ,widgetValue = %d",
                   s_widgetTypeNameArray[widgetType], index, value);
     s_widgetValueList[index] = value;
-
-    if(index == 0){
-        uint8_t brightness = value;
-        brightness = (brightness == 0) ? 30  : brightness;
-        brightness = (brightness == 1) ? 255 : brightness;
-
-        FILE *fp;
-        const char *brightness_file = "/sys/class/backlight/amdgpu_bl1/brightness";  // 根据你的系统路径调整
-
-        fp = fopen(brightness_file, "w");
-        if (fp == NULL) {
-            perror("Error opening brightness file");
-            return -1;
-        }
-
-        fprintf(fp, "%d", brightness);  // 写入新的亮度值
-        fclose(fp);
-    }
-
-    if(index == 1){
-        uint8_t brightness = value;
-        brightness = (brightness == 0)  ? 30  : brightness;
-        brightness = (brightness == 1)  ? 140 : brightness;
-        brightness = (brightness == 2)  ? 255 : brightness;
-
-        FILE *fp;
-        const char *brightness_file = "/sys/class/backlight/amdgpu_bl1/brightness";  // 根据你的系统路径调整
-
-        fp = fopen(brightness_file, "w");
-        if (fp == NULL) {
-            perror("Error opening brightness file");
-            return -1;
-        }
-
-        fprintf(fp, "%d", brightness);  // 写入新的亮度值
-        fclose(fp);
-    }
-
-    if(index == 2){
-        uint8_t brightness = value;
-        brightness = (brightness == 0) ? 30  : brightness;
-        brightness = (brightness == 1) ? 255 : brightness;
-
-        FILE *fp;
-        const char *brightness_file = "/sys/class/backlight/amdgpu_bl1/brightness";  // 根据你的系统路径调整
-
-        fp = fopen(brightness_file, "w");
-        if (fp == NULL) {
-            perror("Error opening brightness file");
-            return -1;
-        }
-
-        fprintf(fp, "%d", brightness);  // 写入新的亮度值
-        fclose(fp);
-    }
-
-    if(index == 3){
-        uint8_t brightness = value;
-        brightness = (brightness < 30)  ? 30  : brightness;
-        brightness = (brightness > 255) ? 255 : brightness;
-
-        FILE *fp;
-        const char *brightness_file = "/sys/class/backlight/amdgpu_bl1/brightness";  // 根据你的系统路径调整
-
-        fp = fopen(brightness_file, "w");
-        if (fp == NULL) {
-            perror("Error opening brightness file");
-            return -1;
-        }
-
-        fprintf(fp, "%d", brightness);  // 写入新的亮度值
-        fclose(fp);
-    }
-
-    if(index == 6){
-        uint8_t brightness = value;
-        brightness = (brightness < 30)  ? 30  : brightness;
-        brightness = (brightness > 255) ? 255 : brightness;
-
-        FILE *fp;
-        const char *brightness_file = "/sys/class/backlight/amdgpu_bl1/brightness";  // 根据你的系统路径调整
-
-        fp = fopen(brightness_file, "w");
-        if (fp == NULL) {
-            perror("Error opening brightness file");
-            return -1;
-        }
-
-        fprintf(fp, "%d", brightness);  // 写入新的亮度值
-        fclose(fp);
-    }
 
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
