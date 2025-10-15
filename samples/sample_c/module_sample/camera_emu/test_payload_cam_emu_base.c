@@ -82,6 +82,7 @@ static T_ZiyanCameraDigitalZoomHandler s_digitalZoomHandler;
 static T_ZiyanCameraOpticalZoomHandler s_opticalZoomHandler;
 static T_ZiyanCameraTapZoomHandler s_tapZoomHandler;
 static T_ZiyanCameraRangeFinderHandler s_rangeFinderHander;
+static T_ZiyanCameraTrackingHandler s_trackingHander;
 
 static T_ZiyanTaskHandle s_userCameraThread;
 
@@ -174,6 +175,11 @@ static T_ZiyanReturnCode SetRangeFinderSwitch(bool enable);
 static T_ZiyanReturnCode GetRangeFinderSwitch(bool* enable);
 static T_ZiyanReturnCode GetRangeFinderData(ziyan_f32_t* distance);
 static T_ZiyanReturnCode GetRangeFinderLocation(T_ZiyanLocation* location);
+
+static T_ZiyanReturnCode TrackTarget(T_ZiyanCameraPointInScreen target_begin, T_ZiyanCameraPointInScreen target_end);
+static T_ZiyanReturnCode TrackTargetByName(const char *targetName);
+static T_ZiyanReturnCode StopTrack();
+static T_ZiyanReturnCode GetTrackState(T_ZiyanCameraTrackState* state);
 
 static void *UserCamera_Task(void *arg);
 
@@ -1492,7 +1498,17 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuBaseStartService(void)
         return returnCode;
     }
 
-    
+    s_trackingHander.TrackTarget = TrackTarget;
+    s_trackingHander.TrackTargetByName = TrackTargetByName;
+    s_trackingHander.StopTrack   = StopTrack;
+    s_trackingHander.GetTrackState = GetTrackState;
+
+    returnCode = ZiyanPayloadCamera_RegTrackingHandler(&s_trackingHander);
+    if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("camera register tracking handler error:0x%08llX", returnCode);
+        return returnCode;
+    }
+
     T_ZiyanTaskHandle handle_test;
     osalHandler->TaskCreate("camera_vedio_task", push_video_stream8,
                                 PAYLOAD_CAMERA_EMU_TASK_STACK_SIZE, NULL, &handle_test);
@@ -1652,6 +1668,75 @@ T_ZiyanReturnCode GetRangeFinderLocation(T_ZiyanLocation* location)
     range_finder_target_location.longitude += 0.0001f;
     range_finder_target_location.altitude += 0.1f;
     *location = range_finder_target_location;
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+static T_ZiyanReturnCode TrackTarget(T_ZiyanCameraPointInScreen targetBegin, T_ZiyanCameraPointInScreen targetEnd)
+{
+    USER_LOG_DEBUG("TrackTarget");
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+static T_ZiyanReturnCode TrackTargetByName(const char* targetName)
+{
+    USER_LOG_DEBUG("TrackTargetByName: %s", targetName);
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+static T_ZiyanReturnCode StopTrack()
+{
+    USER_LOG_DEBUG("StopTrack");
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+static T_ZiyanCameraTrackState s_state = {
+    .status = ZIYAN_CAMERA_TRACKING_TARGET_STATUS_TRACKING,
+    .startX = 0,
+    .startY = 0,
+    .endX = 0,
+    .endY = 0,
+    .centerX = 0,
+    .centerY = 0,
+    .longitude = 0,
+    .latitude = 0,
+    .altitude = 0,
+    .coorN = 0,
+    .coorE = 0,
+    .coorD = 0,
+    .bodyX = 0,
+    .bodyY = 0,
+    .bodyZ = 0,
+    .confidence = 0
+};
+
+static T_ZiyanReturnCode GetTrackState(T_ZiyanCameraTrackState* state)
+{
+    state->status       = s_state.status == ZIYAN_CAMERA_TRACKING_TARGET_STATUS_TRACKING? ZIYAN_CAMERA_TRACKING_TARGET_STATUS_LOST : ZIYAN_CAMERA_TRACKING_TARGET_STATUS_TRACKING;
+    state->startX       = s_state.startX += 0.1;
+    state->startY       = s_state.startY += 0.2;
+    state->endX         = s_state.endX += 0.003;
+    state->endY         = s_state.endY += 0.004;
+    state->centerX      = s_state.centerX += 0.41;
+    state->centerY      = s_state.centerY += 0.31;
+    state->longitude    = s_state.longitude += 0.31;
+    state->latitude     = s_state.latitude += 0.21;
+    state->altitude     = s_state.altitude += 0.01;
+    state->coorN        = s_state.coorN += 0.01;
+    state->coorE        = s_state.coorE += 0.001;
+    state->coorD        = s_state.coorD += 0.001;
+    state->bodyX        = s_state.bodyX += 0.0001;
+    state->bodyY        = s_state.bodyY += 0.01;
+    state->bodyZ        = s_state.bodyZ += 0.01;
+    state->confidence   = s_state.confidence += 1;
+
+    char name[] = "ddddd";
+    memset(state->targetName, 0, sizeof(state->targetName));
+    strcpy(state->targetName, name);
+    
+    char type[] = "car";
+    memset(state->targetType, 0, sizeof(state->targetType));
+    strcpy(state->targetType, type);
+
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
 

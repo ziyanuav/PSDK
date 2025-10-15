@@ -1,5 +1,25 @@
 # Ziyan Payload SDK Release Log
 
+## V1.1.2.0-20251015-Release
+**[Note]**:
+* Add demo of pod camera tracking.
+* Resolved several known issues.
+
+**[Added]**:
+* Custom widget supports pagination.
+
+**[Optimized]**:
+* Optimize the widget of speaker.
+
+**[Fixed]**:
+* Fixed the issue of registration failure when the widget index is greater than 127.
+* Fixed the issue of reporting errors when not using the speaker interface.
+* Fix the exception caused by recursive judgment function in the speaker widget.
+----
+
+
+
+
 ## V1.1.1.0-20250721-Release
 **[Note]**: 
 * Refactored the camera range finder handler and separated it into an independent interface.

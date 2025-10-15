@@ -845,7 +845,7 @@ typedef struct {
 
     /**
      * @brief Prototype of callback function used to get track state.
-     * @details User can get track state, this callback function will be called at regular intervals.
+     * @details User can set the tracking status for GCS to display track state, this callback function will be called at regular intervals.
      * @param state: pointer to memory space used to store track state.
      * @return Execution result.
      */

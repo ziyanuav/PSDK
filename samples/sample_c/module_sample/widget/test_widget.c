@@ -54,11 +54,13 @@ static const T_ZiyanWidgetHandlerListItem s_widgetHandlerList[] = {
     {1, ZIYAN_WIDGET_TYPE_LIST,          ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
     {2, ZIYAN_WIDGET_TYPE_SWITCH,        ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
     {3, ZIYAN_WIDGET_TYPE_SCALE,         ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
-    {4, ZIYAN_WIDGET_TYPE_BUTTON,        ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
-    {5, ZIYAN_WIDGET_TYPE_SCALE,         ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
-    {6, ZIYAN_WIDGET_TYPE_INT_INPUT_BOX, ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
-    {7, ZIYAN_WIDGET_TYPE_SWITCH,        ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
-    {8, ZIYAN_WIDGET_TYPE_LIST,          ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {4, ZIYAN_WIDGET_TYPE_LABEL,         ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {5, ZIYAN_WIDGET_TYPE_LIST,          ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {6, ZIYAN_WIDGET_TYPE_BUTTON,        ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {7, ZIYAN_WIDGET_TYPE_SCALE,         ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {8, ZIYAN_WIDGET_TYPE_INT_INPUT_BOX, ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {9, ZIYAN_WIDGET_TYPE_SWITCH,        ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
+    {10,ZIYAN_WIDGET_TYPE_LIST,          ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
 };
 
 static const char *s_widgetTypeNameArray[] = {
@@ -67,7 +69,8 @@ static const char *s_widgetTypeNameArray[] = {
     "Switch",
     "Scale",
     "List",
-    "Int input box"
+    "Int input box",
+    "Label"
 };
 
 static const uint32_t s_widgetHandlerListCount = sizeof(s_widgetHandlerList) / sizeof(T_ZiyanWidgetHandlerListItem);

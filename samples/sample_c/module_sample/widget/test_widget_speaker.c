@@ -490,6 +490,8 @@ static T_ZiyanReturnCode SetPlayMode(E_ZiyanWidgetSpeakerPlayMode playMode)
     T_ZiyanReturnCode returnCode;
     T_ZiyanOsalHandler *osalHandler = ZiyanPlatform_GetOsalHandler();
 
+    printf("set play mode: %d.\n", playMode);
+
     returnCode = osalHandler->MutexLock(s_speakerMutex);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
         USER_LOG_ERROR("lock mutex error: 0x%08llX.", returnCode);

@@ -49,6 +49,7 @@ typedef enum {
     ZIYAN_WIDGET_TYPE_SCALE = 3, /*!< scale widget type */
     ZIYAN_WIDGET_TYPE_LIST = 4, /*!< list widget type */
     ZIYAN_WIDGET_TYPE_INT_INPUT_BOX = 5, /*!< integer input box widget type */
+    ZIYAN_WIDGET_TYPE_LABEL = 6, /*!< label widget type */
 } E_ZiyanWidgetType;
 
 /**
