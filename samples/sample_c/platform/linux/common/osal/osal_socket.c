@@ -29,6 +29,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include "stdlib.h"
+#include <fcntl.h>
 
 /* Private constants ---------------------------------------------------------*/
 #define SOCKET_RECV_BUF_MAX_SIZE    (1000 * 1000 * 10)
@@ -78,6 +79,15 @@ T_ZiyanReturnCode Osal_Socket(E_ZiyanSocketMode mode, T_ZiyanSocketHandle *socke
         }
     } else if (mode == ZIYAN_SOCKET_MODE_TCP) {
         socketHandleStruct->socketFd = socket(PF_INET, SOCK_STREAM, 0);
+
+        if (setsockopt(socketHandleStruct->socketFd, SOL_SOCKET, SO_REUSEADDR, &opt, optlen) < 0) {
+            goto out;
+        }
+
+        if (setsockopt(socketHandleStruct->socketFd, SOL_SOCKET, SO_RCVBUF, &rcvBufSize, optlen) < 0)
+        {
+            goto out;
+        }
     } else {
         goto out;
     }
@@ -121,6 +131,8 @@ T_ZiyanReturnCode Osal_Bind(T_ZiyanSocketHandle socketHandle, const char *ipAddr
     if (socketHandle == NULL || ipAddr == NULL || port == 0) {
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
     }
+
+    fcntl(socketHandleStruct->socketFd, F_SETFL, O_NONBLOCK);
 
     bzero(&addr, sizeof(addr));
     addr.sin_family = AF_INET;
@@ -208,7 +220,9 @@ T_ZiyanReturnCode Osal_TcpAccept(T_ZiyanSocketHandle socketHandle, char *ipAddr,
     T_SocketHandleStruct *socketHandleStruct = (T_SocketHandleStruct *) socketHandle;
     T_SocketHandleStruct *outSocketHandleStruct;
     struct sockaddr_in addr;
-    uint32_t addrLen = 0;
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    uint32_t addrLen = sizeof(addr);
 
     if (socketHandle == NULL || ipAddr == NULL) {
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
@@ -224,7 +238,7 @@ T_ZiyanReturnCode Osal_TcpAccept(T_ZiyanSocketHandle socketHandle, char *ipAddr,
         free(outSocketHandleStruct);
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     }
-
+    strncpy(ipAddr, inet_ntoa(addr.sin_addr), 16);
     *port = ntohs(addr.sin_port);
     *outSocketHandle = outSocketHandleStruct;
 
@@ -264,6 +278,23 @@ T_ZiyanReturnCode Osal_TcpSendData(T_ZiyanSocketHandle socketHandle,
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
     }
 
+    fd_set wfds;
+    struct timeval tv;
+
+    FD_ZERO(&wfds);
+    FD_SET(socketHandleStruct->socketFd, &wfds);
+
+    tv.tv_sec = 0;
+    tv.tv_usec = 300 * 1000;
+
+    ret = select(socketHandleStruct->socketFd + 1, NULL, &wfds, NULL, &tv);
+    if (ret < 0) {
+        return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
+    }
+    if (ret == 0) {
+        return ZIYAN_ERROR_SYSTEM_MODULE_CODE_TIMEOUT;
+    }
+
     ret = send(socketHandleStruct->socketFd, buf, len, 0);
     if (ret >= 0) {
         *realLen = ret;
@@ -278,17 +309,26 @@ T_ZiyanReturnCode Osal_TcpRecvData(T_ZiyanSocketHandle socketHandle,
                                  uint8_t *buf, uint32_t len, uint32_t *realLen)
 {
     T_SocketHandleStruct *socketHandleStruct = (T_SocketHandleStruct *) socketHandle;
-    int32_t ret;
 
     if (socketHandle == NULL || buf == NULL || len == 0 || realLen == NULL) {
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_INVALID_PARAMETER;
     }
 
-    ret = recv(socketHandleStruct->socketFd, buf, len, 0);
-    if (ret >= 0) {
-        *realLen = ret;
-    } else {
+    struct timeval tv = {0, 100000};
+    fd_set read_fds;
+    FD_ZERO(&read_fds);
+    FD_SET(socketHandleStruct->socketFd, &read_fds);
+    int ret = select(socketHandleStruct->socketFd + 1, &read_fds, NULL, NULL, &tv);
+    if (socketHandleStruct->socketFd < 0) {
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
+    }
+    if (ret > 0 && FD_ISSET(socketHandleStruct->socketFd, &read_fds)) {
+        ret = recv(socketHandleStruct->socketFd, buf, len, 0);
+        if (ret >= 0) {
+            *realLen = ret;
+        } else {
+            return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
+        }
     }
 
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;

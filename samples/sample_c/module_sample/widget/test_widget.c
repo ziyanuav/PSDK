@@ -47,7 +47,7 @@ static T_ZiyanReturnCode ZiyanTestWidget_GetWidgetValue(E_ZiyanWidgetType widget
 /* Private values ------------------------------------------------------------*/
 static T_ZiyanTaskHandle s_widgetTestThread;
 static bool s_isWidgetFileDirPathConfigured = false;
-static char s_widgetFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX] = {0};
+static char s_widgetFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX - 32] = {0};
 
 static const T_ZiyanWidgetHandlerListItem s_widgetHandlerList[] = {
     {0, ZIYAN_WIDGET_TYPE_BUTTON,        ZiyanTestWidget_SetWidgetValue, ZiyanTestWidget_GetWidgetValue, NULL},
@@ -91,7 +91,7 @@ T_ZiyanReturnCode ZiyanTest_WidgetStartService(void)
 
 #ifdef SYSTEM_ARCH_LINUX
     //Step 2 : Set UI Config (Linux environment)
-    char curFileDirPath[WIDGET_DIR_PATH_LEN_MAX];
+    char curFileDirPath[WIDGET_DIR_PATH_LEN_MAX - 32];
     char tempPath[WIDGET_DIR_PATH_LEN_MAX];
     ziyanStat = ZiyanUserUtil_GetCurrentFileDirPath(__FILE__, WIDGET_DIR_PATH_LEN_MAX, curFileDirPath);
     if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {

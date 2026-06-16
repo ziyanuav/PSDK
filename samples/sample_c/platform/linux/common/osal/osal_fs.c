@@ -273,12 +273,13 @@ T_ZiyanReturnCode Osal_Stat(const char *filePath, T_ZiyanFileInfo *fileInfo)
 
     fileInfo->size = st.st_size;
 
-    fileInfo->createTime.year = fileTm->tm_year + 1900 - 1980;
+    fileInfo->createTime.year = fileTm->tm_year + 1900;
     fileInfo->createTime.month = fileTm->tm_mon + 1;
     fileInfo->createTime.day = fileTm->tm_mday;
     fileInfo->createTime.hour = fileTm->tm_hour;
     fileInfo->createTime.minute = fileTm->tm_min;
     fileInfo->createTime.second = fileTm->tm_sec;
+    fileInfo->isDir = S_ISDIR(st.st_mode);
 
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }

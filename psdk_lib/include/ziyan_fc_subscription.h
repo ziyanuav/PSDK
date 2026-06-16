@@ -502,7 +502,7 @@ typedef enum {
      */
     ZIYAN_FC_SUBSCRIPTION_TOPIC_HOME_POINT_INFO = ZIYAN_DATA_SUBSCRIPTION_TOPIC(ZIYAN_DATA_SUBSCRIPTION_MODULE_FC, 44),
     /*!
-     * @brief Provides three gimbal information, used for M300
+     * @brief Provides three gimbal information
      * @datastruct \ref T_ZiyanFcSubscriptionThreeGimbalData
      */
     ZIYAN_FC_SUBSCRIPTION_TOPIC_THREE_GIMBAL_DATA = ZIYAN_DATA_SUBSCRIPTION_TOPIC(ZIYAN_DATA_SUBSCRIPTION_MODULE_FC, 45),
@@ -983,11 +983,11 @@ typedef struct GimbalStatus {
     uint32_t rollLimited: 1;            /*!< 1 - axis reached limit, 0 - no */
     uint32_t yawLimited: 1;             /*!< 1 - axis reached limit, 0 - no */
     uint32_t calibrating: 1;            /*!< 1 - calibrating, 0 - no */
-    uint32_t prevCalibrationgResult: 1; /*!< 1 - success, 0 - fail */
+    uint32_t prevCalibrationResult: 1; /*!< 1 - success, 0 - fail */
     uint32_t installedDirection: 1;     /*!< 1 - reversed for OSMO, 0 - normal */
     uint32_t disabled_mvo: 1;
     uint32_t gear_show_unable: 1;
-    uint32_t gyroFalut: 1;       /*!< 1 - fault, 0 - normal */
+    uint32_t gyroFault: 1;       /*!< 1 - fault, 0 - normal */
     uint32_t escPitchStatus: 1;  /*!< 1 - Pitch data is normal, 0 - fault */
     uint32_t escRollStatus: 1;   /*!< 1 - Roll data is normal, 0 - fault */
     uint32_t escYawStatus: 1;    /*!< 1 - Yaw data is normal , 0 - fault */
@@ -1059,7 +1059,6 @@ typedef struct BatterySingleInfo {
  */
 typedef struct SDKCtrlInfo {
     union {
-        /* Used by M300 & M350 */
         struct {
             uint8_t controlMode;     /*!< enum-type: E_ZIYANFcSubscriptionControlMode. */
             uint8_t deviceStatus: 3; /*!< 0->rc  1->app  4->psdk */
@@ -1234,14 +1233,14 @@ typedef struct GimbalSingleData {
 } GimbalAnglesData;
 
 /**
- * @brief Struct for the topic ZIYAN_FC_SUBSCRIPTION_TOPIC_THREE_GIMBAL_DATA. Used in M300
+ * @brief Struct for the topic ZIYAN_FC_SUBSCRIPTION_TOPIC_THREE_GIMBAL_DATA.
  */
 typedef struct GimbalThreeData {
     GimbalAnglesData anglesData[3];
 } T_ZiyanFcSubscriptionThreeGimbalData;
 
 /**
- * @brief Struct for the topic ZIYAN_FC_SUBSCRIPTION_TOPIC_IMU_ATTI_NAVI_DATA_WITH_TIMESTAMP. Used in M300
+ * @brief Struct for the topic ZIYAN_FC_SUBSCRIPTION_TOPIC_IMU_ATTI_NAVI_DATA_WITH_TIMESTAMP.
  */
 typedef struct ImuAttiNaviDataWithTimestamp {
     uint16_t version;
@@ -1335,7 +1334,7 @@ T_ZiyanReturnCode ZiyanFcSubscription_UnSubscribeTopic(E_ZiyanFcSubscriptionTopi
  * have to have been allocated correctly, and should ensure its size is equal to data structure size of timestamp,
  * otherwise, this function will not be able to return data and timestamp (return error code) or even cause memory
  * overflow event. If the user does not need timestamp information, can fill in NULL. Use flight controller power-on
- * timestamp on M300 RTK. Use payload local timestamp on M30/M30T.
+ * timestamp on RTK. Use payload local timestamp on M30/M30T.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFcSubscription_GetLatestValueOfTopic(E_ZiyanFcSubscriptionTopic topic,

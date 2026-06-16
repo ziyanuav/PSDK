@@ -28,7 +28,7 @@
 #include "test_fc_subscription.h"
 #include "ziyan_logger.h"
 #include "ziyan_platform.h"
-// #include "widget_interaction_test/test_widget_interaction.h"
+#include "widget_interaction_test/test_widget_interaction.h"
 
 /* Private constants ---------------------------------------------------------*/
 #define FC_SUBSCRIPTION_TASK_FREQ         (1)
@@ -125,6 +125,7 @@ T_ZiyanReturnCode ZiyanTest_FcSubscriptionStartService(void)
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
 
+// Internal sample
 T_ZiyanReturnCode ZiyanTest_FcSubscriptionRunSample(void)
 {
     T_ZiyanReturnCode ziyanStat;
@@ -166,6 +167,13 @@ T_ZiyanReturnCode ZiyanTest_FcSubscriptionRunSample(void)
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_UNKNOWN;
     }
 
+    ziyanStat = ZiyanFcSubscription_SubscribeTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_RC, ZIYAN_DATA_SUBSCRIPTION_TOPIC_5_HZ,
+                                               NULL);
+    if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("Subscribe topic rc error.");
+        return ZIYAN_ERROR_FC_MODULE_CODE_RC_MODE_ERROR;
+    }
+
     USER_LOG_INFO("--> Step 3: Get latest value of the subscribed topics in the next 10 seconds\r\n");
 
     for (int i = 0; i < 10; ++i) {
@@ -192,7 +200,7 @@ T_ZiyanReturnCode ZiyanTest_FcSubscriptionRunSample(void)
             USER_LOG_INFO("gps position: x = %d y = %d z = %d.", gpsPosition.x, gpsPosition.y, gpsPosition.z);
         }
 
-        //Attention: if you want to subscribe the single battery info on M300 RTK, you need connect USB cable to
+        //Attention: if you want to subscribe the single battery info on RTK, you need connect USB cable to
         //OSDK device or use topic ZIYAN_FC_SUBSCRIPTION_TOPIC_BATTERY_INFO instead.
         // ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_BATTERY_SINGLE_INFO_INDEX1,
         //                                                   (uint8_t *) &singleBatteryInfo,
@@ -287,6 +295,8 @@ static void *UserFcSubscription_Task(void *arg)
     T_ZiyanDataTimestamp timestamp = {0};
     T_ZiyanFcSubscriptionGpsPosition gpsPosition = {0};
     T_ZiyanFcSubscriptionGpsDetails gpsDetails = {0};
+    T_ZiyanFcSubscriptionRC rc = {0};
+    T_ZiyanFcSubscriptionRCWithFlagData rc_with_flag_data = {0};
     T_ZiyanFcSubscriptionGpsTime gpsTime = 0;
     T_ZiyanFcSubscriptionGpsDate gpsDate = 0;
     T_ZiyanOsalHandler *osalHandler = NULL;
@@ -340,7 +350,7 @@ static void *UserFcSubscription_Task(void *arg)
 
 
         ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_GPS_TIME,
-                                                          &gpsTime,
+                                                          (uint8_t *)&gpsTime,
                                                           sizeof(T_ZiyanFcSubscriptionGpsTime),
                                                           &timestamp);
         if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -348,7 +358,7 @@ static void *UserFcSubscription_Task(void *arg)
         }
 
         ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_GPS_DATE,
-                                                          &gpsDate,
+                                                          (uint8_t *)&gpsDate,
                                                           sizeof(T_ZiyanFcSubscriptionGpsDate),
                                                           &timestamp);
         if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -361,7 +371,7 @@ static void *UserFcSubscription_Task(void *arg)
 
 
         ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_ACCELERATION_RAW,
-                                                          &accele_raw,
+                                                          (uint8_t *)&accele_raw,
                                                           sizeof(T_ZiyanFcSubscriptionAccelerationRaw),
                                                           &timestamp);
         if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -369,7 +379,7 @@ static void *UserFcSubscription_Task(void *arg)
         }
 
         ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_ANGULAR_RATE_RAW,
-                                                          &angular_rate_raw,
+                                                          (uint8_t *)&angular_rate_raw,
                                                           sizeof(T_ZiyanFcSubscriptionAngularRateRaw),
                                                           &timestamp);
         if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -382,7 +392,7 @@ static void *UserFcSubscription_Task(void *arg)
         }
 
         ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_POSITION_FUSED,
-                                                          &position_fused,
+                                                          (uint8_t *)&position_fused,
                                                           sizeof(T_ZiyanFcSubscriptionPositionFused),
                                                           &timestamp);
         if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -391,6 +401,30 @@ static void *UserFcSubscription_Task(void *arg)
 
         if (s_userFcSubscriptionDataShow == true) {
             USER_LOG_INFO("position fused: %f : %f : %f", position_fused.latitude, position_fused.longitude, position_fused.altitude);
+        }
+
+        ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_RC,
+                                                          (uint8_t *)&rc,
+                                                          sizeof(T_ZiyanFcSubscriptionRC),
+                                                          &timestamp);
+        if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+            USER_LOG_ERROR("get value of topic rc error.");
+        }
+
+        if (s_userFcSubscriptionDataShow == true) {
+            USER_LOG_INFO("rc: %d : %d : %d : %d :%d", rc.roll, rc.pitch, rc.yaw, rc.throttle, rc.gear);
+        }
+
+        ziyanStat = ZiyanFcSubscription_GetLatestValueOfTopic(ZIYAN_FC_SUBSCRIPTION_TOPIC_RC_WITH_FLAG_DATA,
+                                                          (uint8_t *)&rc_with_flag_data,
+                                                          sizeof(T_ZiyanFcSubscriptionRCWithFlagData),
+                                                          &timestamp);
+        if (ziyanStat != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+            USER_LOG_ERROR("get value of topic rc with flag data error.");
+        }
+
+        if (s_userFcSubscriptionDataShow == true) {
+            USER_LOG_INFO("rcf: %f : %f : %f : %f :%d : %d : %d : %d", rc_with_flag_data.roll, rc_with_flag_data.pitch, rc_with_flag_data.yaw, rc_with_flag_data.throttle, (int)rc_with_flag_data.flag.logicConnected, (int)rc_with_flag_data.flag.skyConnected, (int)rc_with_flag_data.flag.groundConnected, (int)rc_with_flag_data.flag.appConnected); 
         }
 
     }

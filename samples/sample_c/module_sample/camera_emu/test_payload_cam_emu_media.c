@@ -121,6 +121,8 @@ static T_ZiyanReturnCode StopDownloadNotification(void);
 
 _Noreturn static void *UserCameraMedia_SendVideoTask(void *arg);
 
+static T_ZiyanReturnCode SetVideoStreamInfo(T_ZiyanVideoStreamInfo* info);
+
 /* Private variables -------------------------------------------------------------*/
 static T_ZiyanCameraMediaDownloadPlaybackHandler s_psdkCameraMedia = {0};
 static T_ZiyanPlaybackInfo s_playbackInfo = {0};
@@ -136,8 +138,9 @@ static const char *s_frameSizeKeyChar = "size";
 static T_ZiyanMediaFileHandle s_mediaFileThumbNailHandle;
 static T_ZiyanMediaFileHandle s_mediaFileScreenNailHandle;
 static const uint8_t s_frameAudInfo[VIDEO_FRAME_AUD_LEN] = {0x00, 0x00, 0x00, 0x01, 0x09, 0x10};
-static char s_mediaFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX] = {0};
+static char s_mediaFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX - 32] = {0};
 static bool s_isMediaFileDirPathConfigured = false;
+static T_ZiyanCameraVideoStreamHandler s_videoStreamHandler;
 
 /* Exported functions definition ---------------------------------------------*/
 T_ZiyanReturnCode ZiyanTest_CameraEmuMediaStartService(void)
@@ -180,6 +183,8 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuMediaStartService(void)
     s_psdkCameraMedia.StartDownloadNotification = StartDownloadNotification;
     s_psdkCameraMedia.StopDownloadNotification = StopDownloadNotification;
 
+    s_videoStreamHandler.SetVideoStreamInfo = SetVideoStreamInfo;
+
     if (ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS != osalHandler->SemaphoreCreate(0, &s_mediaPlayWorkSem)) {
         USER_LOG_ERROR("SemaphoreCreate(\"%s\") error.", "s_mediaPlayWorkSem");
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_UNKNOWN;
@@ -201,9 +206,15 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuMediaStartService(void)
         }
     }
 
+    returnCode = ZiyanPayloadCamera_RegVideoStreamHandler(&s_videoStreamHandler);
+    if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("camera register video stream handler error:0x%08llX", returnCode);
+        return returnCode;
+    }
+
     returnCode = ZiyanHighSpeedDataChannel_SetBandwidthProportion(bandwidthProportionOfHighspeedChannel);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-        USER_LOG_ERROR("Set data channel bandwidth width proportion error.");
+        USER_LOG_WARN("Set data channel bandwidth width proportion error.");
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_UNKNOWN;
     }
 
@@ -1185,7 +1196,7 @@ static void *UserCameraMedia_SendVideoTask(void *arg)
     T_ZiyanOsalHandler *osalHandler = ZiyanPlatform_GetOsalHandler();
     uint32_t frameBufSize = 0;
     E_ZiyanCameraVideoStreamType videoStreamType;
-    char curFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX];
+    char curFileDirPath[ZIYAN_FILE_PATH_SIZE_MAX - 32];
     char tempPath[ZIYAN_FILE_PATH_SIZE_MAX];
 
     USER_UTIL_UNUSED(arg);
@@ -1356,8 +1367,8 @@ static void *UserCameraMedia_SendVideoTask(void *arg)
             dataLength = fread(dataBuffer, 1, frameInfo[frameNumber].size, fpFile);
             if (dataLength != frameInfo[frameNumber].size) {
                 USER_LOG_ERROR("read data from video file error.");
-            } else {
-                USER_LOG_DEBUG("read data from video file success, len = %d B\r\n", dataLength);
+            // } else {
+            //     USER_LOG_DEBUG("read data from video file success, len = %d B", dataLength);
             }
 
             if (videoStreamType == ZIYAN_CAMERA_VIDEO_STREAM_TYPE_H264_ZIYAN_FORMAT) {
@@ -1369,7 +1380,6 @@ static void *UserCameraMedia_SendVideoTask(void *arg)
             while (dataLength - lengthOfDataHaveBeenSent) {
                 lengthOfDataToBeSent = USER_UTIL_MIN(DATA_SEND_FROM_VIDEO_STREAM_MAX_LEN,
                                                     dataLength - lengthOfDataHaveBeenSent);
-                printf("send video stream, len = %d B\r\n", lengthOfDataToBeSent);
                 returnCode = ZiyanPayloadCamera_SendVideoStream((const uint8_t *) dataBuffer + lengthOfDataHaveBeenSent,
                                                             lengthOfDataToBeSent);
                 if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -1391,11 +1401,11 @@ static void *UserCameraMedia_SendVideoTask(void *arg)
 
             returnCode = ZiyanPayloadCamera_GetVideoStreamState(&videoStreamState);
             if (returnCode == ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-                USER_LOG_DEBUG(
-                    "video stream state: realtimeBandwidthLimit: %d, realtimeBandwidthBeforeFlowController: %d, realtimeBandwidthAfterFlowController:%d busyState: %d.",
-                    videoStreamState.realtimeBandwidthLimit, videoStreamState.realtimeBandwidthBeforeFlowController,
-                    videoStreamState.realtimeBandwidthAfterFlowController,
-                    videoStreamState.busyState);
+                // USER_LOG_DEBUG(
+                //     "video stream state: realtimeBandwidthLimit: %d, realtimeBandwidthBeforeFlowController: %d, realtimeBandwidthAfterFlowController:%d busyState: %d.",
+                //     videoStreamState.realtimeBandwidthLimit, videoStreamState.realtimeBandwidthBeforeFlowController,
+                //     videoStreamState.realtimeBandwidthAfterFlowController,
+                //     videoStreamState.busyState);
             } else {
                 USER_LOG_ERROR("get video stream state error.");
             }
@@ -1403,6 +1413,16 @@ static void *UserCameraMedia_SendVideoTask(void *arg)
         free:
             free(dataBuffer);
     }
+}
+
+static T_ZiyanReturnCode SetVideoStreamInfo(T_ZiyanVideoStreamInfo* info)
+{
+    USER_LOG_WARN("Your device IP depends on the spyport position, for example: skyport 1: 192.168.1.100, skyport 2: 192.168.1.101.\
+        If you want to push video stream to GCS, please set video stream url correctly.");
+    char url[] = "tcp://192.168.1.10x:9700"; // just a sample url, please set it to your video stream url.
+    memset(info->url, 0, sizeof(info->url));
+    strcpy(info->url, url);
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
 
 #ifndef __CC_ARM

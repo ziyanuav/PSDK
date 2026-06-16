@@ -54,7 +54,6 @@ typedef struct {
     } uartConfig;
     struct {
         char networkDeviceName[USER_DEVICE_NAME_STR_MAX_SIZE];
-        // M300/M350 RTK payload port no need
         uint16_t networkUsbAdapterVid;
         uint16_t networkUsbAdapterPid;
     } networkConfig;

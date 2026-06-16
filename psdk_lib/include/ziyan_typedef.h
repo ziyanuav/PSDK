@@ -44,7 +44,7 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 #define ZIYAN_PI                                  (3.14159265358979323846f)
 #define ZIYAN_FILE_NAME_SIZE_MAX                  256
-#define ZIYAN_FILE_PATH_SIZE_MAX                  (ZIYAN_FILE_NAME_SIZE_MAX + 256)
+#define ZIYAN_FILE_PATH_SIZE_MAX                  (ZIYAN_FILE_NAME_SIZE_MAX)
 #define ZIYAN_IP_ADDR_STR_SIZE_MAX                15
 #define ZIYAN_MD5_BUFFER_LEN                      16
 
@@ -77,6 +77,8 @@ typedef uint64_t T_ZiyanReturnCode;
 typedef enum {
     ZIYAN_MOUNT_POSITION_TYPE_UNKNOWN             = 0,
     ZIYAN_MOUNT_POSITION_TYPE_PAYLOAD_PORT        = 1,
+    ZIYAN_MOUNT_POSITION_TYPE_EXTENSION_PORT      = 2,
+    ZIYAN_MOUNT_POSITION_TYPE_EXTENSION_LITE_PORT = 3,
 } E_ZiyanMountPositionType;
 
 typedef enum {
@@ -84,6 +86,8 @@ typedef enum {
     ZIYAN_MOUNT_POSITION_PAYLOAD_PORT_NO1         = 1,
     ZIYAN_MOUNT_POSITION_PAYLOAD_PORT_NO2         = 2,
     ZIYAN_MOUNT_POSITION_PAYLOAD_PORT_NO3         = 3,
+    ZIYAN_MOUNT_POSITION_EXTENSION_PORT           = 4,
+    ZIYAN_MOUNT_POSITION_EXTENSION_LITE_PORT      = 5,
 } E_ZiyanMountPosition;
 
 typedef enum {
@@ -384,8 +388,8 @@ typedef struct {
  * @param data: pointer to data of the topic, user need transfer type of this pointer to the corresponding data structure
  * pointer for getting every item of the topic conveniently.
  * @param dataSize: the size of memory space pointed by data argument, equal to data structure size corresponding to the topic.
- * @param timestamp: pointer to timestamp corresponding this data. Use flight controller power-on timestamp on M300 RTK.
- * Use payload local timestamp on M30/M30T.
+ * @param timestamp: pointer to timestamp corresponding this data. Use flight controller power-on timestamp on RTK.
+ * Use payload local timestamp.
  * @return Execution result.
  */
 typedef T_ZiyanReturnCode (*ZiyanReceiveDataOfTopicCallback)(const uint8_t *data, uint16_t dataSize,

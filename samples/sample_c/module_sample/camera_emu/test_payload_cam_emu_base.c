@@ -200,123 +200,7 @@ static void *UserCamera_Task(void *arg);
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-#define STREAM_PORT 9600
-#define STREAM_ADDR "127.0.0.1"
-#define INPUT_FILE "/home/levi/Videos/test.h264"  // Replace with your actual video file path
-#define INPUT_FILE2 "test.h264"
-
 #endif
-
-void* push_video_stream8(void* arg)
-{
-#if defined(FFMPEG_INSTALLED) && (LIBAVFORMAT_VERSION_MAJOR >= 57)
-    while(1){
-
-        // Initialize FFmpeg libraries
-        // av_register_all();
-        avformat_network_init();
-
-        AVFormatContext *input_format_context = NULL;
-        AVCodecContext *codec_context = NULL;
-        AVCodec *codec = NULL;
-        AVPacket packet;
-
-        char cwd[256] = {0};
-        char file_path[256] = {0};
-        getcwd(cwd, sizeof(cwd));
-        sprintf(file_path, "%s/%s", cwd, INPUT_FILE2);
-        
-
-        char input_file[256] = {0};
-
-        if (access(file_path, F_OK) == 0) {
-            memcpy(input_file, file_path, strlen(file_path));
-            USER_LOG_INFO("select: %s", file_path);
-        } else {
-            memcpy(input_file, INPUT_FILE, strlen(INPUT_FILE));
-            USER_LOG_INFO("select: %s", INPUT_FILE);
-        }
-        
-        USER_LOG_INFO("input file: %s", input_file);
-
-        // Open the input MP4 file
-        if (avformat_open_input(&input_format_context, input_file, NULL, NULL) < 0) {
-            fprintf(stderr, "Error opening input file\n");
-            return NULL;
-        }
-
-        // Retrieve stream information
-        if (avformat_find_stream_info(input_format_context, NULL) < 0) {
-            fprintf(stderr, "Error finding stream info\n");
-            return NULL;
-        }
-
-        // Find the video stream
-        int video_stream_index = -1;
-        for (int i = 0; i < input_format_context->nb_streams; i++) {
-            if (input_format_context->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
-                video_stream_index = i;
-                break;
-            }
-        }
-
-        if (video_stream_index == -1) {
-            fprintf(stderr, "Video stream not found\n");
-            return NULL;
-        }
-
-        // Find the decoder for the video stream
-        AVStream *video_stream = input_format_context->streams[video_stream_index];
-        codec = avcodec_find_decoder(video_stream->codecpar->codec_id);
-        if (!codec) {
-            fprintf(stderr, "Codec not found\n");
-            return NULL;
-        }
-
-        codec_context = avcodec_alloc_context3(codec);
-        if (!codec_context) {
-            fprintf(stderr, "Could not allocate codec context\n");
-            return NULL;
-        }
-
-        if (avcodec_parameters_to_context(codec_context, video_stream->codecpar) < 0) {
-            fprintf(stderr, "Failed to copy codec parameters to context\n");
-            return NULL;
-        }
-
-        if (avcodec_open2(codec_context, codec, NULL) < 0) {
-            fprintf(stderr, "Error opening codec\n");
-            return NULL;
-        }
-
-        // Initialize packet structure
-        av_init_packet(&packet);
-        packet.data = NULL;
-        packet.size = 0;
-
-        // Start reading frames and send packets
-        while (av_read_frame(input_format_context, &packet) >= 0) {
-            if (packet.stream_index == video_stream_index) {
-                // Send the H.264 encoded packet over UDP
-                ZiyanPayloadCamera_SendVideoStream(packet.data, packet.size);
-                // printf("Sent packet of size %d\n", packet.size);
-                usleep(1000 * 33);
-            }
-
-            // Free the packet after sending
-            av_packet_unref(&packet);
-        }
-
-        // Clean up and close
-        avcodec_free_context(&codec_context);
-        avformat_close_input(&input_format_context);
-    }
-
-#endif
-    return 0;
-}
-
-
 
 
 static T_ZiyanReturnCode GetSystemState(T_ZiyanCameraSystemState *systemState)
@@ -1509,9 +1393,6 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuBaseStartService(void)
         return returnCode;
     }
 
-    T_ZiyanTaskHandle handle_test;
-    osalHandler->TaskCreate("camera_vedio_task", push_video_stream8,
-                                PAYLOAD_CAMERA_EMU_TASK_STACK_SIZE, NULL, &handle_test);
 
     /* Create the camera emu taskHandle */
     if (osalHandler->TaskCreate("user_camera_task", UserCamera_Task,

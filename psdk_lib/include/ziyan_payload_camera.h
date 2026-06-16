@@ -221,6 +221,13 @@ typedef struct {
 } T_ZiyanCameraTrackState;
 
 /**
+ * @brief Camera video stream info.
+ */
+typedef struct {
+    char url[64];  /*!< Specifies the url of the video stream, This parameter is string type. */
+} T_ZiyanVideoStreamInfo;
+
+/**
  * @brief Camera focus assistant settings.
  */
 typedef struct {
@@ -853,6 +860,22 @@ typedef struct {
 
 } T_ZiyanCameraTrackingHandler;
 
+/**
+ * @brief Prototype of handler functions for Video Stream function.
+ */
+typedef struct {
+    /**
+     * @brief Prototype of callback function used to set video stream info.
+     * @details User can set video stream info, this callback function will be called at regular intervals.
+     * @param videoStreamInfo: pointer to memory space used to store video stream info.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*SetVideoStreamInfo)(T_ZiyanVideoStreamInfo* videoStreamInfo);
+
+} T_ZiyanCameraVideoStreamHandler;
+
+
+
 /* Exported functions --------------------------------------------------------*/
 /**
  * @brief Initialize the payload camera module.
@@ -967,6 +990,16 @@ T_ZiyanReturnCode ZiyanPayloadCamera_SetVideoStreamType(E_ZiyanCameraVideoStream
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanPayloadCamera_GetVideoStreamRemoteAddress(char *ipAddr, uint16_t *port);
+
+/**
+ * @brief Register the handler for payload camera video stream function interfaces.
+ * @note This interface registers the camera's video stream interface, which includes setting and acquiring the video stream
+ * parameters. Registering the load on this interface requires support for video stream. Registration of this interface
+ * needs to be after ZiyanPayloadCamera_Init.
+ * @param cameraVideoStreamHandler: pointer to the handler for payload camera video stream functions.
+ * @return Execution result.
+ */
+T_ZiyanReturnCode ZiyanPayloadCamera_RegVideoStreamHandler(const T_ZiyanCameraVideoStreamHandler *cameraVideoStreamHandler);
 
 /**
  * @brief Register the handler for payload camera media download and playback function interfaces.

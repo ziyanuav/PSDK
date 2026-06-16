@@ -1,7 +1,7 @@
 /**
  ********************************************************************
- * @file    ziyan_version.h
- * @brief   This is the header file for "ziyan_version.c", defining the structure and
+ * @file    test_hms.h
+ * @brief   This is the header file for "test_hms.c", defining the structure and
  * (exported) function prototypes.
  *
  * @copyright (c) 2021 ZIYAN. All rights reserved.
@@ -24,32 +24,28 @@
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef ZIYAN_VERSION_H
-#define ZIYAN_VERSION_H
+#ifndef TEST_HMS_H
+#define TEST_HMS_H
 
 /* Includes ------------------------------------------------------------------*/
+#include "ziyan_typedef.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Exported constants --------------------------------------------------------*/
-#define ZIYAN_SDK_VERSION_MAJOR     1 /*!< ZIYAN SDK major version num, when have incompatible API changes. Range from 0 to 99. */
-#define ZIYAN_SDK_VERSION_MINOR     1 /*!< ZIYAN SDK minor version num, when add functionality in a backwards compatible manner changes. Range from 0 to 99. */
-#define ZIYAN_SDK_VERSION_MODIFY    1 /*!< ZIYAN SDK modify version num, when have backwards compatible bug fixes changes. Range from 0 to 99. */
-#define ZIYAN_SDK_VERSION_DEBUG     0 /*!< ZIYAN SDK version beta info, release version will be 0, when beta version release changes. Range from 0 to 255. */
-#define ZIYAN_SDK_VERSION_BUILD     1 /*!< ZIYAN SDK version build info, when jenkins trigger build changes. Range from 0 to 65535. */
 
 /* Exported types ------------------------------------------------------------*/
 
 /* Exported functions --------------------------------------------------------*/
-
-
-/* SDK version info. ---------------------------------------------------------*/
-
+T_ZiyanReturnCode ZiyanTest_HmsManagerRunSample(E_ZiyanMobileAppLanguage language);
+T_ZiyanReturnCode ZiyanTest_HmsCustomizationStartService(void);
+T_ZiyanReturnCode ZiyanTest_HmsCustomizationSetConfigFilePath(const char *path);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // ZIYAN_VERSION_H
+#endif // TEST_HMS_H
 /************************ (C) COPYRIGHT ZIYAN Innovations *******END OF FILE******/

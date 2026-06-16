@@ -23,6 +23,7 @@
  */
 
 /* Includes ------------------------------------------------------------------*/
+#include <widget_interaction_test/test_widget_interaction.h>
 #include <ziyan_platform.h>
 #include <ziyan_logger.h>
 #include <ziyan_core.h>
@@ -40,7 +41,12 @@
 #include "ziyan_aircraft_info.h"
 #include "widget/test_widget.h"
 #include "ziyan_sdk_config.h"
-
+#include "camera_emu/test_payload_cam_emu_base.h"
+#include "camera_emu/test_payload_cam_emu_media.h"
+#include "fc_subscription/test_fc_subscription.h"
+#include "gimbal_emu/test_payload_gimbal_emu.h"
+#include "widget/test_widget_speaker.h"
+#include "hms/test_hms.h"
 
 
 /* Private constants ---------------------------------------------------------*/
@@ -98,6 +104,13 @@ int main(int argc, char **argv)
     // attention: when the program is hand up ctrl-c will generate the coredump file
     signal(SIGTERM, ZiyanUser_NormalExitHandler);
 
+    /* Get app version first */
+    returnCode = ZiyanCore_SetFirmwareVersion(firmwareVersion);
+    if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+        USER_LOG_ERROR("set firmware version error");
+        return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
+    }
+
     /*!< Step 1: Prepare system environment, such as osal, hal uart, console function and so on. */
     returnCode = ZiyanUser_PrepareSystemEnvironment();
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
@@ -140,12 +153,6 @@ int main(int argc, char **argv)
     //     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
     // }
 
-    // returnCode = ZiyanCore_SetFirmwareVersion(firmwareVersion);
-    // if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-    //     USER_LOG_ERROR("set firmware version error");
-    //     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
-    // }
-
     // returnCode = ZiyanCore_SetSerialNumber("PSDK12345678XX");
     // if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
     //     USER_LOG_ERROR("set serial number error");
@@ -178,7 +185,7 @@ int main(int argc, char **argv)
 // #endif
 
 //     if (aircraftInfoBaseInfo.mountPosition == ZIYAN_MOUNT_POSITION_EXTENSION_PORT &&
-//         aircraftInfoBaseInfo.aircraftType == ZIYAN_AIRCRAFT_TYPE_M300_RTK) {
+//         aircraftInfoBaseInfo.aircraftType == ZIYAN_AIRCRAFT_TYPE_SHADOW_PLUS) {
 //         returnCode = ZiyanTest_WidgetInteractionStartService();
 //         if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
 //             USER_LOG_ERROR("widget interaction sample init error");
@@ -290,12 +297,12 @@ int main(int argc, char **argv)
 //         }
 // #endif
 
-// #ifdef CONFIG_MODULE_SAMPLE_HMS_CUSTOMIZATION_ON
-//         returnCode = ZiyanTest_HmsCustomizationStartService();
-//         if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-//             USER_LOG_ERROR("hms test init error");
-//         }
-// #endif
+#ifdef CONFIG_MODULE_SAMPLE_HMS_CUSTOMIZATION_ON
+        returnCode = ZiyanTest_HmsCustomizationStartService();
+        if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+            USER_LOG_ERROR("hms test init error");
+        }
+#endif
 //     }
 
     // /*!< Step 5: Tell the ZIYAN Pilot you are ready. */

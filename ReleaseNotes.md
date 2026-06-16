@@ -1,6 +1,31 @@
 # Ziyan Payload SDK Release Log
 
+## V1.1.2.1-20260305-Release
+
+**[Note]**:
+
+* Resolved several known issues.
+
+**[Added]**:
+
+* 
+
+**[Optimized]**:
+
+* 
+
+**[Fixed]**:
+
+* 
+
+----
+
+
+
+
+
 ## V1.1.2.0-20251015-Release
+
 **[Note]**:
 * Add demo of pod camera tracking.
 * Resolved several known issues.
@@ -134,7 +159,6 @@ This version of Payload SDK mainly first release. Please refer to the release no
 * Added support for widget functionality
 * Added support for subscription functionality
 ---
-
 
 
 

@@ -51,7 +51,8 @@ file(GLOB_RECURSE MODULE_SAMPLE_SRC ../../../module_sample/*.c)
 
 include_directories(../../../module_sample)
 include_directories(../common)
-include_directories(../manifold2/application)
+include_directories(../nvidia_jetson/application)
+include_directories(${CMAKE_SYSROOT}/usr/include)
 
 include_directories(../../../../../psdk_lib/include)
 link_directories(../../../../../psdk_lib/lib/${TOOLCHAIN_NAME})
