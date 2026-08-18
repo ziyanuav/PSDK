@@ -1,7 +1,138 @@
 {
   "version": {
-    "major": 1,
+    "major": 2,
     "minor": 0
+  },
+  "device_type": 1,
+  "feature_mapping": {
+    "lens_switch": {
+      "enabled": true,
+      "display_name": "Lens Switch",
+      "control_params": {
+        "index": 1,
+        "widget_index": 1,
+        "type": 1,
+        "options": [
+          {
+            "name": "Wide Angle Lens",
+            "value": 0,
+            "button_value": 1,
+            "button_index": 0,
+            "supports_infrared_color": false
+          },
+          {
+            "name": "Zoom Lens",
+            "value": 1,
+            "button_value": 1,
+            "button_index": 5,
+            "supports_infrared_color": false
+          },
+          {
+            "name": "Infrared Lens",
+            "value": 2,
+            "button_value": 1,
+            "button_index": 13,
+            "supports_infrared_color": true
+          }
+        ]
+      }
+    },
+    "infrared_color_mode": {
+      "enabled": true,
+      "display_name": "Infrared Color Mode",
+      "dependent_on": "lens_switch",
+      "dependent_values": [
+        2
+      ],
+      "control_params": {
+        "index": 1,
+        "widget_index": 14,
+        "type": 1,
+        "options": [
+          {
+            "name": "White",
+            "value": 0
+          },
+          {
+            "name": "Reserved",
+            "value": 1
+          },
+          {
+            "name": "Golden",
+            "value": 2
+          },
+          {
+            "name": "Red",
+            "value": 3
+          },
+          {
+            "name": "Rainbow",
+            "value": 4
+          },
+          {
+            "name": "Micro",
+            "value": 5
+          },
+          {
+            "name": "Polarization",
+            "value": 6
+          },
+          {
+            "name": "Red",
+            "value": 7
+          },
+          {
+            "name": "Forest",
+            "value": 8
+          },
+          {
+            "name": "Medical",
+            "value": 9
+          },
+          {
+            "name": "Black",
+            "value": 10
+          },
+          {
+            "name": "Golden",
+            "value": 11
+          }
+        ]
+      }
+    },
+    "tracking_target": {
+      "enabled": true,
+      "display_name": "Tracking Target Switch",
+      "control_params": {
+        "index": 3,
+        "widget_index": 5,
+        "type": 2,
+        "value_on": 1,
+        "value_off": 0
+      }
+    },
+    "laser_rangefinder": {
+      "enabled": true,
+      "display_name": "Laser Rangefinder",
+      "control_params": {
+        "index": 3,
+        "widget_index": 27,
+        "type": 2,
+        "value_on": 1,
+        "value_off": 0
+      }
+    },
+    "AI_switch": {
+      "enabled": true,
+      "display_name": "AI Switch",
+      "control_params": {
+        "index": 3,
+        "widget_index": 28,
+        "type": 2,
+        "value_on": 1,
+        "value_off": 0
+      }
+    }
   },
   "main_interface": {
     "floating_window": {

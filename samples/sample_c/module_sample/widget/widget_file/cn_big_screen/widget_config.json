@@ -1,7 +1,138 @@
 {
   "version": {
-    "major": 1,
+    "major": 2,
     "minor": 0
+  },
+  "device_type": 1,
+  "feature_mapping": {
+    "lens_switch": {
+      "enabled": true,
+      "display_name": "镜头切换",
+      "control_params": {
+        "index": 1,
+        "widget_index": 1,
+        "type": 1,
+        "options": [
+          {
+            "name": "广角镜头",
+            "value": 0,
+            "button_value": 1,
+            "button_index": 0,
+            "supports_infrared_color": false
+          },
+          {
+            "name": "变焦镜头",
+            "value": 1,
+            "button_value": 1,
+            "button_index": 5,
+            "supports_infrared_color": false
+          },
+          {
+            "name": "红外镜头",
+            "value": 2,
+            "button_value": 1,
+            "button_index": 13,
+            "supports_infrared_color": true
+          }
+        ]
+      }
+    },
+    "infrared_color_mode": {
+      "enabled": true,
+      "display_name": "红外颜色",
+      "dependent_on": "lens_switch",
+      "dependent_values": [
+        2
+      ],
+      "control_params": {
+        "index": 1,
+        "widget_index": 14,
+        "type": 1,
+        "options": [
+          {
+            "name": "白热",
+            "value": 0
+          },
+          {
+            "name": "保留",
+            "value": 1
+          },
+          {
+            "name": "辉金",
+            "value": 2
+          },
+          {
+            "name": "铁红",
+            "value": 3
+          },
+          {
+            "name": "彩虹",
+            "value": 4
+          },
+          {
+            "name": "微光",
+            "value": 5
+          },
+          {
+            "name": "极光",
+            "value": 6
+          },
+          {
+            "name": "红热",
+            "value": 7
+          },
+          {
+            "name": "丛林",
+            "value": 8
+          },
+          {
+            "name": "医疗",
+            "value": 9
+          },
+          {
+            "name": "黑热",
+            "value": 10
+          },
+          {
+            "name": "金红",
+            "value": 11
+          }
+        ]
+      }
+    },
+    "tracking_target": {
+      "enabled": true,
+      "display_name": "框选目标跟踪",
+      "control_params": {
+        "index": 3,
+        "widget_index": 5,
+        "type": 2,
+        "value_on": 1,
+        "value_off": 0
+      }
+    },
+    "laser_rangefinder": {
+      "enabled": true,
+      "display_name": "激光测距",
+      "control_params": {
+        "index": 3,
+        "widget_index": 27,
+        "type": 2,
+        "value_on": 1,
+        "value_off": 0
+      }
+    },
+    "AI_switch": {
+      "enabled": true,
+      "display_name": "AI开关",
+      "control_params": {
+        "index": 3,
+        "widget_index": 28,
+        "type": 2,
+        "value_on": 1,
+        "value_off": 0
+      }
+    }
   },
   "main_interface": {
     "floating_window": {

@@ -1,5 +1,29 @@
 # Ziyan Payload SDK Release Log
 
+## V1.3.3.0-20260818-Release
+
+**[Note]**:
+
+* Resolved several known issues.
+
+**[Added]**:
+
+* Added new config configuration type, allowing customization of dedicated linkage buttons for the Ziyan ground station.
+
+**[Optimized]**:
+
+* Optimized communication behavior to reduce latency between the flight controller and PSDK.
+
+**[Fixed]**:
+
+* None
+
+----
+
+
+
+
+
 ## V1.1.2.1-20260305-Release
 
 **[Note]**:

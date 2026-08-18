@@ -1383,7 +1383,7 @@ static void *UserCameraMedia_SendVideoTask(void *arg)
                 returnCode = ZiyanPayloadCamera_SendVideoStream((const uint8_t *) dataBuffer + lengthOfDataHaveBeenSent,
                                                             lengthOfDataToBeSent);
                 if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
-                    USER_LOG_ERROR("send video stream error: 0x%08llX.", returnCode);
+                    // USER_LOG_ERROR("send video stream error: 0x%08llX.", returnCode);
                 }
                 lengthOfDataHaveBeenSent += lengthOfDataToBeSent;
             }
