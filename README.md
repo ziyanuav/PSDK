@@ -10,7 +10,7 @@ The ziyan Payload SDK(PSDK), is a development kit provided by ziyan to support d
 
 ## Latest Release
 
-The latest release version of PSDK is 1.3.2.0 This version of Payload SDK mainly first release. Please refer to the release notes for detailed changes list.
+The latest release version of PSDK is 1.3.3.0 This version of Payload SDK mainly first release. Please refer to the release notes for detailed changes list.
 
 ## License
 
