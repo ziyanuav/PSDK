@@ -507,6 +507,13 @@ typedef struct {
      * @return Execution result.
      */
     T_ZiyanReturnCode (*GetDigitalZoomFactor)(ziyan_f32_t *factor);
+
+    /**
+     * @brief Prototype of callback function used to get camera digital zoom specifies.
+     * @param spec: pointer to memory space used to store camera digital zoom specifies.
+     * @return Execution result.
+     */
+    T_ZiyanReturnCode (*GetDigitalZoomSpec)(T_ZiyanCameraDigitalZoomSpec *spec);
 } T_ZiyanCameraDigitalZoomHandler;
 
 /**

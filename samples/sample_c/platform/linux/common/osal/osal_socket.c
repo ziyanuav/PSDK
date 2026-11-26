@@ -24,6 +24,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "osal_socket.h"
+#include <sys/select.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -295,7 +296,7 @@ T_ZiyanReturnCode Osal_TcpSendData(T_ZiyanSocketHandle socketHandle,
         return ZIYAN_ERROR_SYSTEM_MODULE_CODE_TIMEOUT;
     }
 
-    ret = send(socketHandleStruct->socketFd, buf, len, 0);
+    ret = send(socketHandleStruct->socketFd, buf, len, MSG_NOSIGNAL);
     if (ret >= 0) {
         *realLen = ret;
     } else {

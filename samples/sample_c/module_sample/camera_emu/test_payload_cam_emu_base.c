@@ -43,6 +43,9 @@
 #define ZOOM_OPTICAL_FOCAL_MAX_LENGTH           (300)
 #define ZOOM_OPTICAL_FOCAL_MIN_LENGTH           (10)
 #define ZOOM_OPTICAL_FOCAL_LENGTH_STEP          (10)
+#define ZOOM_DIGITAL_FOCAL_MAX_LENGTH           (50)
+#define ZOOM_DIGITAL_FOCAL_MIN_LENGTH           (2)
+#define ZOOM_DIGITAL_FOCAL_LENGTH_STEP          (2)
 #define ZOOM_OPTICAL_FOCAL_LENGTH_CTRL_STEP     (5)
 #define ZOOM_DIGITAL_BASE_FACTOR                (1.0)
 #define ZOOM_DIGITAL_STEP_FACTOR                (0.1)
@@ -157,6 +160,7 @@ static T_ZiyanReturnCode GetFocusRingValue(uint32_t *value);
 static T_ZiyanReturnCode GetFocusRingValueUpperBound(uint32_t *value);
 
 static T_ZiyanReturnCode SetDigitalZoomFactor(ziyan_f32_t factor);
+static T_ZiyanReturnCode GetDigitalZoomSpec(T_ZiyanCameraDigitalZoomSpec *spec);
 static T_ZiyanReturnCode SetOpticalZoomFocalLength(uint32_t focalLength);
 static T_ZiyanReturnCode GetOpticalZoomFocalLength(uint32_t *focalLength);
 static T_ZiyanReturnCode GetOpticalZoomSpec(T_ZiyanCameraOpticalZoomSpec *spec);
@@ -676,6 +680,15 @@ static T_ZiyanReturnCode SetDigitalZoomFactor(ziyan_f32_t factor)
         USER_LOG_ERROR("unlock mutex error: 0x%08llX.", returnCode);
         return returnCode;
     }
+
+    return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
+}
+
+static T_ZiyanReturnCode GetDigitalZoomSpec(T_ZiyanCameraDigitalZoomSpec *spec)
+{
+    spec->maxFocalLength = ZOOM_DIGITAL_FOCAL_MAX_LENGTH;
+    spec->minFocalLength = ZOOM_DIGITAL_FOCAL_MIN_LENGTH;
+    spec->focalLengthStep = ZOOM_DIGITAL_FOCAL_LENGTH_STEP;
 
     return ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
 }
@@ -1333,6 +1346,7 @@ T_ZiyanReturnCode ZiyanTest_CameraEmuBaseStartService(void)
 #if USER_CAMERA_EMU_HYBRID_ZOOM_ON
     s_digitalZoomHandler.SetDigitalZoomFactor = SetDigitalZoomFactor;
     s_digitalZoomHandler.GetDigitalZoomFactor = ZiyanTest_CameraGetDigitalZoomFactor;
+    s_digitalZoomHandler.GetDigitalZoomSpec = GetDigitalZoomSpec;
 
     returnCode = ZiyanPayloadCamera_RegDigitalZoomHandler(&s_digitalZoomHandler);
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {

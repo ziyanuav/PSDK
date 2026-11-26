@@ -1,5 +1,20 @@
 # Ziyan Payload SDK Release Log
 
+## V1.3.4.0-20261123-Release
+
+**[Note]**:
+
+
+**[Added]**:
+* Add digital equivalent focal length range.
+
+**[Optimized]**:
+* TCP video stream transmission stability.
+
+**[Fixed]**:
+* Fixed the issue of missing header files when compiling the demo with the musl library.
+* Fixed crashes caused by illegal topic.
+
 ## V1.3.3.0-20260818-Release
 
 **[Note]**:
@@ -14,15 +29,13 @@
 
 * Optimized communication behavior to reduce latency between the flight controller and PSDK.
 
-**[Fixed]**:
 
-* None
+## V1.3.2.0-20260616-Release
 
-----
-
-
-
-
+**[Note]**:
+* Refactored the camera range finder handler and separated it into an independent interface.
+* Introduced a new camera API to support the camera tracker.
+* Resolved several known issues.
 
 ## V1.1.2.1-20260305-Release
 

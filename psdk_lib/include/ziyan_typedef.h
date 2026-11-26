@@ -151,6 +151,15 @@ typedef struct {
 } T_ZiyanCameraOpticalZoomSpec;
 
 /**
+ * @brief Camera digital zoom specifies.
+ */
+typedef struct {
+    ziyan_f32_t maxFocalLength; /*!< The maximum focal length of digital zoom. */
+    ziyan_f32_t minFocalLength; /*!< The minimum focal length of digital zoom. */
+    ziyan_f32_t focalLengthStep; /*!< The minimum interval of digital zoom focal length change. */
+} T_ZiyanCameraDigitalZoomSpec;
+
+/**
  * @brief Gimbal work mode, specifies how gimbal follow aircraft movement.
  */
 typedef enum {
