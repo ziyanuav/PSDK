@@ -291,7 +291,7 @@ T_ZiyanReturnCode ZiyanFlightController_DeInit(void);
 /**
  * @brief Enable/Disable RTK position function.
  * @details Enabling RTK means that RTK data will be used instead of GPS during flight.
- * @param rtkEnableStatus: refer to "E_ZiyanFlightControllerRtkPositionEnableStatus", inheriting from Pilot.
+ * @param rtkEnableStatus: refer to "E_ZiyanFlightControllerRtkPositionEnableStatus", inheriting from GCS.
  * @return Execution result.
  */
 T_ZiyanReturnCode
@@ -300,7 +300,7 @@ ZiyanFlightController_SetRtkPositionEnableStatus(E_ZiyanFlightControllerRtkPosit
 /**
  * @brief Get RTK enable status.
  * @note Enabling RTK means that RTK data will be used during intelligent flight.
- * @param rtkEnableStatus: refer to "E_ZiyanFlightControllerRtkPositionEnableStatus", inheriting from Pilot.
+ * @param rtkEnableStatus: refer to "E_ZiyanFlightControllerRtkPositionEnableStatus", inheriting from GCS.
  * @return Execution result.
  */
 T_ZiyanReturnCode
@@ -309,7 +309,7 @@ ZiyanFlightController_GetRtkPositionEnableStatus(E_ZiyanFlightControllerRtkPosit
 /**
  * @brief Set RC lost action.
  * @note Valid when RC and PSDK are both lost. It only supports M30.
- * @param rcLostAction: actions when RC is lost.(hover/landing/go home).It inherits from Pilot's param.
+ * @param rcLostAction: actions when RC is lost.(hover/landing/go home).It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_SetRCLostAction(E_ZiyanFlightControllerRCLostAction rcLostAction);
@@ -317,7 +317,7 @@ T_ZiyanReturnCode ZiyanFlightController_SetRCLostAction(E_ZiyanFlightControllerR
 /**
  * @brief Get RC lost action(hover/landing/gohome).
  * @note Valid when RC and PSDK are both lost. It only supports M30.
- * @param rcLostAction: see reference of E_ZiyanFlightControllerRCLostAction.It inherits from Pilot's param.
+ * @param rcLostAction: see reference of E_ZiyanFlightControllerRCLostAction.It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_GetRCLostAction(E_ZiyanFlightControllerRCLostAction *rcLostAction);
@@ -327,7 +327,7 @@ T_ZiyanReturnCode ZiyanFlightController_GetRCLostAction(E_ZiyanFlightControllerR
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param horizontalObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_SetHorizontalVisualObstacleAvoidanceEnableStatus(
@@ -338,7 +338,7 @@ T_ZiyanReturnCode ZiyanFlightController_SetHorizontalVisualObstacleAvoidanceEnab
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param horizontalObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_GetHorizontalVisualObstacleAvoidanceEnableStatus(
@@ -349,7 +349,7 @@ T_ZiyanReturnCode ZiyanFlightController_GetHorizontalVisualObstacleAvoidanceEnab
  * @note It will be valid only if you install CSM radar successfully.For detailed parameters of obstacle sensing,
  * it is recommended to read the official user manual in https://www.ziyan.com.
  * @param horizontalObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_SetHorizontalRadarObstacleAvoidanceEnableStatus(
@@ -360,7 +360,7 @@ T_ZiyanReturnCode ZiyanFlightController_SetHorizontalRadarObstacleAvoidanceEnabl
  * @note It will be valid only if you install CSM radar successfully.For detailed parameters of obstacle sensing,
  * it is recommended to read the official user manual in https://www.ziyan.com/uk/matrice-300/downloads.
  * @param horizontalObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_GetHorizontalRadarObstacleAvoidanceEnableStatus(
@@ -371,7 +371,7 @@ T_ZiyanReturnCode ZiyanFlightController_GetHorizontalRadarObstacleAvoidanceEnabl
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param upwardsObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_SetUpwardsVisualObstacleAvoidanceEnableStatus(
@@ -382,7 +382,7 @@ T_ZiyanReturnCode ZiyanFlightController_SetUpwardsVisualObstacleAvoidanceEnableS
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param upwardsObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_GetUpwardsVisualObstacleAvoidanceEnableStatus(
@@ -393,7 +393,7 @@ T_ZiyanReturnCode ZiyanFlightController_GetUpwardsVisualObstacleAvoidanceEnableS
  * @note It will be valid only if you install CSM radar successfully.For detailed parameters of obstacle sensing,
  * it is recommended to read the official user manual in https://www.ziyan.com.
  * @param upwardsObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_SetUpwardsRadarObstacleAvoidanceEnableStatus(
@@ -404,7 +404,7 @@ T_ZiyanReturnCode ZiyanFlightController_SetUpwardsRadarObstacleAvoidanceEnableSt
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param upwardsObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_GetUpwardsRadarObstacleAvoidanceEnableStatus(
@@ -415,7 +415,7 @@ T_ZiyanReturnCode ZiyanFlightController_GetUpwardsRadarObstacleAvoidanceEnableSt
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param downwardsObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_SetDownwardsVisualObstacleAvoidanceEnableStatus(
@@ -426,7 +426,7 @@ T_ZiyanReturnCode ZiyanFlightController_SetDownwardsVisualObstacleAvoidanceEnabl
  * @note For detailed parameters of obstacle sensing, it is recommended to read the official user manual in
  * https://www.ziyan.com.
  * @param downwardsObstacleAvoidanceEnableStatus: see reference of E_ZiyanFlightControllerObstacleAvoidanceEnableStatus.
- * It inherits from Pilot's param.
+ * It inherits from GCS's param.
  * @return Execution result.
  */
 T_ZiyanReturnCode ZiyanFlightController_GetDownwardsVisualObstacleAvoidanceEnableStatus(

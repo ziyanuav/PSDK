@@ -211,7 +211,7 @@ typedef struct {
     /*!
      * @brief Prototype of callback function used to start calibrating gimbal.
      * @note Maximum allowable time of gimbal calibration is 120s. If gimbal has not completed calibration during
-     * 120s, ZIYAN Pilot believe calibration failed.
+     * 120s, ZIYAN GCS believe calibration failed.
      * @return Execution result.
      */
     T_ZiyanReturnCode (*StartCalibrate)(void);

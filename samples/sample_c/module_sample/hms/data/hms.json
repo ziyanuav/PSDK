@@ -1,7 +1,7 @@
 {
     "Comments": {
         "info" : "synchronize from cloud-api-tutorial v1.9.0",
-        "URL"  : "https://developer.dji.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/hms.html",
+        "URL"  : "https://developer.ziyan.com/doc/cloud-api-tutorial/cn/feature-set/dock-feature-set/hms.html",
         "tips" : "This content is for example only and may be outdated. The latest content database can be downloaded from the HMS Function > Alarm copy query section in the Cloud API tutorial."
     },
     "dock_tip_0x12040000": {
@@ -650,8 +650,8 @@
       "zh": "机场监控摄像头供电异常"
     },
     "dock_tip_0x19114802": {
-      "en": "DJI Cellular Dongle power supply error",
-      "zh": "DJI Cellular 模块供电异常"
+      "en": "ZIYAN Cellular Dongle power supply error",
+      "zh": "ZIYAN Cellular 模块供电异常"
     },
     "dock_tip_0x19114803": {
       "en": "Power supply error in status indicator on dock cover",
@@ -1363,36 +1363,36 @@
       "zh": "温度过低起落架运动受阻"
     },
     "fpv_tip_0x11000046": {
-      "de": "Die Gewindestange des Fluggeräts hat die maximale Lebensdauer erreicht. Um die Flugsicherheit zu gewährleisten, wende dich an den DJI-Support und sende das Fluggerät zur Wartung zurück an DJI",
-      "en": "Aircraft screw rod reaching maximum life span. To ensure flight safety, contact DJI Support and send aircraft back to DJI for maintenance",
-      "es": "El vástago del tornillo de la aeronave está llegando al fin de su vida útil. Para garantizar la seguridad de vuelo, ponte en contacto con la Asistencia técnica de DJI y envía la aeronave de vuelta a DJI para su mantenimiento",
-      "fr": "La tige de vis de l'appareil a atteint sa durée de vie maximale. Pour garantir la sécurité pendant le vol, contactez le Service client DJI et renvoyez l'appareil à DJI à des fins de maintenance",
+      "de": "Die Gewindestange des Fluggeräts hat die maximale Lebensdauer erreicht. Um die Flugsicherheit zu gewährleisten, wende dich an den ZIYAN-Support und sende das Fluggerät zur Wartung zurück an ZIYAN",
+      "en": "Aircraft screw rod reaching maximum life span. To ensure flight safety, contact ZIYAN Support and send aircraft back to ZIYAN for maintenance",
+      "es": "El vástago del tornillo de la aeronave está llegando al fin de su vida útil. Para garantizar la seguridad de vuelo, ponte en contacto con la Asistencia técnica de ZIYAN y envía la aeronave de vuelta a ZIYAN para su mantenimiento",
+      "fr": "La tige de vis de l'appareil a atteint sa durée de vie maximale. Pour garantir la sécurité pendant le vol, contactez le Service client DJI et renvoyez l'appareil à ZIYAN à des fins de maintenance",
       "ja": "機体のスクリューロッドの耐用寿命に達しました。飛行安全性を確保するため、DJIサポートに連絡し、機体をDJIに返送してメンテナンスを受けてください",
-      "ko": "기체 나사 로드가 최대 수명에 도달했습니다. 비행 안전을 보장하려면 DJI 고객지원에 연락하여 유지 보수를 위해 기체를 DJI로 다시 보내세요.",
-      "ru": "Достигнут максимальный срок службы резьбового стержня дрона. Чтобы обеспечить безопасность полетов, обратитесь в службу поддержки DJI и отправьте дрон обратно в DJI для технического обслуживания",
-      "tr": "Hava aracı vida çubuğu, maksimum kullanım ömrüne ulaşıyor. Uçuş güvenliğini sağlamak için DJI Destek birimiyle iletişime geçin ve bakım için hava aracını DJI'a gönderin",
-      "zh": "飞行器丝杆即将达到设计使用寿命，为确保飞行安全，请您及时联系 DJI 技术支持并寄回处理"
+      "ko": "기체 나사 로드가 최대 수명에 도달했습니다. 비행 안전을 보장하려면 ZIYAN 고객지원에 연락하여 유지 보수를 위해 기체를 DJI로 다시 보내세요.",
+      "ru": "Достигнут максимальный срок службы резьбового стержня дрона. Чтобы обеспечить безопасность полетов, обратитесь в службу поддержки ZIYAN и отправьте дрон обратно в ZIYAN для технического обслуживания",
+      "tr": "Hava aracı vida çubuğu, maksimum kullanım ömrüne ulaşıyor. Uçuş güvenliğini sağlamak için ZIYAN Destek birimiyle iletişime geçin ve bakım için hava aracını ZIYAN'a gönderin",
+      "zh": "飞行器丝杆即将达到设计使用寿命，为确保飞行安全，请您及时联系 ZIYAN 技术支持并寄回处理"
     },
     "fpv_tip_0x11000047": {
-      "de": "Die Gewindestange des Fluggeräts hat die maximale Lebensdauer überschritten. Um die Flugsicherheit zu gewährleisten, wende dich schnellstmöglich an den DJI-Support und sende das Fluggerät zur Wartung zurück an DJI. Sollte bei weiterer Nutzung des Fluggeräts ein Unfall passieren, bist du für die Wartungskosten selbst verantwortlich",
-      "en": "Aircraft screw rod exceeded maximum life span. To ensure flight safety, contact DJI Support immediately and send aircraft back to DJI for maintenance. You are responsible for the maintenance cost for the flight accident caused by continued use of the aircraft",
-      "es": "El vástago del tornillo de la aeronave ha superado su vida útil. Para garantizar la seguridad de vuelo, ponte en contacto inmediatamente con la Asistencia técnica de DJI y envía la aeronave de vuelta a DJI para su mantenimiento. Los gastos de mantenimiento derivados de un posible accidente de vuelo causado por el uso continuado de la aeronave correrán a cuenta del usuario",
-      "fr": "La tige de vis de l'appareil a dépassé sa durée de vie maximale. Pour garantir la sécurité pendant le vol, contactez le Service client DJI immédiatement et renvoyez l'appareil à DJI à des fins de maintenance. Vous devrez assumer les frais de maintenance liés à tout accident de vol qui serait causé par la poursuite de l'utilisation de l'appareil",
+      "de": "Die Gewindestange des Fluggeräts hat die maximale Lebensdauer überschritten. Um die Flugsicherheit zu gewährleisten, wende dich schnellstmöglich an den ZIYAN-Support und sende das Fluggerät zur Wartung zurück an ZIYAN. Sollte bei weiterer Nutzung des Fluggeräts ein Unfall passieren, bist du für die Wartungskosten selbst verantwortlich",
+      "en": "Aircraft screw rod exceeded maximum life span. To ensure flight safety, contact ZIYAN Support immediately and send aircraft back to ZIYAN for maintenance. You are responsible for the maintenance cost for the flight accident caused by continued use of the aircraft",
+      "es": "El vástago del tornillo de la aeronave ha superado su vida útil. Para garantizar la seguridad de vuelo, ponte en contacto inmediatamente con la Asistencia técnica de ZIYAN y envía la aeronave de vuelta a ZIYAN para su mantenimiento. Los gastos de mantenimiento derivados de un posible accidente de vuelo causado por el uso continuado de la aeronave correrán a cuenta del usuario",
+      "fr": "La tige de vis de l'appareil a dépassé sa durée de vie maximale. Pour garantir la sécurité pendant le vol, contactez le Service client DJI immédiatement et renvoyez l'appareil à ZIYAN à des fins de maintenance. Vous devrez assumer les frais de maintenance liés à tout accident de vol qui serait causé par la poursuite de l'utilisation de l'appareil",
       "ja": "機体のスクリューロッドが耐用寿命を超えました。飛行安全性を確保するため、DJIサポートに直ちに連絡し、機体をDJIに返送してメンテナンスを受けてください。お客様は、機体の連続使用に起因する飛行事故のメンテナンス費用を負担するものとします",
-      "ko": "기체 나사 로드가 최대 수명을 초과했습니다. 비행 안전을 보장하려면 DJI 고객지원에 즉시 연락하여 유지 보수를 위해 기체를 DJI로 다시 보내세요. 기체를 계속 사용하여 발생한 비행 사고에 대한 유지 보수 비용은 사용자가 부담합니다.",
-      "ru": "Превышен максимальный срок службы резьбового стержня дрона. Чтобы обеспечить безопасность полетов, незамедлительно обратитесь в службу поддержки DJI и отправьте дрон обратно в DJI для технического обслуживания. Вы оплачиваете техническое обслуживание в случае авиационного происшествия, вызванного длительной эксплуатацией дрона",
-      "tr": "Hava aracı vida çubuğu, maksimum kullanım ömrünü aştı. Uçuş güvenliğini sağlamak için hemen DJI Destek birimiyle iletişime geçin ve bakım için hava aracını DJI'a gönderin. Hava aracının sürekli kullanımından kaynaklanan uçuş kazasının bakım maliyetinden siz sorumlusunuz",
-      "zh": "飞行器丝杆已超出设计使用寿命，为确保飞行安全，请您立刻联系 DJI 技术支持并寄回处理，继续使用导致的飞行事故，需要您承担维修费用"
+      "ko": "기체 나사 로드가 최대 수명을 초과했습니다. 비행 안전을 보장하려면 ZIYAN 고객지원에 즉시 연락하여 유지 보수를 위해 기체를 DJI로 다시 보내세요. 기체를 계속 사용하여 발생한 비행 사고에 대한 유지 보수 비용은 사용자가 부담합니다.",
+      "ru": "Превышен максимальный срок службы резьбового стержня дрона. Чтобы обеспечить безопасность полетов, незамедлительно обратитесь в службу поддержки ZIYAN и отправьте дрон обратно в ZIYAN для технического обслуживания. Вы оплачиваете техническое обслуживание в случае авиационного происшествия, вызванного длительной эксплуатацией дрона",
+      "tr": "Hava aracı vida çubuğu, maksimum kullanım ömrünü aştı. Uçuş güvenliğini sağlamak için hemen ZIYAN Destek birimiyle iletişime geçin ve bakım için hava aracını ZIYAN'a gönderin. Hava aracının sürekli kullanımından kaynaklanan uçuş kazasının bakım maliyetinden siz sorumlusunuz",
+      "zh": "飞行器丝杆已超出设计使用寿命，为确保飞行安全，请您立刻联系 ZIYAN 技术支持并寄回处理，继续使用导致的飞行事故，需要您承担维修费用"
     },
     "fpv_tip_0x11000048": {
-      "de": "Fehler: Landegestell. Hindernisvermeidung beeinträchtigt. Mit Vorsicht fliegen. Beim Landen des Fluggeräts auf das Objektiv achten. DJI Support kontaktieren.",
-      "en": "Landing gear error. Obstacle avoidance performance degraded. Fly with caution. Pay attention to lens when aircraft is landing. Contact DJI Support",
-      "es": "Error del tren de aterrizaje. Rendimiento del sistema anticolisión degradado. Vuele con cuidado. Preste atención al objetivo cuando la aeronave esté aterrizando. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Erreur du train d’atterrissage. Performances d'évitement d'obstacle dégradées. Piloter avec précaution. Prêter attention à l'objectif lorsque l'appareil atterrit. Contacter le service client DJI",
+      "de": "Fehler: Landegestell. Hindernisvermeidung beeinträchtigt. Mit Vorsicht fliegen. Beim Landen des Fluggeräts auf das Objektiv achten. ZIYAN Support kontaktieren.",
+      "en": "Landing gear error. Obstacle avoidance performance degraded. Fly with caution. Pay attention to lens when aircraft is landing. Contact ZIYAN Support",
+      "es": "Error del tren de aterrizaje. Rendimiento del sistema anticolisión degradado. Vuele con cuidado. Preste atención al objetivo cuando la aeronave esté aterrizando. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Erreur du train d’atterrissage. Performances d'évitement d'obstacle dégradées. Piloter avec précaution. Prêter attention à l'objectif lorsque l'appareil atterrit. Contacter le service client ZIYAN",
       "ja": "ランディングギアのエラー。障害物回避性能が低下しています。慎重に飛行してください。着陸時にはレンズに注意してください。DJIサポートまでお問い合わせください",
-      "ko": "랜딩 기어 오류. 장애물 회피 성능이 저하됨. 비행 시 주의 필요. 기체가 착륙할 때 렌즈에 주의하세요. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка статуса шасси. Характеристики уклонения от препятствий ухудшились. Соблюдайте осторожность при полете. Обратите внимание на объектив при посадке дрона. Свяжитесь со службой поддержки DJI",
-      "tr": "İniş takımı hatası. Engellerden kaçınma performansı düştü. Dikkatlice uçurun. Hava aracı iniş yaparken lense dikkat edin. DJI Destek birimiyle iletişime geçin",
+      "ko": "랜딩 기어 오류. 장애물 회피 성능이 저하됨. 비행 시 주의 필요. 기체가 착륙할 때 렌즈에 주의하세요. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка статуса шасси. Характеристики уклонения от препятствий ухудшились. Соблюдайте осторожность при полете. Обратите внимание на объектив при посадке дрона. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "İniş takımı hatası. Engellerden kaçınma performansı düştü. Dikkatlice uçurun. Hava aracı iniş yaparken lense dikkat edin. ZIYAN Destek birimiyle iletişime geçin",
       "zh": "起落架异常，避障性能降低，请谨慎飞行，注意降落镜头保护，请联系售后"
     },
     "fpv_tip_0x11020030": {
@@ -1540,68 +1540,68 @@
     },
     "fpv_tip_0x110B0006": {
       "de": "%battery_index Akku: Zelle beschädigt. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery cell damaged. Stop using battery and contact DJI Support",
-      "es": "Célula de batería %battery_index dañada. Deje de usar la batería y contacte con DJI Support",
-      "fr": "Cellule de batterie %battery_index endommagée. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリーセル損傷。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 셀 손상됨. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: ячейка повреждена. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil hücresi hasarlı. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery cell damaged. Stop using battery and contact ZIYAN Support",
+      "es": "Célula de batería %battery_index dañada. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "Cellule de batterie %battery_index endommagée. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリーセル損傷。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 셀 손상됨. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: ячейка повреждена. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil hücresi hasarlı. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池电芯损坏，请停止使用该电池，并联系售后服务"
     },
     "fpv_tip_0x110B0007": {
       "de": "%battery_index Akku: Selbsttest fehlgeschlagen. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery auto-check failed. Stop using battery and contact DJI Support",
-      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con DJI Support",
-      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery auto-check failed. Stop using battery and contact ZIYAN Support",
+      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池自检失败，请更换电池，并联系售后服务"
     },
     "fpv_tip_0x110B0008": {
       "de": "%battery_index Akku: Selbsttest fehlgeschlagen. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery auto-check failed. Stop using battery and contact DJI Support",
-      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con DJI Support",
-      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery auto-check failed. Stop using battery and contact ZIYAN Support",
+      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池自检失败，请更换电池，并联系售后服务"
     },
     "fpv_tip_0x110B0009": {
       "de": "%battery_index Akku: Selbsttest fehlgeschlagen. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery auto-check failed. Stop using battery and contact DJI Support",
-      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con DJI Support",
-      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery auto-check failed. Stop using battery and contact ZIYAN Support",
+      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池自检失败，请更换电池，并联系售后服务"
     },
     "fpv_tip_0x110B000A": {
       "de": "%battery_index Akku: Selbsttest fehlgeschlagen. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery auto-check failed. Stop using battery and contact DJI Support",
-      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con DJI Support",
-      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery auto-check failed. Stop using battery and contact ZIYAN Support",
+      "es": "Error de comprobación automática de la batería %battery_index. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "La vérification automatique de la batterie %battery_index a échoué. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリーの自動確認に失敗しました。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 자체 점검 실패. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: не удалось выполнить автоматическую проверку. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil otomatik denetimi başarısız oldu. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池自检失败，请更换电池，并联系售后服务"
     },
     "fpv_tip_0x110B000B": {
       "de": "%battery_index Akku: Beschädigt. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery damaged. Stop using battery and contact DJI Support",
-      "es": "Batería %battery_index dañada. Deje de usar la batería y contacte con DJI Support",
-      "fr": "Batterie %battery_index endommagée. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリー損傷。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 손상됨. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: повреждение. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil hasarlı. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery damaged. Stop using battery and contact ZIYAN Support",
+      "es": "Batería %battery_index dañada. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "Batterie %battery_index endommagée. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリー損傷。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 손상됨. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: повреждение. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil hasarlı. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池已损坏，请停止使用该电池，并联系售后服务"
     },
     "fpv_tip_0x110B000C": {
@@ -1617,13 +1617,13 @@
     },
     "fpv_tip_0x110B000D": {
       "de": "%battery_index Akku: Beschädigt. Akku nicht mehr verwenden, DJI Support kontaktieren",
-      "en": "%battery_index Battery damaged. Stop using battery and contact DJI Support",
-      "es": "Batería %battery_index dañada. Deje de usar la batería y contacte con DJI Support",
-      "fr": "Batterie %battery_index endommagée. Ne plus utiliser la batterie et contacter le service client DJI",
-      "ja": "%battery_index バッテリー損傷。 バッテリーの使用を止めて DJI サポートにお問い合わせください",
-      "ko": "%battery_index 배터리 손상됨. 배터리 사용을 중지하고 DJI 고객지원으로 문의해주세요.",
-      "ru": "%battery_index АКБ: повреждение. Прекратите использование АКБ и обратитесь в службу поддержки DJI",
-      "tr": "%battery_index Pil hasarlı. Pili kullanmayı bırakın ve DJI Destek ile iletişime geçin",
+      "en": "%battery_index Battery damaged. Stop using battery and contact ZIYAN Support",
+      "es": "Batería %battery_index dañada. Deje de usar la batería y contacte con ZIYAN Support",
+      "fr": "Batterie %battery_index endommagée. Ne plus utiliser la batterie et contacter le service client ZIYAN",
+      "ja": "%battery_index バッテリー損傷。 バッテリーの使用を止めて ZIYAN サポートにお問い合わせください",
+      "ko": "%battery_index 배터리 손상됨. 배터리 사용을 중지하고 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "%battery_index АКБ: повреждение. Прекратите использование АКБ и обратитесь в службу поддержки ZIYAN",
+      "tr": "%battery_index Pil hasarlı. Pili kullanmayı bırakın ve ZIYAN Destek ile iletişime geçin",
       "zh": "%battery_index电池已损坏，请停止使用该电池，并联系售后服务"
     },
     "fpv_tip_0x110B000E": {
@@ -1830,9 +1830,9 @@
     },
     "fpv_tip_0x110B007": {
       "de": "",
-      "en": "Battery %d% auto check failed. Replace battery and contact DJI Support",
+      "en": "Battery %d% auto check failed. Replace battery and contact ZIYAN Support",
       "es": "",
-      "fr": "Vérification auto de batterie %d% impossible. Remplacez la batterie et contactez l'assistance technique DJI",
+      "fr": "Vérification auto de batterie %d% impossible. Remplacez la batterie et contactez l'assistance technique ZIYAN",
       "ja": "",
       "ko": "",
       "ru": "",
@@ -3688,26 +3688,26 @@
       "zh": "飞控系统负载高，如若持续存在请尽快降落"
     },
     "fpv_tip_0x16000002": {
-      "de": "Fehler: Flugdatenschreiber. Bitte an Händler vor Ort oder an DJI Support wenden",
-      "en": "Flight data recording error. Contact your local dealer or DJI Support",
-      "es": "Error al grabar los datos de vuelo . Contacta con el distribuidor local o la asistencia técnica de DJI",
-      "fr": "Erreur d\\'enregistrement des données de vol. Contactez votre revendeur local ou le Service client DJI",
+      "de": "Fehler: Flugdatenschreiber. Bitte an Händler vor Ort oder an ZIYAN Support wenden",
+      "en": "Flight data recording error. Contact your local dealer or ZIYAN Support",
+      "es": "Error al grabar los datos de vuelo . Contacta con el distribuidor local o la asistencia técnica de ZIYAN",
+      "fr": "Erreur d\\'enregistrement des données de vol. Contactez votre revendeur local ou le Service client ZIYAN",
       "it": "",
       "ja": "飛行データ記録エラー。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "비행 데이터 기록 오류. 현지 딜러 또는 DJI 고객지원으로 문의해주세요",
+      "ko": "비행 데이터 기록 오류. 현지 딜러 또는 ZIYAN 고객지원으로 문의해주세요",
       "pt": "",
-      "ru": "Ошибка записи полетных данных. Свяжитесь с местным представителем или службой поддержки DJI",
-      "tr": "Uçuş veri kaydı hatası. Bölgenizdeki satıcı veya DJI Destek ile iletişime geçin",
+      "ru": "Ошибка записи полетных данных. Свяжитесь с местным представителем или службой поддержки ZIYAN",
+      "tr": "Uçuş veri kaydı hatası. Bölgenizdeki satıcı veya ZIYAN Destek ile iletişime geçin",
       "zh": "飞行数据记录异常，请尽快联系就近代理商或大疆售后服务。"
     },
     "fpv_tip_0x16000002_in_the_sky": {
-      "de": "Anormale Flugdatenaufzeichnung. Sollte diese Warnung fortbestehen, nehmen Sie bitte Kontakt mit dem DJI Support oder Ihrem Händler auf.",
-      "en": "Flight data record abnorma.If the warning persists, contact your local dealer or DJI Support.",
-      "es": "Registro de datos de vuelo anómalo. Si la advertencia se sigue mostrando, ponte en contacto con el distribuidor local o la asistencia técnica de DJI.",
-      "fr": "Historique des données de vol anormal. Si le problème persiste, contactez votre revendeur local ou le service client DJI.",
+      "de": "Anormale Flugdatenaufzeichnung. Sollte diese Warnung fortbestehen, nehmen Sie bitte Kontakt mit dem ZIYAN Support oder Ihrem Händler auf.",
+      "en": "Flight data record abnorma.If the warning persists, contact your local dealer or ZIYAN Support.",
+      "es": "Registro de datos de vuelo anómalo. Si la advertencia se sigue mostrando, ponte en contacto con el distribuidor local o la asistencia técnica de ZIYAN.",
+      "fr": "Historique des données de vol anormal. Si le problème persiste, contactez votre revendeur local ou le service client ZIYAN.",
       "ja": "飛行データ記録異常。警告が消えない場合、最寄りの代理店またはDJIサポートにお問い合わせください。",
-      "ko": "비행 데이터 기록 비정상. 경고가 지속되면 현지 딜러 또는 DJI 고객지원으로 문의해주세요.",
-      "ru": "Ошибка записи данных полета. Если предупреждение не устранено, обратитесь к местному представителю или в службу поддержки DJI.",
+      "ko": "비행 데이터 기록 비정상. 경고가 지속되면 현지 딜러 또는 ZIYAN 고객지원으로 문의해주세요.",
+      "ru": "Ошибка записи данных полета. Если предупреждение не устранено, обратитесь к местному представителю или в службу поддержки ZIYAN.",
       "zh": "飞行数据记录异常，请尽快联系就近代理商或大疆售后服务。"
     },
     "fpv_tip_0x16010001": {
@@ -3999,7 +3999,7 @@
     "fpv_tip_0x16010026": {
       "ar": "",
       "de": "",
-      "en": "Unable to take off. Non-DJI RTK module detected",
+      "en": "Unable to take off. Non-ZIYAN RTK module detected",
       "es": "",
       "fr": "",
       "id": "",
@@ -4021,7 +4021,7 @@
     "fpv_tip_0x16010026_in_the_sky": {
       "ar": "",
       "de": "",
-      "en": "Non-DJI RTK module detected",
+      "en": "Non-ZIYAN RTK module detected",
       "es": "",
       "fr": "",
       "id": "",
@@ -5230,14 +5230,14 @@
       "zh": "机载 D-RTK 天线异常"
     },
     "fpv_tip_0x16070036": {
-      "de": "Start nicht möglich. RTK-Antennen getrennt. DJI Support kontaktieren",
-      "en": "Unable to take off. RTK antennas disconnected. Contact DJI Support",
-      "es": "No se puede despegar. Antenas RTK desconectadas. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Impossible de décoller. Antennes RTK déconnectées. Contactez le service client DJI",
+      "de": "Start nicht möglich. RTK-Antennen getrennt. ZIYAN Support kontaktieren",
+      "en": "Unable to take off. RTK antennas disconnected. Contact ZIYAN Support",
+      "es": "No se puede despegar. Antenas RTK desconectadas. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Impossible de décoller. Antennes RTK déconnectées. Contactez le service client ZIYAN",
       "ja": "離陸できません。RTKアンテナの接続が切断されました。DJIサポートまでお問い合わせください",
-      "ko": "이륙 불가. RTK 안테나 연결이 끊어졌습니다. DJI 고객지원으로 문의하세요.",
-      "ru": "Не удается выполнить взлет. Антенны RTK отключены. Свяжитесь со службой поддержки DJI",
-      "tr": "Kalkış yapılamıyor. RTK antenlerinin bağlantısı kesildi. DJI Destek ekibiyle iletişime geçin",
+      "ko": "이륙 불가. RTK 안테나 연결이 끊어졌습니다. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Не удается выполнить взлет. Антенны RTK отключены. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "Kalkış yapılamıyor. RTK antenlerinin bağlantısı kesildi. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：RTK天线断连，请联系DJI售后"
     },
     "fpv_tip_0x16070036_in_the_sky": {
@@ -5979,14 +5979,14 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x16080058": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x16080058_in_the_sky": {
@@ -6001,14 +6001,14 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x16080059": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x16080059_in_the_sky": {
@@ -6023,16 +6023,16 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x1608005A": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "it": "",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
       "pt": "",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005A_in_the_sky": {
@@ -6047,16 +6047,16 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x1608005B": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "it": "",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
       "pt": "",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005B_in_the_sky": {
@@ -6071,16 +6071,16 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x1608005C": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "it": "",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
       "pt": "",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005C_in_the_sky": {
@@ -6095,16 +6095,16 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x1608005D": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "it": "",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
       "pt": "",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005D_in_the_sky": {
@@ -6119,16 +6119,16 @@
       "zh": "电调异常，请尽快返航或降落"
     },
     "fpv_tip_0x1608005E": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "it": "",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
       "pt": "",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005F": {
@@ -6154,58 +6154,58 @@
       "zh-Hant": ""
     },
     "fpv_tip_0x1608005a": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005b": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005c": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005d": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005e": {
-      "de": "ESC-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client DJI",
+      "de": "ESC-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de l'ESC Impossible de décoller. Contactez le Service client ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류. 이륙 불가. DJI 고객지원으로 문의하세요.",
-      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapılamıyor. DJI Destek ekibiyle iletişime geçin",
+      "ko": "ESC 오류. 이륙 불가. ZIYAN 고객지원으로 문의하세요.",
+      "ru": "Ошибка ESC. Не удается выполнить взлет. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapılamıyor. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后"
     },
     "fpv_tip_0x1608005e_in_the_sky": {
@@ -7479,25 +7479,25 @@
       "zh": "指南针异常,请返航或降落"
     },
     "fpv_tip_0x16100002": {
-      "de": "DJI Assistant verbunden. Start nicht möglich. Vor dem Start die Verbindung trennen",
-      "en": "DJI Assistant connected. Unable to take off. Disconnect before taking off",
-      "es": "DJI Assistant conectado. No se puede despegar. Desconéctalo antes de despegar",
-      "fr": "DJI Assistant connecté. Impossible de décoller. Déconnectez-le avant de décoller",
-      "ja": "DJI Assistantに接続されています。離陸できません。離陸する前に接続を解除してください",
-      "ko": "DJI Assistant 연결됨. 이륙 불가. 이륙하기 전 연결 해제 필요",
+      "de": "ZIYAN Assistant verbunden. Start nicht möglich. Vor dem Start die Verbindung trennen",
+      "en": "ZIYAN Assistant connected. Unable to take off. Disconnect before taking off",
+      "es": "ZIYAN Assistant conectado. No se puede despegar. Desconéctalo antes de despegar",
+      "fr": "ZIYAN Assistant connecté. Impossible de décoller. Déconnectez-le avant de décoller",
+      "ja": "ZIYAN Assistantに接続されています。離陸できません。離陸する前に接続を解除してください",
+      "ko": "ZIYAN Assistant 연결됨. 이륙 불가. 이륙하기 전 연결 해제 필요",
       "ru": "ПО DJI Assistant подключено. Взлет невозможен. Отключите его перед взлетом",
-      "tr": "DJI Assistant bağlandı. Kalkış yapamıyor. Kalkıştan önce bağlantıyı kes",
+      "tr": "ZIYAN Assistant bağlandı. Kalkış yapamıyor. Kalkıştan önce bağlantıyı kes",
       "zh": "无法起飞：已连接DJI Assistant 软件，请先断开再起飞"
     },
     "fpv_tip_0x16100002_in_the_sky": {
-      "de": "DJI Assistant verbunden. Vor dem Start die Verbindung trennen",
-      "en": "DJI Assistant connected. Disconnect before taking off",
-      "es": "DJI Assistant conectado. Desconéctalo antes de despegar",
-      "fr": "DJI Assistant connecté. Déconnectez-le avant de décoller",
-      "ja": "DJI Assistantに接続されています。離陸する前に接続を解除してください",
-      "ko": "DJI Assistant 연결됨. 이륙하기 전 연결 해제 필요",
+      "de": "ZIYAN Assistant verbunden. Vor dem Start die Verbindung trennen",
+      "en": "ZIYAN Assistant connected. Disconnect before taking off",
+      "es": "ZIYAN Assistant conectado. Desconéctalo antes de despegar",
+      "fr": "ZIYAN Assistant connecté. Déconnectez-le avant de décoller",
+      "ja": "ZIYAN Assistantに接続されています。離陸する前に接続を解除してください",
+      "ko": "ZIYAN Assistant 연결됨. 이륙하기 전 연결 해제 필요",
       "ru": "ПО DJI Assistant подключено. Отключите его перед взлетом",
-      "tr": "DJI Assistant bağlandı. Kalkıştan önce bağlantıyı kes",
+      "tr": "ZIYAN Assistant bağlandı. Kalkıştan önce bağlantıyı kes",
       "zh": "已连接DJI Assistant 软件，请先断开再飞行"
     },
     "fpv_tip_0x16100003": {
@@ -7639,14 +7639,14 @@
       "zh": "新手模式下请在室外开阔环境飞行"
     },
     "fpv_tip_0x1610000B": {
-      "de": "Fehler: Akkuzelle . Kann nicht abheben. Bitte DJI Support kontaktieren",
-      "en": "Battery cell error. Unable to take off. Contact DJI Support",
-      "es": "Error de la célula de batería. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de cellule de batterie . Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "Fehler: Akkuzelle . Kann nicht abheben. Bitte ZIYAN Support kontaktieren",
+      "en": "Battery cell error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de la célula de batería. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de cellule de batterie . Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "バッテリーセルエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "배터리 셀 오류 . 이륙 불가. DJI 고객지원으로 문의해주세요",
-      "ru": "Ошибка элемента батареи . Взлет невозможен. Обратитесь в службу поддержки DJI",
-      "tr": "Pil hücresi hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "배터리 셀 오류 . 이륙 불가. ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Ошибка элемента батареи . Взлет невозможен. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Pil hücresi hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：电池电芯错误，请联系售后服务"
     },
     "fpv_tip_0x1610000B_in_the_sky": {
@@ -7870,25 +7870,25 @@
       "zh": "飞行器倾斜角度过大，请水平放置飞行器后起飞"
     },
     "fpv_tip_0x16100016": {
-      "de": "Fluggerät nicht aktiviert. Kann nicht abheben. DJI Pilot neu starten und aktivieren",
-      "en": "Aircraft not activated. Unable to take off. Restart DJI Pilot and activate aircraft",
-      "es": "Aeronave no activada. No se puede despegar. Reinicia DJI Pilot y activa la aeronave",
-      "fr": "L\\'appareil n\\'est pas activé. Impossible de décoller. Redémarrez DJI Pilot et activez l\\'appareil",
-      "ja": "機体が未アクティベーション。離陸できません。DJI Pilotを再起動して機体をアクティベートしてください",
-      "ko": "활성화 안 된 기체. 이륙 불가. DJI Pilot 재시작 후 기체 활성화해야 함",
-      "ru": "Дрон не активирован. Взлет невозможен. Перезагрузите DJI Pilot и активируйте дрон",
-      "tr": "Araç etkinleştirilmemiş. Kalkış yapamıyor. DJI Pilot’u yeniden başlatın ve aracı etkinleştirin",
+      "de": "Fluggerät nicht aktiviert. Kann nicht abheben. ZIYAN GCS neu starten und aktivieren",
+      "en": "Aircraft not activated. Unable to take off. Restart ZIYAN GCS and activate aircraft",
+      "es": "Aeronave no activada. No se puede despegar. Reinicia ZIYAN GCS y activa la aeronave",
+      "fr": "L\\'appareil n\\'est pas activé. Impossible de décoller. Redémarrez ZIYAN GCS et activez l\\'appareil",
+      "ja": "機体が未アクティベーション。離陸できません。ZIYAN GCSを再起動して機体をアクティベートしてください",
+      "ko": "활성화 안 된 기체. 이륙 불가. ZIYAN GCS 재시작 후 기체 활성화해야 함",
+      "ru": "Дрон не активирован. Взлет невозможен. Перезагрузите DJI GCS и активируйте дрон",
+      "tr": "Araç etkinleştirilmemiş. Kalkış yapamıyor. ZIYAN GCS’u yeniden başlatın ve aracı etkinleştirin",
       "zh": "无法起飞：飞行器未激活，请重启App进行激活"
     },
     "fpv_tip_0x16100016_in_the_sky": {
-      "de": "Fluggerät nicht aktiviert. Starten Sie DJI Pilot neu und aktivieren Sie das Fluggerät",
-      "en": "Aircraft not activated. Restart DJI Pilot and activate aircraft",
-      "es": "Aeronave no activada. Reinicia DJI Pilot y activa la aeronave",
-      "fr": "Appareil non activé. Redémarrez DJI Pilot et activez l\\'appareil",
-      "ja": "機体が未アクティベーション。DJI Pilotを再起動して機体をアクティベートしてください",
-      "ko": "활성화 안 된 기체. DJI Pilot 재시작 후 기체 활성화해야 함",
-      "ru": "Дрон не активирован. Перезагрузите DJI Pilot и активируйте дрон",
-      "tr": "Araç etkinleştirilmemiş. DJI Pilot’u yeniden başlatın ve aracı etkinleştirin",
+      "de": "Fluggerät nicht aktiviert. Starten Sie ZIYAN GCS neu und aktivieren Sie das Fluggerät",
+      "en": "Aircraft not activated. Restart ZIYAN GCS and activate aircraft",
+      "es": "Aeronave no activada. Reinicia ZIYAN GCS y activa la aeronave",
+      "fr": "Appareil non activé. Redémarrez ZIYAN GCS et activez l\\'appareil",
+      "ja": "機体が未アクティベーション。ZIYAN GCSを再起動して機体をアクティベートしてください",
+      "ko": "활성화 안 된 기체. ZIYAN GCS 재시작 후 기체 활성화해야 함",
+      "ru": "Дрон не активирован. Перезагрузите DJI GCS и активируйте дрон",
+      "tr": "Araç etkinleştirilmemiş. ZIYAN GCS’u yeniden başlatın ve aracı etkinleştirin",
       "zh": "飞行器未激活，请重启App进行激活"
     },
     "fpv_tip_0x16100017": {
@@ -7936,14 +7936,14 @@
       "zh": "IMU 初始化异常，请返航或降落"
     },
     "fpv_tip_0x16100019": {
-      "de": "ESC-Fehler . Kann nicht abheben. Bitte DJI Support kontaktieren",
-      "en": "ESC error. Unable to take off. Contact DJI Support",
-      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur ESC . Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "ESC-Fehler . Kann nicht abheben. Bitte ZIYAN Support kontaktieren",
+      "en": "ESC error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de ESC. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur ESC . Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "ESCエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "ESC 오류 . 이륙 불가. DJI 고객지원으로 문의해주세요",
-      "ru": "Ошибка ESC . Взлет невозможен. Обратитесь в службу поддержки DJI",
-      "tr": "ESC hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "ESC 오류 . 이륙 불가. ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Ошибка ESC . Взлет невозможен. Обратитесь в службу поддержки ZIYAN",
+      "tr": "ESC hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：电调异常，请联系售后服务"
     },
     "fpv_tip_0x16100019_in_the_sky": {
@@ -8152,7 +8152,7 @@
       "zh": "飞控温度过高，强制降落中"
     },
     "fpv_tip_0x16100022": {
-      "en": "Unable to take off. Aircraft unable to remain stable for several times. To ensure flight safety, contact DJI Support",
+      "en": "Unable to take off. Aircraft unable to remain stable for several times. To ensure flight safety, contact ZIYAN Support",
       "zh": "无法起飞：飞机已多次失稳，为保证飞行安全，请联系大疆售后服务"
     },
     "fpv_tip_0x16100023": {
@@ -8199,24 +8199,24 @@
     },
     "fpv_tip_0x16100026": {
       "de": "Start nicht möglich. RTK-Modul eines Fremdherstellers erkannt",
-      "en": "Unable to take off. Non-DJI RTK module detected",
-      "es": "No se puede despegar. Módulo RTK no DJI detectado",
-      "fr": "Impossible de décoller. Module RTK autre que DJI détecté",
+      "en": "Unable to take off. Non-ZIYAN RTK module detected",
+      "es": "No se puede despegar. Módulo RTK no ZIYAN detectado",
+      "fr": "Impossible de décoller. Module RTK autre que ZIYAN détecté",
       "ja": "離陸できません。DJI以外のRTKモジュールが検出されました",
-      "ko": "이륙 불가. 비 DJI RTK 모듈이 감지되었습니다",
-      "ru": "Не удается выполнить взлет. Обнаружен модуль RTK, не являющийся продуктом DJI",
-      "tr": "Kalkış yapılamıyor. DJI marka olmayan RTK modülü tespit edildi",
+      "ko": "이륙 불가. 비 ZIYAN RTK 모듈이 감지되었습니다",
+      "ru": "Не удается выполнить взлет. Обнаружен модуль RTK, не являющийся продуктом ZIYAN",
+      "tr": "Kalkış yapılamıyor. ZIYAN marka olmayan RTK modülü tespit edildi",
       "zh": "无法起飞：检测到非官方RTK模块"
     },
     "fpv_tip_0x16100026_in_the_sky": {
       "de": "RTK-Modul eines Fremdherstellers erkannt",
-      "en": "Non-DJI RTK module detected",
-      "es": "Módulo RTK no DJI detectado",
-      "fr": "Module RTK autre que DJI détecté",
+      "en": "Non-ZIYAN RTK module detected",
+      "es": "Módulo RTK no ZIYAN detectado",
+      "fr": "Module RTK autre que ZIYAN détecté",
       "ja": "DJI以外のRTKモジュールが検出されました",
-      "ko": "비 DJI RTK 모듈이 감지되었습니다",
-      "ru": "Обнаружен модуль RTK, не являющийся продуктом DJI",
-      "tr": "DJI marka olmayan RTK modülü tespit edildi",
+      "ko": "비 ZIYAN RTK 모듈이 감지되었습니다",
+      "ru": "Обнаружен модуль RTK, не являющийся продуктом ZIYAN",
+      "tr": "ZIYAN marka olmayan RTK modülü tespit edildi",
       "zh": "检测到非官方RTK模块"
     },
     "fpv_tip_0x16100027": {
@@ -8248,14 +8248,14 @@
       "zh": "飞控系统异常，请尽快降落"
     },
     "fpv_tip_0x16100029": {
-      "de": "Seriennummer des Fluggeräts ungültig. Kann nicht abheben. An Händler vor Ort oder an DJI-Support wenden",
-      "en": "Invalid aircraft serial number. Unable to take off. Contact your local dealer or DJI Support",
-      "es": "Número de serie de la aeronave no válido. No se puede despegar. Ponte en contacto con el distribuidor local o la asistencia técnica de DJI",
-      "fr": "N° de série appareil invalide. Impossible de décoller. Contactez votre revendeur local ou l\\'assistance technique DJI",
+      "de": "Seriennummer des Fluggeräts ungültig. Kann nicht abheben. An Händler vor Ort oder an ZIYAN-Support wenden",
+      "en": "Invalid aircraft serial number. Unable to take off. Contact your local dealer or ZIYAN Support",
+      "es": "Número de serie de la aeronave no válido. No se puede despegar. Ponte en contacto con el distribuidor local o la asistencia técnica de ZIYAN",
+      "fr": "N° de série appareil invalide. Impossible de décoller. Contactez votre revendeur local ou l\\'assistance technique ZIYAN",
       "ja": "無効な機体シリアルナンバー。離陸できません。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "유효하지 않은 기체 시리얼 넘버. 이륙 불가. 현지 딜러 또는 DJI 고객지원으로 문의해주세요",
-      "ru": "Неверный серийный номер дрона. Взлет невозможен. Обратитесь к местному представителю или в службу поддержки DJI",
-      "tr": "Aracın seri numarası geçersiz. Kalkış yapamıyor. Yerel satıcınızla ya da DJI Destek ile iletişime geçin",
+      "ko": "유효하지 않은 기체 시리얼 넘버. 이륙 불가. 현지 딜러 또는 ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Неверный серийный номер дрона. Взлет невозможен. Обратитесь к местному представителю или в службу поддержки ZIYAN",
+      "tr": "Aracın seri numarası geçersiz. Kalkış yapamıyor. Yerel satıcınızla ya da ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：飞行器SN异常，请联系就近代理商或者大疆售后服务"
     },
     "fpv_tip_0x16100029_in_the_sky": {
@@ -8314,14 +8314,14 @@
       "zh": "数据记录仪异常，请返航或降落"
     },
     "fpv_tip_0x16100030": {
-      "de": "Fluggerät und Firmware-Version stimmen nicht überein . Start nicht möglich. An Händler vor Ort oder an DJI-Support wenden",
-      "en": "Aircraft model and firmware version do not match. Unable to take off. Contact your local dealer or DJI Support.",
-      "es": "El modelo de la aeronave y la versión del firmware no coinciden. No se puede despegar. Ponte en contacto con el distribuidor local o la asistencia técnica de DJI.",
-      "fr": "Le modèle de l\\'appareil et la version du firmware ne correspondent pas . Impossible de décoller. Contactez votre revendeur local ou l\\'assistance technique DJI",
+      "de": "Fluggerät und Firmware-Version stimmen nicht überein . Start nicht möglich. An Händler vor Ort oder an ZIYAN-Support wenden",
+      "en": "Aircraft model and firmware version do not match. Unable to take off. Contact your local dealer or ZIYAN Support.",
+      "es": "El modelo de la aeronave y la versión del firmware no coinciden. No se puede despegar. Ponte en contacto con el distribuidor local o la asistencia técnica de ZIYAN.",
+      "fr": "Le modèle de l\\'appareil et la version du firmware ne correspondent pas . Impossible de décoller. Contactez votre revendeur local ou l\\'assistance technique ZIYAN",
       "ja": "機体モデルとファームウェアバージョンが一致しません。離陸できません。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "기체 모델과 펌웨어 버전 불일치 . 이륙 불가. 현지 딜러 또는 DJI 고객지원으로 문의해주세요",
-      "ru": "Модель дрона не совпадает с версией ПО . Взлет невозможен. Обратитесь к местному представителю или в службу поддержки DJI.",
-      "tr": "Araç modeli ve yazılım sürümü eşleşmiyor. Kalkış yapamıyor. Yerel satıcınızla ya da DJI Destek ile iletişime geçin.",
+      "ko": "기체 모델과 펌웨어 버전 불일치 . 이륙 불가. 현지 딜러 또는 ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Модель дрона не совпадает с версией ПО . Взлет невозможен. Обратитесь к местному представителю или в службу поддержки ZIYAN.",
+      "tr": "Araç modeli ve yazılım sürümü eşleşmiyor. Kalkış yapamıyor. Yerel satıcınızla ya da ZIYAN Destek ile iletişime geçin.",
       "zh": "无法起飞：飞行器机型与固件不匹配，请联系就近代理商或大疆售后服务"
     },
     "fpv_tip_0x16100030_in_the_sky": {
@@ -8421,30 +8421,30 @@
     },
     "fpv_tip_0x16100042": {
       "ar": "",
-      "de": "Start nicht möglich. Steuerknüppel-Hardwarefehler. DJI Support kontaktieren.",
-      "en": "Unable to take off. Control stick hardware error. Contact DJI Support",
-      "es": "No se puede despegar. Error de hardware de la palanca de control. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Impossible de décoller. Erreur matérielle du joystick. Contactez le service client DJI",
+      "de": "Start nicht möglich. Steuerknüppel-Hardwarefehler. ZIYAN Support kontaktieren.",
+      "en": "Unable to take off. Control stick hardware error. Contact ZIYAN Support",
+      "es": "No se puede despegar. Error de hardware de la palanca de control. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Impossible de décoller. Erreur matérielle du joystick. Contactez le service client ZIYAN",
       "it": "",
       "ja": "離陸できません。操作スティックのハードウェアエラー。DJIサポートまでお問い合わせください",
-      "ko": "이륙 불가. 조종 스틱 하드웨어 오류. DJI 고객지원으로 문의하세요",
+      "ko": "이륙 불가. 조종 스틱 하드웨어 오류. ZIYAN 고객지원으로 문의하세요",
       "pt": "",
-      "ru": "Не удается выполнить взлет. Аппаратная ошибка ручки управления. Свяжитесь со службой поддержки DJI",
-      "tr": "Kalkış yapılamıyor. Kontrol çubuğu donanım hatası. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Не удается выполнить взлет. Аппаратная ошибка ручки управления. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "Kalkış yapılamıyor. Kontrol çubuğu donanım hatası. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "无法起飞：摇杆硬件异常，请联系售后"
     },
     "fpv_tip_0x16100042_in_the_sky": {
       "ar": "",
-      "de": "Steuerknüppel-Hardwarefehler. Umgehend landen. DJI Support kontaktieren.",
-      "en": "Control stick hardware error. Land promptly. Contact DJI Support",
-      "es": "Error de hardware de la palanca de control. Aterriza rápidamente. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Erreur matérielle du joystick. Atterrissez immédiatement. Contactez le service client DJI",
+      "de": "Steuerknüppel-Hardwarefehler. Umgehend landen. ZIYAN Support kontaktieren.",
+      "en": "Control stick hardware error. Land promptly. Contact ZIYAN Support",
+      "es": "Error de hardware de la palanca de control. Aterriza rápidamente. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Erreur matérielle du joystick. Atterrissez immédiatement. Contactez le service client ZIYAN",
       "it": "",
       "ja": "操作スティックのハードウェアエラー。直ちに着陸してください。DJIサポートまでお問い合わせください",
-      "ko": "조종 스틱 하드웨어 오류. 즉시 착륙하세요. DJI 고객지원으로 문의하세요",
+      "ko": "조종 스틱 하드웨어 오류. 즉시 착륙하세요. ZIYAN 고객지원으로 문의하세요",
       "pt": "",
-      "ru": "Аппаратная ошибка ручки управления. Немедленно выполните посадку. Свяжитесь со службой поддержки DJI",
-      "tr": "Kontrol çubuğu donanım hatası. Derhal iniş yapın. DJI Destek ekibiyle iletişime geçin",
+      "ru": "Аппаратная ошибка ручки управления. Немедленно выполните посадку. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "Kontrol çubuğu donanım hatası. Derhal iniş yapın. ZIYAN Destek ekibiyle iletişime geçin",
       "zh": "摇杆硬件异常，请尽快降落，并联系售后"
     },
     "fpv_tip_0x1610004A": {
@@ -8550,25 +8550,25 @@
       "zh": "电池数量过少，请尽快返航或降落"
     },
     "fpv_tip_0x1610004F": {
-      "de": "Batterieauthentifizierung fehlgeschlagen. Kann nicht abheben. Durch DJI-Akku ersetzen",
-      "en": "Battery authentication failed. Unable to take off. Replace with DJI battery",
-      "es": "Error de autenticación de la batería. No se puede despegar. Reemplázala por una batería de DJI",
-      "fr": "L\\'authentification de la batterie a échoué. Impossible de décoller. Remplacez-la avec une batterie DJI",
+      "de": "Batterieauthentifizierung fehlgeschlagen. Kann nicht abheben. Durch ZIYAN-Akku ersetzen",
+      "en": "Battery authentication failed. Unable to take off. Replace with ZIYAN battery",
+      "es": "Error de autenticación de la batería. No se puede despegar. Reemplázala por una batería de ZIYAN",
+      "fr": "L\\'authentification de la batterie a échoué. Impossible de décoller. Remplacez-la avec une batterie ZIYAN",
       "ja": "バッテリーの認証に失敗しました。離陸できません。DJIバッテリーに交換してください",
-      "ko": "배터리 인증 실패. 이륙 불가. 표준 DJI 배터리로 교체해야 함",
-      "ru": "Не удалось опознать батарею. Взлет невозможен. Замените ее на аккумулятор DJI",
-      "tr": "Pil kimlik doğrulaması başarısız. Kalkış yapamıyor. DJI pili ile değiştirin",
+      "ko": "배터리 인증 실패. 이륙 불가. 표준 ZIYAN 배터리로 교체해야 함",
+      "ru": "Не удалось опознать батарею. Взлет невозможен. Замените ее на аккумулятор ZIYAN",
+      "tr": "Pil kimlik doğrulaması başarısız. Kalkış yapamıyor. ZIYAN pili ile değiştirin",
       "zh": "无法起飞：电池认证失败，请更换DJI官方电池"
     },
     "fpv_tip_0x1610004F_in_the_sky": {
-      "de": "Batterieauthentifizierung fehlgeschlagen. Durch Standard-DJI-Akku ersetzen",
-      "en": "Battery authentication failed. Replace with standard DJI battery",
-      "es": "Error de autenticación de la batería. Reemplázala por una batería estándar de DJI",
-      "fr": "L\\'authentification de la batterie a échoué. Remplacez-la avec une batterie DJI standard",
+      "de": "Batterieauthentifizierung fehlgeschlagen. Durch Standard-ZIYAN-Akku ersetzen",
+      "en": "Battery authentication failed. Replace with standard ZIYAN battery",
+      "es": "Error de autenticación de la batería. Reemplázala por una batería estándar de ZIYAN",
+      "fr": "L\\'authentification de la batterie a échoué. Remplacez-la avec une batterie ZIYAN standard",
       "ja": "バッテリーの認証に失敗しました。標準のDJIバッテリーと交換してください",
-      "ko": "배터리 인증 실패. 표준 DJI 배터리로 교체해야 함",
-      "ru": "Не удалось опознать батарею. Замените ее на стандартный аккумулятор DJI",
-      "tr": "Pil kimlik doğrulaması başarısız. Standart bir DJI pili ile değiştirin",
+      "ko": "배터리 인증 실패. 표준 ZIYAN 배터리로 교체해야 함",
+      "ru": "Не удалось опознать батарею. Замените ее на стандартный аккумулятор ZIYAN",
+      "tr": "Pil kimlik doğrulaması başarısız. Standart bir ZIYAN pili ile değiştirin",
       "zh": "电池认证失败，请更换DJI官方电池"
     },
     "fpv_tip_0x16100051": {
@@ -8616,14 +8616,14 @@
       "zh": "飞行器模块间固件不匹配，请升级固件版本"
     },
     "fpv_tip_0x16100054": {
-      "de": "Fehler: Gimbal . Kann nicht abheben. Bitte DJI-Support kontaktieren.",
-      "en": "Gimbal error. Unable to take off. Contact DJI Support",
-      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de nacelle . Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "Fehler: Gimbal . Kann nicht abheben. Bitte ZIYAN-Support kontaktieren.",
+      "en": "Gimbal error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de nacelle . Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "ジンバルエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "짐벌 오류 . 이륙 불가. DJI 고객지원으로 문의해주세요",
-      "ru": "Ошибка стабилизатора . Взлет невозможен. Обратитесь в службу поддержки DJI",
-      "tr": "Gimbal hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "짐벌 오류 . 이륙 불가. ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Ошибка стабилизатора . Взлет невозможен. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Gimbal hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：云台异常，请联系大疆售后服务"
     },
     "fpv_tip_0x16100054_in_the_sky": {
@@ -8638,14 +8638,14 @@
       "zh": "云台异常，返航或降落"
     },
     "fpv_tip_0x16100055": {
-      "de": "Gimbal-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "Gimbal error. Unable to take off. Contact DJI Support",
-      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de nacelle. Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "Gimbal-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "Gimbal error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de nacelle. Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "ジンバルエラー。離陸できません。DJIサポートにお問い合わせください",
-      "ko": "짐벌 오류. 이륙 불가. DJI 고객지원으로 문의",
-      "ru": "Ошибка стабилизатора. Невозможно выполнить взлет. Обратитесь в службу поддержки DJI",
-      "tr": "Gimbal hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "짐벌 오류. 이륙 불가. ZIYAN 고객지원으로 문의",
+      "ru": "Ошибка стабилизатора. Невозможно выполнить взлет. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Gimbal hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：云台异常，请联系大疆售后服务"
     },
     "fpv_tip_0x16100055_in_the_sky": {
@@ -8660,14 +8660,14 @@
       "zh": "云台异常，返航或降落"
     },
     "fpv_tip_0x16100056": {
-      "de": "Gimbal-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "Gimbal error. Unable to take off. Contact DJI Support",
-      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de nacelle. Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "Gimbal-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "Gimbal error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de nacelle. Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "ジンバルエラー。離陸できません。DJIサポートにお問い合わせください",
-      "ko": "짐벌 오류. 이륙 불가. DJI 고객지원으로 문의",
-      "ru": "Ошибка стабилизатора. Невозможно выполнить взлет. Обратитесь в службу поддержки DJI",
-      "tr": "Gimbal hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "짐벌 오류. 이륙 불가. ZIYAN 고객지원으로 문의",
+      "ru": "Ошибка стабилизатора. Невозможно выполнить взлет. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Gimbal hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：云台异常，请联系大疆售后服务"
     },
     "fpv_tip_0x16100056_in_the_sky": {
@@ -8682,14 +8682,14 @@
       "zh": "云台异常，返航或降落"
     },
     "fpv_tip_0x16100057": {
-      "de": "Gimbal-Fehler. Start nicht möglich. DJI Support kontaktieren",
-      "en": "Gimbal error. Unable to take off. Contact DJI Support",
-      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de nacelle. Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "Gimbal-Fehler. Start nicht möglich. ZIYAN Support kontaktieren",
+      "en": "Gimbal error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error del estabilizador. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de nacelle. Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "ジンバルエラー。離陸できません。DJIサポートにお問い合わせください",
-      "ko": "짐벌 오류. 이륙 불가. DJI 고객지원으로 문의",
-      "ru": "Ошибка стабилизатора. Невозможно выполнить взлет. Обратитесь в службу поддержки DJI",
-      "tr": "Gimbal hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "짐벌 오류. 이륙 불가. ZIYAN 고객지원으로 문의",
+      "ru": "Ошибка стабилизатора. Невозможно выполнить взлет. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Gimbal hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：云台异常，请联系大疆售后服务"
     },
     "fpv_tip_0x16100057_in_the_sky": {
@@ -9229,14 +9229,14 @@
       "zh": "电调版本不一致，请更新飞行器固件"
     },
     "fpv_tip_0x16100076": {
-      "de": "IMU-Fehler . Start nicht möglich. An DJI-Support wenden",
-      "en": "IMU error. Unable to take off. Contact DJI Support",
-      "es": "Error de IMU. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur IMU. Impossible de décoller. Contacter le service client DJI",
+      "de": "IMU-Fehler . Start nicht möglich. An ZIYAN-Support wenden",
+      "en": "IMU error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de IMU. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur IMU. Impossible de décoller. Contacter le service client ZIYAN",
       "ja": "IMU エラー。離陸できません。DJI サポートまでお問い合わせください",
-      "ko": "IMU 오류 . 이륙 불가. DJI 고객지원으로 문의해주세요",
-      "ru": "Ошибка IMU . Взлет невозможен. Обратитесь в службу поддержки DJI",
-      "tr": "IMU hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "IMU 오류 . 이륙 불가. ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Ошибка IMU . Взлет невозможен. Обратитесь в службу поддержки ZIYAN",
+      "tr": "IMU hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：IMU异常，请联系大疆售后服务"
     },
     "fpv_tip_0x16100076_in_the_sky": {
@@ -9251,14 +9251,14 @@
       "zh": "IMU异常，请返航或降落"
     },
     "fpv_tip_0x16100078": {
-      "de": "Kompassfehler. Start nicht möglich. An DJI-Support wenden",
-      "en": "Compass error. Unable to take off. Contact DJI Support",
-      "es": "Error de brújula. No se puede despegar. Ponte en contacto con la asistencia técnica de DJI",
-      "fr": "Erreur de compas. Impossible de décoller. Contactez l\\'assistance technique DJI",
+      "de": "Kompassfehler. Start nicht möglich. An ZIYAN-Support wenden",
+      "en": "Compass error. Unable to take off. Contact ZIYAN Support",
+      "es": "Error de brújula. No se puede despegar. Ponte en contacto con la asistencia técnica de ZIYAN",
+      "fr": "Erreur de compas. Impossible de décoller. Contactez l\\'assistance technique ZIYAN",
       "ja": "コンパスエラー。離陸できません。DJIサポートまでお問い合わせください",
-      "ko": "콤파스 오류. 이륙 불가. DJI 고객지원으로 문의해주세요",
-      "ru": "Ошибка компаса. Взлет невозможен. Обратитесь в службу поддержки DJI",
-      "tr": "Pusula hatası. Kalkış yapamıyor. DJI Destek ile iletişime geçin",
+      "ko": "콤파스 오류. 이륙 불가. ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Ошибка компаса. Взлет невозможен. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Pusula hatası. Kalkış yapamıyor. ZIYAN Destek ile iletişime geçin",
       "zh": "无法起飞：指南针异常，请联系大疆售后服务"
     },
     "fpv_tip_0x16100078_in_the_sky": {
@@ -10194,7 +10194,7 @@
     "fpv_tip_0x161000B5": {
       "ar": "",
       "de": "",
-      "en": "Remote ID module error. Unable to take off. Contact DJI Support",
+      "en": "Remote ID module error. Unable to take off. Contact ZIYAN Support",
       "es": "",
       "fr": "",
       "it": "",
@@ -10368,47 +10368,47 @@
       "zh": "电池温度低于10度，尽快返航或降落"
     },
     "fpv_tip_0x161000C8": {
-      "de": "Start fehlgeschlagen.Überprüfen, ob das Fluggerät mit dem DJI Assistant verbunden ist oder gerade aktualisiert wird.",
-      "en": "Unable to take off. Check whether aircraft is connected to DJI Assistant or system is updating",
-      "es": "No se puede despegar. Comprueba si la aeronave está conectada a DJI Assistant o si el sistema se está actualizando",
-      "fr": "Impossible de décoller. Vérifiez si l\\'appareil est connecté à DJI Assistant ou si une mise à jour est en cours",
+      "de": "Start fehlgeschlagen.Überprüfen, ob das Fluggerät mit dem ZIYAN Assistant verbunden ist oder gerade aktualisiert wird.",
+      "en": "Unable to take off. Check whether aircraft is connected to ZIYAN Assistant or system is updating",
+      "es": "No se puede despegar. Comprueba si la aeronave está conectada a ZIYAN Assistant o si el sistema se está actualizando",
+      "fr": "Impossible de décoller. Vérifiez si l\\'appareil est connecté à ZIYAN Assistant ou si une mise à jour est en cours",
       "ja": "離陸できません。機体がDJI Assistantに接続されているか、またはシステムが更新中か確認してください",
-      "ko": "이륙 불가. 기체가 DJI Assistant에 연결 또는 시스템 업데이트 상태 확인 필요",
+      "ko": "이륙 불가. 기체가 ZIYAN Assistant에 연결 또는 시스템 업데이트 상태 확인 필요",
       "ru": "Не удалось взлететь. Нарушено соединение DJI Assistant с дроном либо идет обновление системы",
-      "tr": "Kalkış yapamıyor. Aracın DJI Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
+      "tr": "Kalkış yapamıyor. Aracın ZIYAN Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
       "zh": "无法起飞：请确认usb是否已连接或者系统正在升级中"
     },
     "fpv_tip_0x161000C8_in_the_sky": {
-      "de": "Überprüfen, ob das Fluggerät mit dem DJI Assistant verbunden ist oder das System aktualisiert wird.",
-      "en": "Check whether aircraft is connected to DJI Assistant or system is updating",
-      "es": "Comprueba si la aeronave está conectada a DJI Assistant o si el sistema se está actualizando",
-      "fr": "Vérifiez si l\\'appareil est connecté à DJI Assistant ou si une mise à jour est en cours",
+      "de": "Überprüfen, ob das Fluggerät mit dem ZIYAN Assistant verbunden ist oder das System aktualisiert wird.",
+      "en": "Check whether aircraft is connected to ZIYAN Assistant or system is updating",
+      "es": "Comprueba si la aeronave está conectada a ZIYAN Assistant o si el sistema se está actualizando",
+      "fr": "Vérifiez si l\\'appareil est connecté à ZIYAN Assistant ou si une mise à jour est en cours",
       "ja": "機体がDJI Assistantに接続されているか、またはシステムが更新中か確認してください",
-      "ko": "기체가 DJI Assistant에 연결되었는지 또는 시스템 업데이트 상태 확인 필요",
-      "ru": "Проверьте, не подключен ли дрон к DJI Assistant или не обновляется ли система",
-      "tr": "Aracın DJI Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
+      "ko": "기체가 ZIYAN Assistant에 연결되었는지 또는 시스템 업데이트 상태 확인 필요",
+      "ru": "Проверьте, не подключен ли дрон к ZIYAN Assistant или не обновляется ли система",
+      "tr": "Aracın ZIYAN Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
       "zh": "请确认usb是否已连接或者系统正在升级中"
     },
     "fpv_tip_0x161000C9": {
-      "de": "Start nicht möglich. Überprüfen, ob das Fluggerät mit dem DJI Assistant verbunden ist oder das System aktualisiert wird.",
-      "en": "Unable to take off. Check whether aircraft is connected to DJI Assistant or system is updating",
-      "es": "No se puede despegar. Comprueba si la aeronave está conectada a DJI Assistant o si el sistema se está actualizando",
-      "fr": "Impossible de décoller. Vérifiez si l\\'appareil est connecté à DJI Assistant ou si une mise à jour est en cours",
+      "de": "Start nicht möglich. Überprüfen, ob das Fluggerät mit dem ZIYAN Assistant verbunden ist oder das System aktualisiert wird.",
+      "en": "Unable to take off. Check whether aircraft is connected to ZIYAN Assistant or system is updating",
+      "es": "No se puede despegar. Comprueba si la aeronave está conectada a ZIYAN Assistant o si el sistema se está actualizando",
+      "fr": "Impossible de décoller. Vérifiez si l\\'appareil est connecté à ZIYAN Assistant ou si une mise à jour est en cours",
       "ja": "離陸できません。機体がDJI Assistantに接続されているか、またはシステムが更新中か確認してください",
-      "ko": "이륙 불가. 기체가 DJI Assistant에 연결되었는지 또는 시스템 업데이트 상태 확인 필요",
-      "ru": "Невозможно выполнить взлет. Проверьте, не подключен ли дрон к DJI Assistant или не обновляется ли система",
-      "tr": "Kalkış yapamıyor. Aracın DJI Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
+      "ko": "이륙 불가. 기체가 ZIYAN Assistant에 연결되었는지 또는 시스템 업데이트 상태 확인 필요",
+      "ru": "Невозможно выполнить взлет. Проверьте, не подключен ли дрон к ZIYAN Assistant или не обновляется ли система",
+      "tr": "Kalkış yapamıyor. Aracın ZIYAN Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
       "zh": "无法起飞：请确认usb是否已连接或者系统正在升级中"
     },
     "fpv_tip_0x161000C9_in_the_sky": {
-      "de": "Überprüfen, ob das Fluggerät mit dem DJI Assistant verbunden ist oder das System aktualisiert wird.",
-      "en": "Check whether aircraft is connected to DJI Assistant or system is updating",
-      "es": "Comprueba si la aeronave está conectada a DJI Assistant o si el sistema se está actualizando",
-      "fr": "Vérifiez si l\\'appareil est connecté à DJI Assistant ou si une mise à jour est en cours",
+      "de": "Überprüfen, ob das Fluggerät mit dem ZIYAN Assistant verbunden ist oder das System aktualisiert wird.",
+      "en": "Check whether aircraft is connected to ZIYAN Assistant or system is updating",
+      "es": "Comprueba si la aeronave está conectada a ZIYAN Assistant o si el sistema se está actualizando",
+      "fr": "Vérifiez si l\\'appareil est connecté à ZIYAN Assistant ou si une mise à jour est en cours",
       "ja": "機体がDJI Assistantに接続されているか、またはシステムが更新中か確認してください",
-      "ko": "기체가 DJI Assistant에 연결되었는지 또는 시스템 업데이트 상태 확인 필요",
-      "ru": "Проверьте, не подключен ли дрон к DJI Assistant или не обновляется ли система",
-      "tr": "Aracın DJI Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
+      "ko": "기체가 ZIYAN Assistant에 연결되었는지 또는 시스템 업데이트 상태 확인 필요",
+      "ru": "Проверьте, не подключен ли дрон к ZIYAN Assistant или не обновляется ли система",
+      "tr": "Aracın ZIYAN Assistant’a bağlı olup olmadığını veya sistem güncellemesinin devam edip etmediğini kontrol edin",
       "zh": "请确认usb是否已连接或者系统正在升级中"
     },
     "fpv_tip_0x161000F1": {
@@ -10661,21 +10661,21 @@
     },
     "fpv_tip_0x161000FB": {
       "ar": "",
-      "de": "Start nicht möglich. Propeller beschädigt. DJI Support kontaktieren.",
-      "en": "Unable to take off. Propeller damaged. Contact DJI Support",
-      "es": "No se puede despegar. Hélice dañada. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Impossible de décoller. Hélice endommagée. Contactez le service client DJI",
+      "de": "Start nicht möglich. Propeller beschädigt. ZIYAN Support kontaktieren.",
+      "en": "Unable to take off. Propeller damaged. Contact ZIYAN Support",
+      "es": "No se puede despegar. Hélice dañada. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Impossible de décoller. Hélice endommagée. Contactez le service client ZIYAN",
       "id": "",
       "it": "",
       "ja": "離陸できません。プロペラが破損しています。DJIサポートまでお問い合わせください",
-      "ko": "이륙 불가. 프로펠러가 손상되었습니다. DJI 고객지원으로 문의하세요",
+      "ko": "이륙 불가. 프로펠러가 손상되었습니다. ZIYAN 고객지원으로 문의하세요",
       "nl": "",
       "pl": "",
       "pt": "",
       "pt-PT": "",
-      "ru": "Не удается выполнить взлет. Пропеллер поврежден. Свяжитесь со службой поддержки DJI",
+      "ru": "Не удается выполнить взлет. Пропеллер поврежден. Свяжитесь со службой поддержки ZIYAN",
       "th": "",
-      "tr": "Kalkış yapılamıyor. Pervane hasar gördü. DJI Destek birimiyle iletişime geçin",
+      "tr": "Kalkış yapılamıyor. Pervane hasar gördü. ZIYAN Destek birimiyle iletişime geçin",
       "ug": "",
       "vi": "",
       "zh": "无法起飞：桨叶损坏，请联系售后服务",
@@ -10683,21 +10683,21 @@
     },
     "fpv_tip_0x161000FC": {
       "ar": "",
-      "de": "Start nicht möglich. Standortauswahl von DJI Dock läuft",
-      "en": "Unable to take off. DJI Dock in site selection process",
-      "es": "No se puede despegar. DJI Dock en el proceso de selección del sitio",
-      "fr": "Impossible de décoller. DJI Dock dans le processus de sélection du site",
+      "de": "Start nicht möglich. Standortauswahl von ZIYAN Dock läuft",
+      "en": "Unable to take off. ZIYAN Dock in site selection process",
+      "es": "No se puede despegar. ZIYAN Dock en el proceso de selección del sitio",
+      "fr": "Impossible de décoller. ZIYAN Dock dans le processus de sélection du site",
       "id": "",
       "it": "",
       "ja": "離陸できません。DJI Dockがサイトを選択中です",
-      "ko": "이륙 불가. DJI Dock이 장소 선택 중입니다",
+      "ko": "이륙 불가. ZIYAN Dock이 장소 선택 중입니다",
       "nl": "",
       "pl": "",
       "pt": "",
       "pt-PT": "",
-      "ru": "Не удается выполнить взлет. DJI Dock в процессе выбора площадки",
+      "ru": "Не удается выполнить взлет. ZIYAN Dock в процессе выбора площадки",
       "th": "",
-      "tr": "Kalkış yapılamıyor. Yer seçimi sürecinde DJI Dock",
+      "tr": "Kalkış yapılamıyor. Yer seçimi sürecinde ZIYAN Dock",
       "ug": "",
       "vi": "",
       "zh": "无法起飞：机场选址中",
@@ -10811,7 +10811,7 @@
       "zh": "无法起飞：Remote ID 播报异常，无法获取遥控器位置"
     },
     "fpv_tip_0x161000b5": {
-      "en": "Remote ID module error. Unable to take off. Contact DJI Support",
+      "en": "Remote ID module error. Unable to take off. Contact ZIYAN Support",
       "zh": "无法起飞，Remote ID 模块异常，请联系售后服务"
     },
     "fpv_tip_0x161000c0": {
@@ -13209,7 +13209,7 @@
     },
     "fpv_tip_0x16471103": {
       "en": "",
-      "zh": "DJI GPS时间戳异常"
+      "zh": "ZIYAN GPS时间戳异常"
     },
     "fpv_tip_0x16471201": {
       "en": "",
@@ -14308,15 +14308,15 @@
       "zh-Hant": ""
     },
     "fpv_tip_0x17000006": {
-      "de": "Landeskennung nicht aktualisiert. Bestimmte Funktionen nicht verfügbar. Starkes GPS-Signal sicherstellen und mit DJI Pilot verbinden, um automatisch zu aktualisieren",
-      "en": "Country code not updated. Certain features unavailable. Make sure GPS signal is strong and connect to DJI Pilot to update automatically",
-      "es": "Código del país no actualizado. Algunas funciones no están disponibles. Asegúrate de que la señal GPS sea fuerte y conéctate a DJI Pilot para actualizar automáticamente",
-      "fr": "Code de pays non mis à jour. Certaines fonctionnalités ne sont pas disponibles. Assurez-vous que le signal GPS est fort et connectez-vous à DJI Pilot pour mettre à jour automatiquement",
-      "ja": "国コードが更新されていません。一部の機能は使用できません。GPS信号が強いことを確認し、DJI Pilotに接続すると、自動的に更新されます",
-      "ko": "국가 코드 업데이트 안 됨. 특정 기능 사용 불가. GPS 신호가 강한지 확인하고 DJI Pilot에 연결하여 자동으로 업데이트하세요.",
-      "ru": "Код страны не обновлен. Некоторые функции недоступны. Убедитесь, что сигнал GPS сильный, и подключитесь к DJI Pilot для автоматического обновления.",
-      "tr": "Ülke kodu güncellenmedi. Bazı özellikler kullanılamıyor. GPS sinyalinin güçlü olduğundan emin olun ve otomatik olarak güncellemek için DJI Pilot'a bağlanın",
-      "zh": "国家码未更新，部分功能受限，请保证飞机GPS信号良好并连接 DJI Pilot 自动更新"
+      "de": "Landeskennung nicht aktualisiert. Bestimmte Funktionen nicht verfügbar. Starkes GPS-Signal sicherstellen und mit ZIYAN GCS verbinden, um automatisch zu aktualisieren",
+      "en": "Country code not updated. Certain features unavailable. Make sure GPS signal is strong and connect to ZIYAN GCS to update automatically",
+      "es": "Código del país no actualizado. Algunas funciones no están disponibles. Asegúrate de que la señal GPS sea fuerte y conéctate a ZIYAN GCS para actualizar automáticamente",
+      "fr": "Code de pays non mis à jour. Certaines fonctionnalités ne sont pas disponibles. Assurez-vous que le signal GPS est fort et connectez-vous à ZIYAN GCS pour mettre à jour automatiquement",
+      "ja": "国コードが更新されていません。一部の機能は使用できません。GPS信号が強いことを確認し、ZIYAN GCSに接続すると、自動的に更新されます",
+      "ko": "국가 코드 업데이트 안 됨. 특정 기능 사용 불가. GPS 신호가 강한지 확인하고 ZIYAN GCS에 연결하여 자동으로 업데이트하세요.",
+      "ru": "Код страны не обновлен. Некоторые функции недоступны. Убедитесь, что сигнал GPS сильный, и подключитесь к ZIYAN GCS для автоматического обновления.",
+      "tr": "Ülke kodu güncellenmedi. Bazı özellikler kullanılamıyor. GPS sinyalinin güçlü olduğundan emin olun ve otomatik olarak güncellemek için ZIYAN GCS'a bağlanın",
+      "zh": "国家码未更新，部分功能受限，请保证飞机GPS信号良好并连接 ZIYAN GCS 自动更新"
     },
     "fpv_tip_0x17000006_in_the_sky": {
       "de": "Landeskennung nicht aktualisiert. Bestimmte Funktionen nicht verfügbar",
@@ -18558,14 +18558,14 @@
       "zh": "视觉NN降噪异常(视觉降噪)"
     },
     "fpv_tip_0x1A010007": {
-      "de": "System im Werksmodus. DJI Support kontaktieren",
-      "en": "System in factory mode. Contact DJI Support",
-      "es": "Sistema en modo de fábrica. Ponte en contacto con la Asistencia técnica de DJI",
-      "fr": "Système en mode usine. Contactez le service client DJI",
+      "de": "System im Werksmodus. ZIYAN Support kontaktieren",
+      "en": "System in factory mode. Contact ZIYAN Support",
+      "es": "Sistema en modo de fábrica. Ponte en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Système en mode usine. Contactez le service client ZIYAN",
       "ja": "システムが出荷時の初期モードですDJIサポートまでお問い合わせください",
-      "ko": "시스템이 공장 모드에 있습니다. DJI 고객지원에 문의하세요.",
-      "ru": "Система в заводском режиме. Обратитесь в службу поддержки DJI",
-      "tr": "Sistem, fabrika modunda. DJI Destek birimiyle iletişime geçin",
+      "ko": "시스템이 공장 모드에 있습니다. ZIYAN 고객지원에 문의하세요.",
+      "ru": "Система в заводском режиме. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Sistem, fabrika modunda. ZIYAN Destek birimiyle iletişime geçin",
       "zh": "当前处于工厂模式，请联系售后维修"
     },
     "fpv_tip_0x1A010040": {
@@ -21681,7 +21681,7 @@
     },
     "fpv_tip_0x1B010801": {
       "de": "Parameter der Kamera geändert. Smarte Verfolgung gestoppt",
-      "en": "DJI Pilot error. Target Acquisition paused. Restart DJI Pilot",
+      "en": "ZIYAN GCS error. Target Acquisition paused. Restart ZIYAN GCS",
       "es": "Parámetros de la cámara modificados. Smart Track detenido",
       "fr": "Paramètres de caméra modifiés. Smart Track interrompu",
       "ja": "カメラパラメーターを変更。スマートトラック停止",
@@ -21691,25 +21691,25 @@
       "zh": "APP状态异常，目标锁定功能停止，请重启APP"
     },
     "fpv_tip_0x1B010802": {
-      "de": "Fehler: DJI Pilot. Smarte Verfolgung unterbrochen. DJI Pilot neu starten",
-      "en": "DJI Pilot error. Smart Track paused. Restart DJI Pilot",
-      "es": "Error de DJI Pilot. Smart Track pausado. Reinicia DJI Pilot",
-      "fr": "Erreur de DJI Pilot. Smart Track mis en pause. Redémarrez DJI Pilot",
-      "ja": "DJI Pilotエラー。スマートトラック一時停止。DJI Pilotを再起動してください",
-      "ko": "DJI Pilot 오류. 스마트 트랙 일시 중지됨. DJI Pilot 재시작 필요",
-      "ru": "Ошибка DJI Pilot. Интеллектуальное следование приостановлено. Перезапустите DJI Pilot",
-      "tr": "DJI Pilot hatası. Akıllı Takip duraklatıldı. DJI Pilot’u yeniden başlat",
+      "de": "Fehler: ZIYAN GCS. Smarte Verfolgung unterbrochen. ZIYAN GCS neu starten",
+      "en": "ZIYAN GCS error. Smart Track paused. Restart ZIYAN GCS",
+      "es": "Error de ZIYAN GCS. Smart Track pausado. Reinicia ZIYAN GCS",
+      "fr": "Erreur de ZIYAN GCS. Smart Track mis en pause. Redémarrez ZIYAN GCS",
+      "ja": "ZIYAN GCSエラー。スマートトラック一時停止。ZIYAN GCSを再起動してください",
+      "ko": "ZIYAN GCS 오류. 스마트 트랙 일시 중지됨. ZIYAN GCS 재시작 필요",
+      "ru": "Ошибка ZIYAN GCS. Интеллектуальное следование приостановлено. Перезапустите ZIYAN GCS",
+      "tr": "ZIYAN GCS hatası. Akıllı Takip duraklatıldı. ZIYAN GCS’u yeniden başlat",
       "zh": "智能跟踪功能异常，请重启APP"
     },
     "fpv_tip_0x1B010803": {
-      "de": "Fehler: DJI Pilot. Smarte Verfolgung unterbrochen. DJI Pilot neu starten",
-      "en": "DJI Pilot error. Smart Track paused. Restart DJI Pilot",
-      "es": "Error de DJI Pilot. Smart Track pausado. Reinicia DJI Pilot",
-      "fr": "Erreur de DJI Pilot. Smart Track mis en pause. Redémarrez DJI Pilot",
-      "ja": "DJI Pilotエラー。スマートトラック一時停止。DJI Pilotを再起動してください",
-      "ko": "DJI Pilot 오류. 스마트 트랙 일시 중지됨. DJI Pilot 재시작 필요",
-      "ru": "Ошибка DJI Pilot. Интеллектуальное следование приостановлено. Перезапустите DJI Pilot",
-      "tr": "DJI Pilot hatası. Akıllı Takip duraklatıldı. DJI Pilot’u yeniden başlat",
+      "de": "Fehler: ZIYAN GCS. Smarte Verfolgung unterbrochen. ZIYAN GCS neu starten",
+      "en": "ZIYAN GCS error. Smart Track paused. Restart ZIYAN GCS",
+      "es": "Error de ZIYAN GCS. Smart Track pausado. Reinicia ZIYAN GCS",
+      "fr": "Erreur de ZIYAN GCS. Smart Track mis en pause. Redémarrez ZIYAN GCS",
+      "ja": "ZIYAN GCSエラー。スマートトラック一時停止。ZIYAN GCSを再起動してください",
+      "ko": "ZIYAN GCS 오류. 스마트 트랙 일시 중지됨. ZIYAN GCS 재시작 필요",
+      "ru": "Ошибка ZIYAN GCS. Интеллектуальное следование приостановлено. Перезапустите ZIYAN GCS",
+      "tr": "ZIYAN GCS hatası. Akıllı Takip duraklatıldı. ZIYAN GCS’u yeniden başlat",
       "zh": "智能跟踪功能异常，请重启APP"
     },
     "fpv_tip_0x1B010C01": {
@@ -22524,7 +22524,7 @@
     "fpv_tip_0x1B080002": {
       "ar": "",
       "de": "",
-      "en": "Remote ID module error. Contact DJI Support",
+      "en": "Remote ID module error. Contact ZIYAN Support",
       "es": "",
       "fr": "",
       "it": "",
@@ -24223,15 +24223,15 @@
     },
     "fpv_tip_0x1C000306": {
       "de": "Objektiv von Drittanbieter",
-      "en": "Non-DJI Enterprise lens",
-      "es": "Objetivo que no es de DJI Enterprise",
-      "fr": "Objectif non DJI Enterprise",
+      "en": "Non-ZIYAN Enterprise lens",
+      "es": "Objetivo que no es de ZIYAN Enterprise",
+      "fr": "Objectif non ZIYAN Enterprise",
       "it": "",
-      "ja": "DJI Enterprise製以外のレンズ",
-      "ko": "비순정 DJI 기업 솔루션 렌즈",
+      "ja": "ZIYAN Enterprise製以外のレンズ",
+      "ko": "비순정 ZIYAN 기업 솔루션 렌즈",
       "pt": "",
-      "ru": "Объектив не от DJI Enterprise",
-      "tr": "DJI Enterprise marka olmayan mercek",
+      "ru": "Объектив не от ZIYAN Enterprise",
+      "tr": "ZIYAN Enterprise marka olmayan mercek",
       "zh": "非DJI ENTERPRISE镜头"
     },
     "fpv_tip_0x1C000310": {
@@ -24750,26 +24750,26 @@
       "zh": "内参检校参数过旧"
     },
     "fpv_tip_0x1C001001": {
-      "de": "DJI PROSSD-Fragmentierungsrisiko erkannt. Formatierung des Speichergeräts empfohlen",
-      "en": "DJI PROSSD fragmentation risk detected. Formatting storage device recommended",
-      "es": "Riesgo de fragmentación de DJI PROSSD detectado. Se recomienda formatear el dispositivo de almacenamiento",
-      "fr": "Risque de fragmentation DJI PROSSD détecté. Formatage du périphérique de stockage recommandé",
-      "ja": "DJI PROSSDの断片化のリスクが検出されました。ストレージ機器のフォーマットをお勧めします",
-      "ko": "DJI PROSSD 단편화 위험이 감지되었습니다. 저장 장치 포맷을 권장합니다",
-      "ru": "Обнаружен риск фрагментации DJI PROSSD. Рекомендуется форматирование устройства хранения",
-      "tr": "DJI PROSSD parçalanma riski algılandı. Depolama cihazının biçimlendirilmesi önerilir",
-      "zh": "DJI PROSSD存储碎片化即将满，建议格式化"
+      "de": "ZIYAN PROSSD-Fragmentierungsrisiko erkannt. Formatierung des Speichergeräts empfohlen",
+      "en": "ZIYAN PROSSD fragmentation risk detected. Formatting storage device recommended",
+      "es": "Riesgo de fragmentación de ZIYAN PROSSD detectado. Se recomienda formatear el dispositivo de almacenamiento",
+      "fr": "Risque de fragmentation ZIYAN PROSSD détecté. Formatage du périphérique de stockage recommandé",
+      "ja": "ZIYAN PROSSDの断片化のリスクが検出されました。ストレージ機器のフォーマットをお勧めします",
+      "ko": "ZIYAN PROSSD 단편화 위험이 감지되었습니다. 저장 장치 포맷을 권장합니다",
+      "ru": "Обнаружен риск фрагментации ZIYAN PROSSD. Рекомендуется форматирование устройства хранения",
+      "tr": "ZIYAN PROSSD parçalanma riski algılandı. Depolama cihazının biçimlendirilmesi önerilir",
+      "zh": "ZIYAN PROSSD存储碎片化即将满，建议格式化"
     },
     "fpv_tip_0x1C001002": {
-      "de": "DJI PROSSD fragmentiert. Formatierung des Speichergeräts empfohlen",
-      "en": "DJI PROSSD fragmented. Formatting storage device recommended",
-      "es": "DJI PROSSD fragmentado. Se recomienda formatear el dispositivo de almacenamiento",
-      "fr": "DJI PROSSD fragmenté. Formatage du périphérique de stockage recommandé",
-      "ja": "DJI PROSSDが断片化しています。ストレージ機器のフォーマットをお勧めします",
-      "ko": "DJI PROSSD가 단편화되었습니다. 저장 장치 포맷을 권장합니다",
-      "ru": "DJI PROSSD фрагментирован. Рекомендуется форматирование устройства хранения",
-      "tr": "DJI PROSSD parçalandı. Depolama cihazının biçimlendirilmesi önerilir",
-      "zh": "DJI PROSSD存储碎片化已满，建议格式化"
+      "de": "ZIYAN PROSSD fragmentiert. Formatierung des Speichergeräts empfohlen",
+      "en": "ZIYAN PROSSD fragmented. Formatting storage device recommended",
+      "es": "ZIYAN PROSSD fragmentado. Se recomienda formatear el dispositivo de almacenamiento",
+      "fr": "ZIYAN PROSSD fragmenté. Formatage du périphérique de stockage recommandé",
+      "ja": "ZIYAN PROSSDが断片化しています。ストレージ機器のフォーマットをお勧めします",
+      "ko": "ZIYAN PROSSD가 단편화되었습니다. 저장 장치 포맷을 권장합니다",
+      "ru": "ZIYAN PROSSD фрагментирован. Рекомендуется форматирование устройства хранения",
+      "tr": "ZIYAN PROSSD parçalandı. Depolama cihazının biçimlendirilmesi önerilir",
+      "zh": "ZIYAN PROSSD存储碎片化已满，建议格式化"
     },
     "fpv_tip_0x1C001003": {
       "de": "",
@@ -24780,50 +24780,50 @@
       "ko": "",
       "ru": "",
       "tr": "",
-      "zh": "获取 DJI PROSSD 存储信息失败，避免存储风险，请备份素材后格式化"
+      "zh": "获取 ZIYAN PROSSD 存储信息失败，避免存储风险，请备份素材后格式化"
     },
     "fpv_tip_0x1C001101": {
-      "de": "Das Ende der Lebensdauer von DJI PROSSD ist bald erreicht. Austausch des Speichergeräts empfohlen.",
-      "en": "DJI PROSSD approaching end of lifespan. Replacing storage device recommended",
-      "es": "DJI PROSSD cerca del final de su vida útil. Se recomienda sustituir el dispositivo de almacenamiento",
-      "fr": "DJI PROSSD bientôt en fin de vie. Remplacement du périphérique de stockage recommandé",
-      "ja": "DJI PROSSDが有効期限に近づいています。ストレージ機器の交換をお勧めします",
-      "ko": "DJI PROSSD가 수명을 거의 다했습니다. 저장 장치 교체를 권장합니다",
-      "ru": "Срок службы DJI PROSSD подходит к концу. Рекомендуется замена устройства хранения",
-      "tr": "DJI PROSSD kullanım ömrünün sonuna yaklaşıyor. Depolama cihazının yenilenmesi önerilir",
-      "zh": "DJI PROSSD读写量即将到达上限，建议更换"
+      "de": "Das Ende der Lebensdauer von ZIYAN PROSSD ist bald erreicht. Austausch des Speichergeräts empfohlen.",
+      "en": "ZIYAN PROSSD approaching end of lifespan. Replacing storage device recommended",
+      "es": "ZIYAN PROSSD cerca del final de su vida útil. Se recomienda sustituir el dispositivo de almacenamiento",
+      "fr": "ZIYAN PROSSD bientôt en fin de vie. Remplacement du périphérique de stockage recommandé",
+      "ja": "ZIYAN PROSSDが有効期限に近づいています。ストレージ機器の交換をお勧めします",
+      "ko": "ZIYAN PROSSD가 수명을 거의 다했습니다. 저장 장치 교체를 권장합니다",
+      "ru": "Срок службы ZIYAN PROSSD подходит к концу. Рекомендуется замена устройства хранения",
+      "tr": "ZIYAN PROSSD kullanım ömrünün sonuna yaklaşıyor. Depolama cihazının yenilenmesi önerilir",
+      "zh": "ZIYAN PROSSD读写量即将到达上限，建议更换"
     },
     "fpv_tip_0x1C001102": {
-      "de": "Das Ende der Lebensdauer von DJI PROSSD ist erreicht. Austausch des Speichergeräts empfohlen",
-      "en": "DJI PROSSD reached end of lifespan. Replacing storage device recommended",
-      "es": "DJI PROSSD ha alcanzado el final de su vida útil. Se recomienda sustituir el dispositivo de almacenamiento",
-      "fr": "DJI PROSSD a atteint sa fin de vie. Remplacement du périphérique de stockage recommandé",
-      "ja": "DJI PROSSDが有効期限に達しました。ストレージ機器の交換をお勧めします",
-      "ko": "DJI PROSSD가 수명을 다했습니다. 저장 장치 교체를 권장합니다",
-      "ru": "Срок службы DJI PROSSD подошел к концу. Рекомендуется замена устройства хранения",
-      "tr": "DJI PROSSD kullanım ömrünün sonuna erişti. Depolama cihazının yenilenmesi önerilir",
-      "zh": "DJI PROSSD读写量已达上限，建议更换"
+      "de": "Das Ende der Lebensdauer von ZIYAN PROSSD ist erreicht. Austausch des Speichergeräts empfohlen",
+      "en": "ZIYAN PROSSD reached end of lifespan. Replacing storage device recommended",
+      "es": "ZIYAN PROSSD ha alcanzado el final de su vida útil. Se recomienda sustituir el dispositivo de almacenamiento",
+      "fr": "ZIYAN PROSSD a atteint sa fin de vie. Remplacement du périphérique de stockage recommandé",
+      "ja": "ZIYAN PROSSDが有効期限に達しました。ストレージ機器の交換をお勧めします",
+      "ko": "ZIYAN PROSSD가 수명을 다했습니다. 저장 장치 교체를 권장합니다",
+      "ru": "Срок службы ZIYAN PROSSD подошел к концу. Рекомендуется замена устройства хранения",
+      "tr": "ZIYAN PROSSD kullanım ömrünün sonuna erişti. Depolama cihazının yenilenmesi önerilir",
+      "zh": "ZIYAN PROSSD读写量已达上限，建议更换"
     },
     "fpv_tip_0x1C001103": {
       "de": "In DJI PROSSD gespeicherte Daten konnten nicht abgerufen werden. Sichere die Dateien, bevor du DJI PROSSD formatierst, um Datenverlust zu vermeiden",
-      "en": "Failed to obtain data stored in DJI PROSSD. Back up files before formatting DJI PROSSD to avoid data loss",
-      "es": "Error al obtener los datos almacenados en DJI PROSSD. Para evitar la pérdida de datos, realice una copia de seguridad de los archivos antes de formatear DJI PROSSD",
+      "en": "Failed to obtain data stored in ZIYAN PROSSD. Back up files before formatting ZIYAN PROSSD to avoid data loss",
+      "es": "Error al obtener los datos almacenados en ZIYAN PROSSD. Para evitar la pérdida de datos, realice una copia de seguridad de los archivos antes de formatear ZIYAN PROSSD",
       "fr": "Impossible d'obtenir les données stockées dans DJI PROSSD. Sauvegardez les fichiers avant de formater DJI PROSSD pour éviter toute perte de données",
-      "ja": "DJI ProSSDに保存されているデータの取得に失敗しました。データの消失を回避するため、DJI ProSSDをフォーマットする前にファイルをバックアップしてください",
-      "ko": "DJI PROSSD에 저장된 데이터를 가져오지 못했습니다. 데이터 손실을 방지하기 위해 DJI PROSSD를 포맷하기 전에 파일을 백업하세요.",
-      "ru": "Не удалось получить данные из DJI PROSSD. Во избежание потери данных выполните резервное копирование файлов перед форматированием DJI PROSSD",
-      "tr": "DJI PROSSD'de saklanan veriler alınamadı. Veri kaybını önlemek için DJI PROSSD'yi biçimlendirmeden önce dosyaları yedekleyin",
-      "zh": "获取 DJI PROSSD 存储信息失败，避免存储风险，请备份素材后格式化"
+      "ja": "ZIYAN ProSSDに保存されているデータの取得に失敗しました。データの消失を回避するため、DJI ProSSDをフォーマットする前にファイルをバックアップしてください",
+      "ko": "ZIYAN PROSSD에 저장된 데이터를 가져오지 못했습니다. 데이터 손실을 방지하기 위해 ZIYAN PROSSD를 포맷하기 전에 파일을 백업하세요.",
+      "ru": "Не удалось получить данные из ZIYAN PROSSD. Во избежание потери данных выполните резервное копирование файлов перед форматированием ZIYAN PROSSD",
+      "tr": "ZIYAN PROSSD'de saklanan veriler alınamadı. Veri kaybını önlemek için ZIYAN PROSSD'yi biçimlendirmeden önce dosyaları yedekleyin",
+      "zh": "获取 ZIYAN PROSSD 存储信息失败，避免存储风险，请备份素材后格式化"
     },
     "fpv_tip_0x1C001201": {
-      "de": "DJI PROSSD zum Starten der Aufnahme verwenden",
-      "en": "Use DJI PROSSD to start recording",
-      "es": "Utilizar DJI PROSSD para iniciar grabación",
-      "fr": "Utiliser DJI PROSSD pour lancer l’enregistrement",
-      "ja": "DJI PROSSDを使用して撮影を開始してください",
-      "ko": "DJI PROSSD를 사용해 녹화를 시작하세요",
-      "ru": "Используйте DJI PROSSD, чтобы начать запись",
-      "tr": "Kayda başlamak için DJI PROSSD'yi kullanın",
+      "de": "ZIYAN PROSSD zum Starten der Aufnahme verwenden",
+      "en": "Use ZIYAN PROSSD to start recording",
+      "es": "Utilizar ZIYAN PROSSD para iniciar grabación",
+      "fr": "Utiliser ZIYAN PROSSD pour lancer l’enregistrement",
+      "ja": "ZIYAN PROSSDを使用して撮影を開始してください",
+      "ko": "ZIYAN PROSSD를 사용해 녹화를 시작하세요",
+      "ru": "Используйте ZIYAN PROSSD, чтобы начать запись",
+      "tr": "Kayda başlamak için ZIYAN PROSSD'yi kullanın",
       "zh": "请使用DJI PROSSD以正常使用录像功能"
     },
     "fpv_tip_0x1C001301": {
@@ -24838,26 +24838,26 @@
       "zh": "视频写入失败，正在停止录像"
     },
     "fpv_tip_0x1C001302": {
-      "de": "Niedrige DJI PROSSD-Schreibgeschwindigkeit. Aufnahme wird gestoppt...",
-      "en": "DJI PROSSD write speed low. Stopping recording...",
-      "es": "Baja velocidad de escritura en DJI PROSSD. Deteniendo la grabación...",
-      "fr": "Vitesse d’écriture DJI PROSSD faible. Arrêt de l’enregistrement en cours...",
-      "ja": "DJI PROSSDの書き込みが低速です。撮影を停止しています...",
-      "ko": "DJI PROSSD 쓰기 속도가 낮습니다. 녹화 중단 중...",
-      "ru": "Низкая скорость записи DJI PROSSD. Выполняется остановка записи...",
-      "tr": "DJI PROSSD yazma hızı düşük. Kayıt durduruluyor...",
-      "zh": "DJI PROSSD写入速度慢，正在停止录像"
+      "de": "Niedrige ZIYAN PROSSD-Schreibgeschwindigkeit. Aufnahme wird gestoppt...",
+      "en": "ZIYAN PROSSD write speed low. Stopping recording...",
+      "es": "Baja velocidad de escritura en ZIYAN PROSSD. Deteniendo la grabación...",
+      "fr": "Vitesse d’écriture ZIYAN PROSSD faible. Arrêt de l’enregistrement en cours...",
+      "ja": "ZIYAN PROSSDの書き込みが低速です。撮影を停止しています...",
+      "ko": "ZIYAN PROSSD 쓰기 속도가 낮습니다. 녹화 중단 중...",
+      "ru": "Низкая скорость записи ZIYAN PROSSD. Выполняется остановка записи...",
+      "tr": "ZIYAN PROSSD yazma hızı düşük. Kayıt durduruluyor...",
+      "zh": "ZIYAN PROSSD写入速度慢，正在停止录像"
     },
     "fpv_tip_0x1C001303": {
-      "de": "Unzureichender Speicherplatz auf DJI PROSSD. Aufnahme wird gestoppt...",
-      "en": "Insufficient storage on DJI PROSSD. Stopping recording...",
-      "es": "Almacenamiento insuficiente en DJI PROSSD. Deteniendo la grabación...",
-      "fr": "Stockage insuffisant sur DJI PROSSD. Arrêt de l’enregistrement en cours...",
-      "ja": "DJI PROSSDのストレージが不足しています。撮影を停止しています...",
-      "ko": "DJI PROSSD에 저장 공간이 충분하지 않습니다. 녹화 중단 중...",
-      "ru": "Недостаточно места на DJI PROSSD. Выполняется остановка записи...",
-      "tr": "DJI PROSSD'de yetersiz depolama alanı. Kayıt durduruluyor...",
-      "zh": "DJI PROSSD剩余空间不足，正在停止录像"
+      "de": "Unzureichender Speicherplatz auf ZIYAN PROSSD. Aufnahme wird gestoppt...",
+      "en": "Insufficient storage on ZIYAN PROSSD. Stopping recording...",
+      "es": "Almacenamiento insuficiente en ZIYAN PROSSD. Deteniendo la grabación...",
+      "fr": "Stockage insuffisant sur ZIYAN PROSSD. Arrêt de l’enregistrement en cours...",
+      "ja": "ZIYAN PROSSDのストレージが不足しています。撮影を停止しています...",
+      "ko": "ZIYAN PROSSD에 저장 공간이 충분하지 않습니다. 녹화 중단 중...",
+      "ru": "Недостаточно места на ZIYAN PROSSD. Выполняется остановка записи...",
+      "tr": "ZIYAN PROSSD'de yetersiz depolama alanı. Kayıt durduruluyor...",
+      "zh": "ZIYAN PROSSD剩余空间不足，正在停止录像"
     },
     "fpv_tip_0x1C001306": {
       "en": "System busy. Recording not allowed",
@@ -25000,48 +25000,48 @@
       "zh": "相机信号链路不稳定，请尝试重新拔插云台"
     },
     "fpv_tip_0x1C001501": {
-      "de": "Lichtsensorfehler. DJI Support kontaktieren",
-      "en": "Light sensor error. Contact DJI Support",
-      "es": "Error del sensor de luz. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Erreur du capteur de lumière. Contactez le service client DJI",
+      "de": "Lichtsensorfehler. ZIYAN Support kontaktieren",
+      "en": "Light sensor error. Contact ZIYAN Support",
+      "es": "Error del sensor de luz. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Erreur du capteur de lumière. Contactez le service client ZIYAN",
       "ja": "光センサーエラーです。DJIサポートまでお問い合わせください",
-      "ko": "광 센서 오류. DJI 고객지원으로 문의하세요",
-      "ru": "Ошибка датчика освещенности. Свяжитесь со службой поддержки DJI",
-      "tr": "Işık sensörü hatası. DJI Destek birimiyle iletişime geçin",
+      "ko": "광 센서 오류. ZIYAN 고객지원으로 문의하세요",
+      "ru": "Ошибка датчика освещенности. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "Işık sensörü hatası. ZIYAN Destek birimiyle iletişime geçin",
       "zh": "光照传感器异常，请联系售后服务"
     },
     "fpv_tip_0x1C001502": {
-      "de": "Lichtsensorfehler. DJI Support kontaktieren.",
-      "en": "Light sensor error. Contact DJI Support",
-      "es": "Error del sensor de luz. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Light sensor error. Contact DJI Support",
+      "de": "Lichtsensorfehler. ZIYAN Support kontaktieren.",
+      "en": "Light sensor error. Contact ZIYAN Support",
+      "es": "Error del sensor de luz. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Light sensor error. Contact ZIYAN Support",
       "ja": "光センサーエラーです。DJIサポートまでお問い合わせください",
-      "ko": "광 센서 오류. DJI 고객지원으로 문의하세요",
-      "ru": "Ошибка датчика освещенности. Свяжитесь со службой поддержки DJI",
-      "tr": "Işık sensörü hatası. DJI Destek birimiyle iletişime geçin",
+      "ko": "광 센서 오류. ZIYAN 고객지원으로 문의하세요",
+      "ru": "Ошибка датчика освещенности. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "Işık sensörü hatası. ZIYAN Destek birimiyle iletişime geçin",
       "zh": "光照传感器异常，请联系售后服务"
     },
     "fpv_tip_0x1C001503": {
-      "de": "Kalibrierungsdaten Lichtsensor fehlerhaft. DJI Support kontaktieren",
-      "en": "Light sensor calibration data error. Contact DJI Support",
-      "es": "Error de datos de calibración del sensor de luz. Póngase en contacto con la Asistencia técnica de DJI",
-      "fr": "Erreur de données de l'étalonnage du capteur de lumière. Contact DJI Support",
+      "de": "Kalibrierungsdaten Lichtsensor fehlerhaft. ZIYAN Support kontaktieren",
+      "en": "Light sensor calibration data error. Contact ZIYAN Support",
+      "es": "Error de datos de calibración del sensor de luz. Póngase en contacto con la Asistencia técnica de ZIYAN",
+      "fr": "Erreur de données de l'étalonnage du capteur de lumière. Contact ZIYAN Support",
       "ja": "光センサーキャリブレーションデータエラーです。DJIサポートまでお問い合わせください",
-      "ko": "광 센서 캘리브레이션 데이터 오류. DJI 고객지원으로 문의하세요",
-      "ru": "Ошибка данных калибровки датчика освещенности. Свяжитесь со службой поддержки DJI",
-      "tr": "Işık sensörü kalibrasyonu veri hatası. DJI Destek birimiyle iletişime geçin",
+      "ko": "광 센서 캘리브레이션 데이터 오류. ZIYAN 고객지원으로 문의하세요",
+      "ru": "Ошибка данных калибровки датчика освещенности. Свяжитесь со службой поддержки ZIYAN",
+      "tr": "Işık sensörü kalibrasyonu veri hatası. ZIYAN Destek birimiyle iletişime geçin",
       "zh": "光照传感器标定数据异常，请联系售后服务"
     },
     "fpv_tip_0x1C001603": {
-      "de": "DJI PROSSD kann nicht verwendet werden. Speichergerät entfernen und wieder einsetzen",
-      "en": "Unable to use DJI PROSSD. Remove and insert storage device again",
-      "es": "No se puede utilizar DJI PROSSD. Retira el dispositivo de almacenamiento e insértalo de nuevo",
-      "fr": "Impossible d’utiliser DJI PROSSD. Retirer et réinsérer le périphérique de stockage",
-      "ja": "DJI PROSSDを使用できません。ストレージ機器を取り付け直してください",
-      "ko": "DJI PROSSD를 사용할 수 없습니다. 저장 장치를 제거했다가 다시 삽입하세요",
-      "ru": "Использование DJI PROSSD невозможно. Извлеките и повторно вставьте устройство хранения",
-      "tr": "DJI PROSSD kullanılamıyor. Depolama cihazını çıkarın ve yeniden takın",
-      "zh": "DJI PROSSD存储不可挂载，请重新拔插"
+      "de": "ZIYAN PROSSD kann nicht verwendet werden. Speichergerät entfernen und wieder einsetzen",
+      "en": "Unable to use ZIYAN PROSSD. Remove and insert storage device again",
+      "es": "No se puede utilizar ZIYAN PROSSD. Retira el dispositivo de almacenamiento e insértalo de nuevo",
+      "fr": "Impossible d’utiliser ZIYAN PROSSD. Retirer et réinsérer le périphérique de stockage",
+      "ja": "ZIYAN PROSSDを使用できません。ストレージ機器を取り付け直してください",
+      "ko": "ZIYAN PROSSD를 사용할 수 없습니다. 저장 장치를 제거했다가 다시 삽입하세요",
+      "ru": "Использование ZIYAN PROSSD невозможно. Извлеките и повторно вставьте устройство хранения",
+      "tr": "ZIYAN PROSSD kullanılamıyor. Depolama cihazını çıkarın ve yeniden takın",
+      "zh": "ZIYAN PROSSD存储不可挂载，请重新拔插"
     },
     "fpv_tip_0x1C001604": {
       "ar": "",
@@ -25081,125 +25081,125 @@
     },
     "fpv_tip_0x1C001606": {
       "ar": "",
-      "de": "DJI PROSSD nicht formatiert",
-      "en": "DJI PROSSD not formatted",
-      "es": "DJI PROSSD no formateado",
-      "fr": "DJI PROSSD non formaté",
+      "de": "ZIYAN PROSSD nicht formatiert",
+      "en": "ZIYAN PROSSD not formatted",
+      "es": "ZIYAN PROSSD no formateado",
+      "fr": "ZIYAN PROSSD non formaté",
       "it": "",
-      "ja": "DJI PROSSDがフォーマットされていません",
-      "ko": "DJI PROSSD가 포맷되지 않은 상태입니다",
+      "ja": "ZIYAN PROSSDがフォーマットされていません",
+      "ko": "ZIYAN PROSSD가 포맷되지 않은 상태입니다",
       "pt": "",
-      "ru": "DJI PROSSD не отформатирован",
-      "tr": "DJI PROSSD biçimlendirilmemiş",
-      "zh": "DJI PROSSD存储未格式化"
+      "ru": "ZIYAN PROSSD не отформатирован",
+      "tr": "ZIYAN PROSSD biçimlendirilmemiş",
+      "zh": "ZIYAN PROSSD存储未格式化"
     },
     "fpv_tip_0x1C001607": {
       "ar": "",
-      "de": "DJI PROSSD wird formatiert...",
-      "en": "Formatting DJI PROSSD...",
-      "es": "Formateando DJI PROSSD...",
-      "fr": "Formatage DJI PROSSD en cours...",
+      "de": "ZIYAN PROSSD wird formatiert...",
+      "en": "Formatting ZIYAN PROSSD...",
+      "es": "Formateando ZIYAN PROSSD...",
+      "fr": "Formatage ZIYAN PROSSD en cours...",
       "it": "",
-      "ja": "DJI PROSSDのフォーマット中...",
-      "ko": "DJI PROSSD 포맷 중...",
+      "ja": "ZIYAN PROSSDのフォーマット中...",
+      "ko": "ZIYAN PROSSD 포맷 중...",
       "pt": "",
-      "ru": "Выполняется форматирование DJI PROSSD...",
-      "tr": "DJI PROSSD biçimlendiriliyor...",
-      "zh": "DJI PROSSD正在格式化"
+      "ru": "Выполняется форматирование ZIYAN PROSSD...",
+      "tr": "ZIYAN PROSSD biçimlendiriliyor...",
+      "zh": "ZIYAN PROSSD正在格式化"
     },
     "fpv_tip_0x1C001608": {
       "ar": "",
-      "de": "DJI PROSSD-Dateisystemformat nicht unterstützt",
-      "en": "DJI PROSSD file system format not supported",
-      "es": "Formato del sistema de archivos de DJI PROSSD no compatible",
-      "fr": "Format de système de fichiers DJI PROSSD non pris en charge",
+      "de": "ZIYAN PROSSD-Dateisystemformat nicht unterstützt",
+      "en": "ZIYAN PROSSD file system format not supported",
+      "es": "Formato del sistema de archivos de ZIYAN PROSSD no compatible",
+      "fr": "Format de système de fichiers ZIYAN PROSSD non pris en charge",
       "it": "",
-      "ja": "DJI PROSSDのファイルシステム形式には対応していません",
-      "ko": "DJI PROSSD 파일 시스템 포맷이 지원되지 않습니다",
+      "ja": "ZIYAN PROSSDのファイルシステム形式には対応していません",
+      "ko": "ZIYAN PROSSD 파일 시스템 포맷이 지원되지 않습니다",
       "pt": "",
-      "ru": "Формат файловой системы DJI PROSSD не поддерживается",
-      "tr": "DJI PROSSD dosya sistemi biçimi desteklenmiyor.",
-      "zh": "DJI PROSSD文件系统不支持"
+      "ru": "Формат файловой системы ZIYAN PROSSD не поддерживается",
+      "tr": "ZIYAN PROSSD dosya sistemi biçimi desteklenmiyor.",
+      "zh": "ZIYAN PROSSD文件系统不支持"
     },
     "fpv_tip_0x1C001609": {
       "ar": "",
-      "de": "DJI PROSSD wird aktualisiert...",
-      "en": "Refreshing DJI PROSSD...",
-      "es": "Actualizando DJI PROSSD...",
-      "fr": "Actualisation de DJI PROSSD...",
+      "de": "ZIYAN PROSSD wird aktualisiert...",
+      "en": "Refreshing ZIYAN PROSSD...",
+      "es": "Actualizando ZIYAN PROSSD...",
+      "fr": "Actualisation de ZIYAN PROSSD...",
       "it": "",
-      "ja": "DJI PROSSDの更新中...",
-      "ko": "DJI PROSSD 새로고침 중...",
+      "ja": "ZIYAN PROSSDの更新中...",
+      "ko": "ZIYAN PROSSD 새로고침 중...",
       "pt": "",
-      "ru": "Выполняется обновление DJI PROSSD...",
-      "tr": "DJI PROSSD yenileniyor...",
-      "zh": "DJI PROSSD正在刷新"
+      "ru": "Выполняется обновление ZIYAN PROSSD...",
+      "tr": "ZIYAN PROSSD yenileniyor...",
+      "zh": "ZIYAN PROSSD正在刷新"
     },
     "fpv_tip_0x1C00160A": {
-      "de": "DJI PROSSD voll",
-      "en": "DJI PROSSD full",
-      "es": "DJI PROSSD lleno",
-      "fr": "DJI PROSSD plein",
-      "ja": "DJI PROSSDが満杯です",
-      "ko": "DJI PROSSD에 공간이 없습니다",
-      "ru": "DJI PROSSD заполнен",
-      "tr": "DJI PROSSD dolu",
-      "zh": "DJI PROSSD存储空间已满"
+      "de": "ZIYAN PROSSD voll",
+      "en": "ZIYAN PROSSD full",
+      "es": "ZIYAN PROSSD lleno",
+      "fr": "ZIYAN PROSSD plein",
+      "ja": "ZIYAN PROSSDが満杯です",
+      "ko": "ZIYAN PROSSD에 공간이 없습니다",
+      "ru": "ZIYAN PROSSD заполнен",
+      "tr": "ZIYAN PROSSD dolu",
+      "zh": "ZIYAN PROSSD存储空间已满"
     },
     "fpv_tip_0x1C00160B": {
-      "de": "DJI PROSSD-Dateibenennungsindex voll. Zusätzliche Dateien löschen",
-      "en": "DJI PROSSD file naming index full. Delete extra files",
-      "es": "Índice de nomenclatura de archivo DJI PROSSD completo. Elimina los archivos adicionales",
-      "fr": "Index de nommage des fichiers DJI PROSSD plein. Supprimer les fichiers excédentaires",
-      "ja": "DJI PROSSDのファイルネーミングインデックスが満杯です。余分なファイルを削除してください",
-      "ko": "DJI PROSSD 파일 이름 지정 인덱스에 공간이 없습니다. 불필요한 파일을 삭제하세요",
-      "ru": "Индекс имен файлов DJI PROSSD заполнен. Удалите лишние файлы",
-      "tr": "DJI PROSSD adlandırma dizini dolu. Fazla dosyaları sil",
-      "zh": "DJI PROSSD文件序号溢出，请删除多余素材"
+      "de": "ZIYAN PROSSD-Dateibenennungsindex voll. Zusätzliche Dateien löschen",
+      "en": "ZIYAN PROSSD file naming index full. Delete extra files",
+      "es": "Índice de nomenclatura de archivo ZIYAN PROSSD completo. Elimina los archivos adicionales",
+      "fr": "Index de nommage des fichiers ZIYAN PROSSD plein. Supprimer les fichiers excédentaires",
+      "ja": "ZIYAN PROSSDのファイルネーミングインデックスが満杯です。余分なファイルを削除してください",
+      "ko": "ZIYAN PROSSD 파일 이름 지정 인덱스에 공간이 없습니다. 불필요한 파일을 삭제하세요",
+      "ru": "Индекс имен файлов ZIYAN PROSSD заполнен. Удалите лишние файлы",
+      "tr": "ZIYAN PROSSD adlandırma dizini dolu. Fazla dosyaları sil",
+      "zh": "ZIYAN PROSSD文件序号溢出，请删除多余素材"
     },
     "fpv_tip_0x1C00160C": {
-      "de": "DJI PROSSD wird initialisiert...",
-      "en": "Initializing DJI PROSSD…",
-      "es": "Inicializando DJI PROSSD...",
-      "fr": "Initialisation de DJI PROSSD…",
-      "ja": "DJI PROSSDの初期化中...",
-      "ko": "DJI PROSSD 초기화 중…",
-      "ru": "Инициализация DJI PROSSD…",
-      "tr": "DJI PROSSD başlatılıyor…",
-      "zh": "DJI PROSSD正在初始化"
+      "de": "ZIYAN PROSSD wird initialisiert...",
+      "en": "Initializing ZIYAN PROSSD…",
+      "es": "Inicializando ZIYAN PROSSD...",
+      "fr": "Initialisation de ZIYAN PROSSD…",
+      "ja": "ZIYAN PROSSDの初期化中...",
+      "ko": "ZIYAN PROSSD 초기화 중…",
+      "ru": "Инициализация ZIYAN PROSSD…",
+      "tr": "ZIYAN PROSSD başlatılıyor…",
+      "zh": "ZIYAN PROSSD正在初始化"
     },
     "fpv_tip_0x1C00160D": {
-      "de": "Neuformatierung von DJI PROSSD empfohlen",
-      "en": "Reformatting DJI PROSSD recommended",
-      "es": "Se recomienda volver a formatear DJI PROSSD",
-      "fr": "Reformatage de DJI PROSSD recommandé",
-      "ja": "DJI PROSSDの再フォーマットをお勧めします",
-      "ko": "DJI PROSSD 재포맷 권장",
-      "ru": "Рекомендуется переформатировать DJI PROSSD",
-      "tr": "DJI PROSSD'nin yeniden biçimlendirilmesi önerilir",
-      "zh": "DJI PROSSD建议重新格式化"
+      "de": "Neuformatierung von ZIYAN PROSSD empfohlen",
+      "en": "Reformatting ZIYAN PROSSD recommended",
+      "es": "Se recomienda volver a formatear ZIYAN PROSSD",
+      "fr": "Reformatage de ZIYAN PROSSD recommandé",
+      "ja": "ZIYAN PROSSDの再フォーマットをお勧めします",
+      "ko": "ZIYAN PROSSD 재포맷 권장",
+      "ru": "Рекомендуется переформатировать ZIYAN PROSSD",
+      "tr": "ZIYAN PROSSD'nin yeniden biçimlendirilmesi önerilir",
+      "zh": "ZIYAN PROSSD建议重新格式化"
     },
     "fpv_tip_0x1C00160E": {
-      "de": "Dateien auf DJI PROSSD werden wiederhergestellt...",
-      "en": "Restoring files on DJI PROSSD...",
-      "es": "Restaurando archivos en DJI PROSSD...",
-      "fr": "Restauration des fichiers sur DJI PROSSD...",
-      "ja": "DJI PROSSDのファイルの復元中...",
-      "ko": "DJI PROSSD 파일 복구 중...",
-      "ru": "Восстановление файлов на DJI PROSSD...",
-      "tr": "DJI PROSSD'deki dosyalar geri yükleniyor...",
-      "zh": "DJI PROSSD存储文件正在修复中"
+      "de": "Dateien auf ZIYAN PROSSD werden wiederhergestellt...",
+      "en": "Restoring files on ZIYAN PROSSD...",
+      "es": "Restaurando archivos en ZIYAN PROSSD...",
+      "fr": "Restauration des fichiers sur ZIYAN PROSSD...",
+      "ja": "ZIYAN PROSSDのファイルの復元中...",
+      "ko": "ZIYAN PROSSD 파일 복구 중...",
+      "ru": "Восстановление файлов на ZIYAN PROSSD...",
+      "tr": "ZIYAN PROSSD'deki dosyalar geri yükleniyor...",
+      "zh": "ZIYAN PROSSD存储文件正在修复中"
     },
     "fpv_tip_0x1C00160F": {
-      "de": "Niedrige DJI PROSSD-Geschwindigkeit. Austausch des Speichergeräts empfohlen",
-      "en": "DJI PROSSD speed low. Replacing storage device recommended",
-      "es": "Baja velocidad en DJI PROSSD. Se recomienda sustituir el dispositivo de almacenamiento",
-      "fr": "Vitesse de DJI PROSSD faible. Remplacement du périphérique de stockage recommandé",
-      "ja": "DJI PROSSDの速度が遅くなっています。ストレージ機器の交換をお勧めします",
-      "ko": "DJI PROSSD 속도가 낮습니다. 저장 장치 교체를 권장합니다",
-      "ru": "Низкая скорость DJI PROSSD. Рекомендуется замена устройства хранения",
-      "tr": "DJI PROSSD hızı düşük. Depolama cihazının yenilenmesi önerilir",
-      "zh": "DJI PROSSD存储速度慢，建议更换"
+      "de": "Niedrige ZIYAN PROSSD-Geschwindigkeit. Austausch des Speichergeräts empfohlen",
+      "en": "ZIYAN PROSSD speed low. Replacing storage device recommended",
+      "es": "Baja velocidad en ZIYAN PROSSD. Se recomienda sustituir el dispositivo de almacenamiento",
+      "fr": "Vitesse de ZIYAN PROSSD faible. Remplacement du périphérique de stockage recommandé",
+      "ja": "ZIYAN PROSSDの速度が遅くなっています。ストレージ機器の交換をお勧めします",
+      "ko": "ZIYAN PROSSD 속도가 낮습니다. 저장 장치 교체를 권장합니다",
+      "ru": "Низкая скорость ZIYAN PROSSD. Рекомендуется замена устройства хранения",
+      "tr": "ZIYAN PROSSD hızı düşük. Depolama cihazının yenilenmesi önerilir",
+      "zh": "ZIYAN PROSSD存储速度慢，建议更换"
     },
     "fpv_tip_0x1C001701": {
       "de": "Zeitauslöserintervall zu kurz. Aufnahmen können nicht gestartet werden.",
@@ -25334,15 +25334,15 @@
       "zh-Hant": ""
     },
     "fpv_tip_0x1C001A01": {
-      "de": "Niedrige DJI PROSSD-Schreibgeschwindigkeit. Neustart des Fluggeräts empfohlen",
-      "en": "DJI PROSSD write speed low. Restarting aircraft recommended",
-      "es": "Baja velocidad de escritura en DJI PROSSD. Se recomienda reiniciar la aeronave",
-      "fr": "Vitesse d’écriture DJI PROSSD faible. Redémarrage de l’appareil recommandé",
-      "ja": "DJI PROSSDの書き込みが低速です。機体の再起動をお勧めします",
-      "ko": "DJI PROSSD 쓰기 속도가 낮습니다. 기체 재시작을 권장합니다",
-      "ru": "Низкая скорость записи DJI PROSSD. Рекомендуется перезапуск дрона",
-      "tr": "DJI PROSSD yazma hızı düşük. Hava aracının yeniden başlatılması önerilir",
-      "zh": "DJI PROSSD写入速度慢，建议重新启动飞行器"
+      "de": "Niedrige ZIYAN PROSSD-Schreibgeschwindigkeit. Neustart des Fluggeräts empfohlen",
+      "en": "ZIYAN PROSSD write speed low. Restarting aircraft recommended",
+      "es": "Baja velocidad de escritura en ZIYAN PROSSD. Se recomienda reiniciar la aeronave",
+      "fr": "Vitesse d’écriture ZIYAN PROSSD faible. Redémarrage de l’appareil recommandé",
+      "ja": "ZIYAN PROSSDの書き込みが低速です。機体の再起動をお勧めします",
+      "ko": "ZIYAN PROSSD 쓰기 속도가 낮습니다. 기체 재시작을 권장합니다",
+      "ru": "Низкая скорость записи ZIYAN PROSSD. Рекомендуется перезапуск дрона",
+      "tr": "ZIYAN PROSSD yazma hızı düşük. Hava aracının yeniden başlatılması önerilir",
+      "zh": "ZIYAN PROSSD写入速度慢，建议重新启动飞行器"
     },
     "fpv_tip_0x1C001B01": {
       "de": "Nutzungshäufigkeit Gimbal-Anschluss erreicht",
@@ -25870,12 +25870,12 @@
       "zh": "无效存储卡，请更换存储卡"
     },
     "fpv_tip_0x1C100401_index_1": {
-      "de": "Ungültige eMMC. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "Invalid eMMC. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "eMMC non valide. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "Ungültige eMMC. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "Invalid eMMC. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "eMMC non valide. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCが無効です。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC가 올바르지 않습니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Сбой eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC가 올바르지 않습니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Сбой eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "无效EMMC，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C100402": {
@@ -25890,12 +25890,12 @@
       "zh": "存储卡为慢速卡，请更换"
     },
     "fpv_tip_0x1C100402_index_1": {
-      "de": "eMMC-Geschwindigkeitsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC speed error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur de vitesse de l'eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Geschwindigkeitsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC speed error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur de vitesse de l'eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCの速度エラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 속도 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка скорости eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 속도 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка скорости eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC速度异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C100403": {
@@ -25910,12 +25910,12 @@
       "zh": "存储卡异常，请更换存储卡"
     },
     "fpv_tip_0x1C100403_index_1": {
-      "de": "eMMC-Fehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Fehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCのエラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C100404": {
@@ -25930,12 +25930,12 @@
       "zh": "无存储卡"
     },
     "fpv_tip_0x1C100404_index_1": {
-      "de": "eMMC-Identifikationsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC identification error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur d'identification eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Identifikationsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC identification error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur d'identification eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCの認識エラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 식별 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка идентификации eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 식별 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка идентификации eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC识别异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C100405": {
@@ -26258,12 +26258,12 @@
       "zh": "无效存储卡，请更换存储卡"
     },
     "fpv_tip_0x1C200401_index_1": {
-      "de": "Ungültige eMMC. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "Invalid eMMC. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "eMMC non valide. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "Ungültige eMMC. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "Invalid eMMC. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "eMMC non valide. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCが無効です。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC가 올바르지 않습니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Сбой eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC가 올바르지 않습니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Сбой eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "无效EMMC，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C200402": {
@@ -26278,12 +26278,12 @@
       "zh": "存储卡为慢速卡，请更换"
     },
     "fpv_tip_0x1C200402_index_1": {
-      "de": "Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC速度异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C200403": {
@@ -26298,12 +26298,12 @@
       "zh": "存储卡异常，请更换存储卡"
     },
     "fpv_tip_0x1C200403_index_1": {
-      "de": "eMMC-Fehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Fehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCのエラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C200404": {
@@ -26318,12 +26318,12 @@
       "zh": "无存储卡"
     },
     "fpv_tip_0x1C200404_index_1": {
-      "de": "eMMC-Identifikationsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC identification error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur d'identification eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Identifikationsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC identification error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur d'identification eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCの認識エラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 식별 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка идентификации eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 식별 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка идентификации eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC识别异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C200405": {
@@ -26602,12 +26602,12 @@
       "zh": "无效存储卡，请更换存储卡"
     },
     "fpv_tip_0x1C300401_index_1": {
-      "de": "Ungültige eMMC. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "Invalid eMMC. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "eMMC non valide. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "Ungültige eMMC. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "Invalid eMMC. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "eMMC non valide. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCが無効です。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC가 올바르지 않습니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Сбой eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC가 올바르지 않습니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Сбой eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "无效EMMC，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C300402": {
@@ -26622,12 +26622,12 @@
       "zh": "存储卡为慢速卡，请更换"
     },
     "fpv_tip_0x1C300402_index_1": {
-      "de": "eMMC-Geschwindigkeitsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC speed error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur de vitesse de l'eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Geschwindigkeitsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC speed error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur de vitesse de l'eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCの速度エラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 속도 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка скорости eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 속도 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка скорости eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC速度异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C300403": {
@@ -26642,12 +26642,12 @@
       "zh": "存储卡异常，请更换存储卡"
     },
     "fpv_tip_0x1C300403_index_1": {
-      "de": "eMMC-Fehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Fehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCのエラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C300404": {
@@ -26662,12 +26662,12 @@
       "zh": "无存储卡"
     },
     "fpv_tip_0x1C300404_index_1": {
-      "de": "eMMC-Identifikationsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den DJI-Support",
-      "en": "eMMC identification error. Restart camera. If the issue persists, contact DJI Support for repairs",
-      "fr": "Erreur d'identification eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance DJI pour la réparation",
+      "de": "eMMC-Identifikationsfehler. Kamera neu starten. Wenn das Problem weiterhin besteht, wenden Sie sich für Reparaturen an den ZIYAN-Support",
+      "en": "eMMC identification error. Restart camera. If the issue persists, contact ZIYAN Support for repairs",
+      "fr": "Erreur d'identification eMMC. Redémarrez la caméra. Si le problème persiste, contactez l'assistance ZIYAN pour la réparation",
       "ja": "eMMCの認識エラーです。カメラを再起動してください。問題が解決しない場合は、DJIサポートにお問い合わせになり、修理をご依頼ください",
-      "ko": "eMMC 식별 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 DJI 지원 센터에 수리를 요청하세요.",
-      "ru": "Ошибка идентификации eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки DJI для ремонта",
+      "ko": "eMMC 식별 오류입니다. 카메라를 다시 시작하세요. 문제가 지속되면 ZIYAN 지원 센터에 수리를 요청하세요.",
+      "ru": "Ошибка идентификации eMMC. Перезапустите камеру. Если проблема не устранена, свяжитесь со службой поддержки ZIYAN для ремонта",
       "zh": "EMMC识别异常，请重启相机，如问题还存在，请返厂维修"
     },
     "fpv_tip_0x1C300405": {
@@ -27349,14 +27349,14 @@
       "zh": "云台初始化异常"
     },
     "fpv_tip_0x1D0C0005": {
-      "de": "Gimbal-Spannungsfehler. Durch DJI-Akku ersetzen",
-      "en": "Gimbal voltage error. Replace with DJI battery",
-      "es": "Error de voltaje del estabilizador. Sustituir por una batería DJI",
-      "fr": "Erreur de tension de la nacelle. Remplacer la batterie par une batterie DJI",
+      "de": "Gimbal-Spannungsfehler. Durch ZIYAN-Akku ersetzen",
+      "en": "Gimbal voltage error. Replace with ZIYAN battery",
+      "es": "Error de voltaje del estabilizador. Sustituir por una batería ZIYAN",
+      "fr": "Erreur de tension de la nacelle. Remplacer la batterie par une batterie ZIYAN",
       "ja": "ジンバルの電圧エラー。DJIバッテリーに交換してください",
-      "ko": "짐벌 전압 오류. DJI 배터리로 교체하세요",
-      "ru": "Ошибка напряжения гиростабилизатора. Замените аккумуляторной батареей DJI",
-      "tr": "Gimbal voltaj hatası. DJI pille değiştirin",
+      "ko": "짐벌 전압 오류. ZIYAN 배터리로 교체하세요",
+      "ru": "Ошибка напряжения гиростабилизатора. Замените аккумуляторной батареей ZIYAN",
+      "tr": "Gimbal voltaj hatası. ZIYAN pille değiştirin",
       "zh": "云台电源电压异常，请使用官方电池"
     },
     "fpv_tip_0x1D0C000B": {
@@ -27426,14 +27426,14 @@
       "zh": "FPV云台初始化异常"
     },
     "fpv_tip_0x1D0C0C05": {
-      "de": "Spannungsfehler FPV-Gimbal. Durch DJI-Akku ersetzen",
-      "en": "FPV gimbal voltage error. Replace with DJI battery",
-      "es": "Error de voltaje del estabilizador FPV. Sustituir por una batería DJI",
-      "fr": "Erreur de tension de la nacelle FPV. Remplacer la batterie par une batterie DJI",
+      "de": "Spannungsfehler FPV-Gimbal. Durch ZIYAN-Akku ersetzen",
+      "en": "FPV gimbal voltage error. Replace with ZIYAN battery",
+      "es": "Error de voltaje del estabilizador FPV. Sustituir por una batería ZIYAN",
+      "fr": "Erreur de tension de la nacelle FPV. Remplacer la batterie par une batterie ZIYAN",
       "ja": "FPVジンバル電圧エラーです。DJIバッテリーに交換してください",
-      "ko": "FPV 짐벌 전압 오류. DJI 배터리로 교체하세요",
-      "ru": "Ошибка напряжения стабилизатора курсовой камеры. Замените аккумуляторной батареей DJI",
-      "tr": "FPV gimbal voltaj hatası. DJI pille değiştirin",
+      "ko": "FPV 짐벌 전압 오류. ZIYAN 배터리로 교체하세요",
+      "ru": "Ошибка напряжения стабилизатора курсовой камеры. Замените аккумуляторной батареей ZIYAN",
+      "tr": "FPV gimbal voltaj hatası. ZIYAN pille değiştirin",
       "zh": "FPV云台电源电压异常，请使用官方电池"
     },
     "fpv_tip_0x1D0C0C0B": {
@@ -27762,7 +27762,7 @@
     "fpv_tip_0x1E010002": {
       "ar": "",
       "de": "Hardwarefehler: Lautsprecher. Fluggerät neu starten",
-      "en": "Speaker hardware error. Contact DJI Support",
+      "en": "Speaker hardware error. Contact ZIYAN Support",
       "es": "Error de hardware del altavoz. Reinicia la aeronave.",
       "fr": "Erreur matérielle du haut-parleur. Redémarrez l'appareil",
       "it": "",
@@ -27785,14 +27785,14 @@
       "zh": "喊话器过载，请重启飞行器"
     },
     "fpv_tip_0x1F010000": {
-      "de": "4G service: unable to obtain license. Contact DJI Support",
-      "en": "4G service: unable to obtain license. Contact DJI Support",
-      "es": "4G service: unable to obtain license. Contact DJI Support",
-      "fr": "4G service: unable to obtain license. Contact DJI Support",
-      "ja": "4G service: unable to obtain license. Contact DJI Support",
-      "ko": "4G service: unable to obtain license. Contact DJI Support",
-      "ru": "4G service: unable to obtain license. Contact DJI Support",
-      "tr": "4G service: unable to obtain license. Contact DJI Support",
+      "de": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "en": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "es": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "fr": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "ja": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "ko": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "ru": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "tr": "4G service: unable to obtain license. Contact ZIYAN Support",
       "zh": "4G服务：License无法获取，请联系DJI售后服务"
     },
     "fpv_tip_0x1F010001": {
@@ -27807,14 +27807,14 @@
       "zh": "4G服务：License过期，请导入有效证书"
     },
     "fpv_tip_0x1F010002": {
-      "de": "4G service: license verification failed. Contact DJI Support",
-      "en": "4G service: license verification failed. Contact DJI Support",
-      "es": "4G service: license verification failed. Contact DJI Support",
-      "fr": "4G service: license verification failed. Contact DJI Support",
-      "ja": "4G service: license verification failed. Contact DJI Support",
-      "ko": "4G service: license verification failed. Contact DJI Support",
-      "ru": "4G service: license verification failed. Contact DJI Support",
-      "tr": "4G service: license verification failed. Contact DJI Support",
+      "de": "4G service: license verification failed. Contact ZIYAN Support",
+      "en": "4G service: license verification failed. Contact ZIYAN Support",
+      "es": "4G service: license verification failed. Contact ZIYAN Support",
+      "fr": "4G service: license verification failed. Contact ZIYAN Support",
+      "ja": "4G service: license verification failed. Contact ZIYAN Support",
+      "ko": "4G service: license verification failed. Contact ZIYAN Support",
+      "ru": "4G service: license verification failed. Contact ZIYAN Support",
+      "tr": "4G service: license verification failed. Contact ZIYAN Support",
       "zh": "4G服务：License校验失败，请联系DJI售后服务"
     },
     "fpv_tip_0x1F010003": {
@@ -27873,36 +27873,36 @@
       "zh": "4G服务：服务器版本过低，请升级服务器"
     },
     "fpv_tip_0x1F010008": {
-      "de": "4G service: requested parameter error. Contact DJI Support",
-      "en": "4G service: requested parameter error. Contact DJI Support",
-      "es": "4G service: requested parameter error. Contact DJI Support",
-      "fr": "4G service: requested parameter error. Contact DJI Support",
-      "ja": "4G service: requested parameter error. Contact DJI Support",
-      "ko": "4G service: requested parameter error. Contact DJI Support",
-      "ru": "4G service: requested parameter error. Contact DJI Support",
-      "tr": "4G service: requested parameter error. Contact DJI Support",
+      "de": "4G service: requested parameter error. Contact ZIYAN Support",
+      "en": "4G service: requested parameter error. Contact ZIYAN Support",
+      "es": "4G service: requested parameter error. Contact ZIYAN Support",
+      "fr": "4G service: requested parameter error. Contact ZIYAN Support",
+      "ja": "4G service: requested parameter error. Contact ZIYAN Support",
+      "ko": "4G service: requested parameter error. Contact ZIYAN Support",
+      "ru": "4G service: requested parameter error. Contact ZIYAN Support",
+      "tr": "4G service: requested parameter error. Contact ZIYAN Support",
       "zh": "4G服务：请求参数错误，请联系DJI售后服务"
     },
     "fpv_tip_0x1F010009": {
-      "de": "4G service: server internal error. Contact DJI Support",
-      "en": "4G service: server internal error. Contact DJI Support",
-      "es": "4G service: server internal error. Contact DJI Support",
-      "fr": "4G service: server internal error. Contact DJI Support",
-      "ja": "4G service: server internal error. Contact DJI Support",
-      "ko": "4G service: server internal error. Contact DJI Support",
-      "ru": "4G service: server internal error. Contact DJI Support",
-      "tr": "4G service: server internal error. Contact DJI Support",
+      "de": "4G service: server internal error. Contact ZIYAN Support",
+      "en": "4G service: server internal error. Contact ZIYAN Support",
+      "es": "4G service: server internal error. Contact ZIYAN Support",
+      "fr": "4G service: server internal error. Contact ZIYAN Support",
+      "ja": "4G service: server internal error. Contact ZIYAN Support",
+      "ko": "4G service: server internal error. Contact ZIYAN Support",
+      "ru": "4G service: server internal error. Contact ZIYAN Support",
+      "tr": "4G service: server internal error. Contact ZIYAN Support",
       "zh": "4G服务：服务器内部错误，请联系DJI售后服务"
     },
     "fpv_tip_0x1F01000A": {
-      "de": "4G service: unable to obtain license. Contact DJI Support",
-      "en": "4G service: unable to obtain license. Contact DJI Support",
-      "es": "4G service: unable to obtain license. Contact DJI Support",
-      "fr": "4G service: unable to obtain license. Contact DJI Support",
-      "ja": "4G service: unable to obtain license. Contact DJI Support",
-      "ko": "4G service: unable to obtain license. Contact DJI Support",
-      "ru": "4G service: unable to obtain license. Contact DJI Support",
-      "tr": "4G service: unable to obtain license. Contact DJI Support",
+      "de": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "en": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "es": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "fr": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "ja": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "ko": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "ru": "4G service: unable to obtain license. Contact ZIYAN Support",
+      "tr": "4G service: unable to obtain license. Contact ZIYAN Support",
       "zh": "4G服务：证书无法读取，请联系DJI售后服务"
     },
     "fpv_tip_0x1F01000B": {
@@ -27917,14 +27917,14 @@
       "zh": "4G服务：证书过期，请导入有效证书"
     },
     "fpv_tip_0x1F01000C": {
-      "de": "4G service: license verification failed. Contact DJI Support",
-      "en": "4G service: license verification failed. Contact DJI Support",
-      "es": "4G service: license verification failed. Contact DJI Support",
-      "fr": "4G service: license verification failed. Contact DJI Support",
-      "ja": "4G service: license verification failed. Contact DJI Support",
-      "ko": "4G service: license verification failed. Contact DJI Support",
-      "ru": "4G service: license verification failed. Contact DJI Support",
-      "tr": "4G service: license verification failed. Contact DJI Support",
+      "de": "4G service: license verification failed. Contact ZIYAN Support",
+      "en": "4G service: license verification failed. Contact ZIYAN Support",
+      "es": "4G service: license verification failed. Contact ZIYAN Support",
+      "fr": "4G service: license verification failed. Contact ZIYAN Support",
+      "ja": "4G service: license verification failed. Contact ZIYAN Support",
+      "ko": "4G service: license verification failed. Contact ZIYAN Support",
+      "ru": "4G service: license verification failed. Contact ZIYAN Support",
+      "tr": "4G service: license verification failed. Contact ZIYAN Support",
       "zh": "4G服务：证书校验失败，请联系DJI售后服务"
     },
     "fpv_tip_0x1F01000D": {
@@ -27939,14 +27939,14 @@
       "zh": "系统时间错误，请确认设备和服务器时间正确后重试"
     },
     "fpv_tip_0x1F010063": {
-      "de": "4G service: system unknown error. Contact DJI Support",
-      "en": "4G service: system unknown error. Contact DJI Support",
-      "es": "4G service: system unknown error. Contact DJI Support",
-      "fr": "4G service: system unknown error. Contact DJI Support",
-      "ja": "4G service: system unknown error. Contact DJI Support",
-      "ko": "4G service: system unknown error. Contact DJI Support",
-      "ru": "4G service: system unknown error. Contact DJI Support",
-      "tr": "4G service: system unknown error. Contact DJI Support",
+      "de": "4G service: system unknown error. Contact ZIYAN Support",
+      "en": "4G service: system unknown error. Contact ZIYAN Support",
+      "es": "4G service: system unknown error. Contact ZIYAN Support",
+      "fr": "4G service: system unknown error. Contact ZIYAN Support",
+      "ja": "4G service: system unknown error. Contact ZIYAN Support",
+      "ko": "4G service: system unknown error. Contact ZIYAN Support",
+      "ru": "4G service: system unknown error. Contact ZIYAN Support",
+      "tr": "4G service: system unknown error. Contact ZIYAN Support",
       "zh": "4G服务：系统未知错误，请联系DJI售后服务"
     },
     "fpv_tip_0x1F0B0001": {
@@ -27961,14 +27961,14 @@
       "zh": "飞机无法使用LTE链路，网络波动或SIM卡无法访问网络"
     },
     "fpv_tip_0x1F0B0002": {
-      "de": "Kein Netz auf DJI Mobilfunk-Dongle der Fernsteuerung",
-      "en": "No network on DJI Cellular Dongle of remote controller",
-      "es": "No hay red en el adaptador de red móvil de DJI del control remoto",
-      "fr": "Pas de réseau sur le dongle cellulaire DJI de la radiocommande",
+      "de": "Kein Netz auf ZIYAN Mobilfunk-Dongle der Fernsteuerung",
+      "en": "No network on ZIYAN Cellular Dongle of remote controller",
+      "es": "No hay red en el adaptador de red móvil de ZIYAN del control remoto",
+      "fr": "Pas de réseau sur le dongle cellulaire ZIYAN de la radiocommande",
       "ja": "送信機のDJIセルラードングルでネットワークを利用できません",
-      "ko": "조종기 DJI 셀룰러 동글이 네트워크에 연결되어 있지 않습니다",
-      "ru": "Нет сети на DJI Cellular Dongle пульта дистанционного управления",
-      "tr": "Uzaktan kumandanın DJI Hücresel Dongle'ında ağ yok",
+      "ko": "조종기 ZIYAN 셀룰러 동글이 네트워크에 연결되어 있지 않습니다",
+      "ru": "Нет сети на ZIYAN Cellular Dongle пульта дистанционного управления",
+      "tr": "Uzaktan kumandanın ZIYAN Hücresel Dongle'ında ağ yok",
       "zh": "遥控器DJI Cellular模块无法访问网络"
     },
     "fpv_tip_0x1F0B0003": {
@@ -28104,61 +28104,61 @@
       "zh": "LTE链路不可用，请重启飞机和遥控器"
     },
     "fpv_tip_0x1F0B001C": {
-      "de": "LTE-Übertragungsfehler. Authentifizierungsdateien für Fluggerät fehlen. Lokalen Händler oder DJI Support kontaktieren",
-      "en": "LTE Transmission error. Aircraft authentication files missing. Contact your local dealer or DJI Support",
+      "de": "LTE-Übertragungsfehler. Authentifizierungsdateien für Fluggerät fehlen. Lokalen Händler oder ZIYAN Support kontaktieren",
+      "en": "LTE Transmission error. Aircraft authentication files missing. Contact your local dealer or ZIYAN Support",
       "es": "",
-      "fr": "Erreur transmission LTE. Fichiers d'authentification de l'appareil manquants. Contactez immédiatement votre revendeur local ou l'assistance technique DJI",
+      "fr": "Erreur transmission LTE. Fichiers d'authentification de l'appareil manquants. Contactez immédiatement votre revendeur local ou l'assistance technique ZIYAN",
       "it": "",
       "ja": "LTE伝送エラー。機体認証ファイルがありません。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "LTE 전송 오류. 기체 인증 파일이 없습니다. 현지 대리점 또는 DJI 고객지원팀에 연락하세요",
+      "ko": "LTE 전송 오류. 기체 인증 파일이 없습니다. 현지 대리점 또는 ZIYAN 고객지원팀에 연락하세요",
       "pt": "",
-      "ru": "Ошибка передачи по LTE. Отсутствуют файлы аутентификации дрона. Обратитесь к местному дилеру или в службу поддержки DJI",
+      "ru": "Ошибка передачи по LTE. Отсутствуют файлы аутентификации дрона. Обратитесь к местному дилеру или в службу поддержки ZIYAN",
       "tr": "",
       "zh": "LTE链路异常，飞行器缺少认证文件，请联系大疆售后服务"
     },
     "fpv_tip_0x1F0B001c": {
-      "de": "LTE-Übertragungsfehler. Authentifizierungsdateien für Fluggerät fehlen. Lokalen Händler oder DJI Support kontaktieren",
-      "en": "LTE Transmission error. Aircraft authentication files missing. Contact your local dealer or DJI Support",
+      "de": "LTE-Übertragungsfehler. Authentifizierungsdateien für Fluggerät fehlen. Lokalen Händler oder ZIYAN Support kontaktieren",
+      "en": "LTE Transmission error. Aircraft authentication files missing. Contact your local dealer or ZIYAN Support",
       "es": "",
-      "fr": "Erreur transmission LTE. Fichiers d'authentification de l'appareil manquants. Contactez immédiatement votre revendeur local ou l'assistance technique DJI",
+      "fr": "Erreur transmission LTE. Fichiers d'authentification de l'appareil manquants. Contactez immédiatement votre revendeur local ou l'assistance technique ZIYAN",
       "ja": "LTE伝送エラー。機体認証ファイルがありません。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "LTE 전송 오류. 기체 인증 파일이 없습니다. 현지 대리점 또는 DJI 고객지원팀에 연락하세요",
-      "ru": "Ошибка передачи по LTE. Отсутствуют файлы аутентификации дрона. Обратитесь к местному дилеру или в службу поддержки DJI",
+      "ko": "LTE 전송 오류. 기체 인증 파일이 없습니다. 현지 대리점 또는 ZIYAN 고객지원팀에 연락하세요",
+      "ru": "Ошибка передачи по LTE. Отсутствуют файлы аутентификации дрона. Обратитесь к местному дилеру или в службу поддержки ZIYAN",
       "tr": "",
       "zh": "LTE链路异常，飞行器缺少认证文件，请联系大疆售后服务"
     },
     "fpv_tip_0x1F0B001d": {
-      "de": "LTE-Übertragungsfehler. Authentifizierungsdateien für Fernsteuerung fehlen. Lokalen Händler oder DJI Support kontaktieren",
-      "en": "LTE Transmission error. Remote controller authentication files missing. Contact your local dealer or DJI Support",
+      "de": "LTE-Übertragungsfehler. Authentifizierungsdateien für Fernsteuerung fehlen. Lokalen Händler oder ZIYAN Support kontaktieren",
+      "en": "LTE Transmission error. Remote controller authentication files missing. Contact your local dealer or ZIYAN Support",
       "es": "",
-      "fr": "Erreur transmission LTE. Fichiers d'authentification de la radiocommande manquants. Contactez votre revendeur local ou l'assistance technique DJI",
+      "fr": "Erreur transmission LTE. Fichiers d'authentification de la radiocommande manquants. Contactez votre revendeur local ou l'assistance technique ZIYAN",
       "ja": "LTE伝送エラー。送信機認証ファイルがありません。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "LTE 전송 오류. 조종기 인증 파일이 없습니다. 현지 대리점 또는 DJI 고객지원팀에 연락하세요",
-      "ru": "Ошибка передачи по LTE. Отсутствуют файлы аутентификации пульта ДУ. Обратитесь к местному дилеру или в службу поддержки DJI",
+      "ko": "LTE 전송 오류. 조종기 인증 파일이 없습니다. 현지 대리점 또는 ZIYAN 고객지원팀에 연락하세요",
+      "ru": "Ошибка передачи по LTE. Отсутствуют файлы аутентификации пульта ДУ. Обратитесь к местному дилеру или в службу поддержки ZIYAN",
       "tr": "",
       "zh": "LTE链路异常，遥控器缺少认证文件，请联系大疆售后服务"
     },
     "fpv_tip_0x1F0B0020": {
-      "de": "Aktualisierung des DJI Mobilfunkmodul-Dongles des Fluggeräts erforderlich",
-      "en": "Update DJI Cellular Dongle of aircraft required",
-      "es": "Es necesario actualizar el adaptador de red móvil de DJI de la aeronave.",
-      "fr": "Mise à jour requise du dongle cellulaire DJI de l'appareil",
+      "de": "Aktualisierung des ZIYAN Mobilfunkmodul-Dongles des Fluggeräts erforderlich",
+      "en": "Update ZIYAN Cellular Dongle of aircraft required",
+      "es": "Es necesario actualizar el adaptador de red móvil de ZIYAN de la aeronave.",
+      "fr": "Mise à jour requise du dongle cellulaire ZIYAN de l'appareil",
       "ja": "機体のDJIセルラードングルの更新が必要です",
-      "ko": "기체의 DJI 셀룰러 동글 업데이트 필요",
-      "ru": "Обновите DJI Cellular Dongle дрона",
-      "tr": "Hava aracının DJI Hücresel Dongle'ının güncellenmesi gerekiyor",
-      "zh": "飞行器 DJI Cellular 模块需要升级"
+      "ko": "기체의 ZIYAN 셀룰러 동글 업데이트 필요",
+      "ru": "Обновите ZIYAN Cellular Dongle дрона",
+      "tr": "Hava aracının ZIYAN Hücresel Dongle'ının güncellenmesi gerekiyor",
+      "zh": "飞行器 ZIYAN Cellular 模块需要升级"
     },
     "fpv_tip_0x1F0B0021": {
-      "de": "Aktualisierung des DJI Mobilfunkmodul-Dongles der Fernsteuerung erforderlich",
-      "en": "Update DJI Cellular Dongle of remote controller required",
-      "es": "Es necesario actualizar el adaptador de red móvil de DJI del control remoto.",
-      "fr": "Mise à jour requise du dongle cellulaire DJI de la radiocommande",
+      "de": "Aktualisierung des ZIYAN Mobilfunkmodul-Dongles der Fernsteuerung erforderlich",
+      "en": "Update ZIYAN Cellular Dongle of remote controller required",
+      "es": "Es necesario actualizar el adaptador de red móvil de ZIYAN del control remoto.",
+      "fr": "Mise à jour requise du dongle cellulaire ZIYAN de la radiocommande",
       "ja": "送信機のDJIセルラードングルの更新が必要です",
-      "ko": "조종기의 DJI 셀룰러 동글 업데이트 필요",
-      "ru": "Обновите DJI Cellular Dongle пульта дистанционного управления",
-      "tr": "Uzaktan kumandanın DJI Hücresel Dongle'ının güncellenmesi gerekiyor",
-      "zh": "遥控器 DJI Cellular 模块需升级"
+      "ko": "조종기의 ZIYAN 셀룰러 동글 업데이트 필요",
+      "ru": "Обновите ZIYAN Cellular Dongle пульта дистанционного управления",
+      "tr": "Uzaktan kumandanın ZIYAN Hücresel Dongle'ının güncellenmesi gerekiyor",
+      "zh": "遥控器 ZIYAN Cellular 模块需升级"
     },
     "fpv_tip_0x1F0B0022": {
       "ar": "",
@@ -28238,25 +28238,25 @@
       "zh-Hant": ""
     },
     "fpv_tip_0x1F0B0027": {
-      "de": "Aktualisierung der LTE-Zertifizierung des Fluggeräts erforderlich. An Händler vor Ort oder an DJI Support wenden",
-      "en": "Aircraft LTE certification update required. Contact your local dealer or DJI Support",
-      "es": "Es necesario actualizar la certificación LTE de la aeronave. Ponte en contacto con el distribuidor local o el servicio de asistencia técnica de DJI.",
-      "fr": "Mise à jour de la certification LTE de l'appareil nécessaire. Contactez votre revendeur local ou le service client DJI",
+      "de": "Aktualisierung der LTE-Zertifizierung des Fluggeräts erforderlich. An Händler vor Ort oder an ZIYAN Support wenden",
+      "en": "Aircraft LTE certification update required. Contact your local dealer or ZIYAN Support",
+      "es": "Es necesario actualizar la certificación LTE de la aeronave. Ponte en contacto con el distribuidor local o el servicio de asistencia técnica de ZIYAN.",
+      "fr": "Mise à jour de la certification LTE de l'appareil nécessaire. Contactez votre revendeur local ou le service client ZIYAN",
       "ja": "機体のLTE認定の更新が必要です。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "기체 LTE 인증 업데이트 필요. 지역 딜러 또는 DJI 고객지원에 문의하세요.",
-      "ru": "Требуется обновление сертификации LTE для дрона. Обратитесь к местному представителю или в службу поддержки DJI",
-      "tr": "Hava aracı LTE sertifika güncellemesi gerekiyor. Bölgenizdeki satıcıyla veya DJI Destek ile iletişime geçin",
+      "ko": "기체 LTE 인증 업데이트 필요. 지역 딜러 또는 ZIYAN 고객지원에 문의하세요.",
+      "ru": "Требуется обновление сертификации LTE для дрона. Обратитесь к местному представителю или в службу поддержки ZIYAN",
+      "tr": "Hava aracı LTE sertifika güncellemesi gerekiyor. Bölgenizdeki satıcıyla veya ZIYAN Destek ile iletişime geçin",
       "zh": "飞行器 LTE 证书需更新，请联系售后或代理商"
     },
     "fpv_tip_0x1F0B0028": {
-      "de": "Aktualisierung der LTE-Zertifizierung der Fernsteuerung erforderlich. An Händler vor Ort oder an DJI Support wenden",
-      "en": "Remote controller LTE certification update required. Contact your local dealer or DJI Support",
-      "es": "Es necesario actualizar la certificación LTE del control remoto. Ponte en contacto con el distribuidor local o el servicio de asistencia técnica de DJI.",
-      "fr": "Mise à jour de la certification LTE de la radiocommande. Contactez votre revendeur local ou le service client DJI",
+      "de": "Aktualisierung der LTE-Zertifizierung der Fernsteuerung erforderlich. An Händler vor Ort oder an ZIYAN Support wenden",
+      "en": "Remote controller LTE certification update required. Contact your local dealer or ZIYAN Support",
+      "es": "Es necesario actualizar la certificación LTE del control remoto. Ponte en contacto con el distribuidor local o el servicio de asistencia técnica de ZIYAN.",
+      "fr": "Mise à jour de la certification LTE de la radiocommande. Contactez votre revendeur local ou le service client ZIYAN",
       "ja": "送信機のLTE認定の更新が必要です。最寄りの代理店またはDJIサポートにお問い合わせください",
-      "ko": "조종기 LTE 인증 업데이트 필요. 지역 딜러 또는 DJI 고객지원에 문의하세요.",
-      "ru": "Требуется обновление сертификации LTE для пульта дистанционного управления. Обратитесь к местному представителю или в службу поддержки DJI",
-      "tr": "Uzaktan kumanda LTE sertifika güncellemesi gerekiyor. Bölgenizdeki satıcıyla veya DJI Destek ile iletişime geçin",
+      "ko": "조종기 LTE 인증 업데이트 필요. 지역 딜러 또는 ZIYAN 고객지원에 문의하세요.",
+      "ru": "Требуется обновление сертификации LTE для пульта дистанционного управления. Обратитесь к местному представителю или в службу поддержки ZIYAN",
+      "tr": "Uzaktan kumanda LTE sertifika güncellemesi gerekiyor. Bölgenizdeki satıcıyla veya ZIYAN Destek ile iletişime geçin",
       "zh": "遥控器 LTE 证书需更新，请联系售后或代理商"
     },
     "fpv_tip_0x1F0B0029": {
@@ -28447,26 +28447,26 @@
       "zh": "当前地区无法使用增强图传功能"
     },
     "fpv_tip_0x1F0B0037": {
-      "de": "Kein Internetzugang auf DJI Mobilfunkmodul-Dongle des Fluggeräts. Standort oder Netzwerk wechseln",
-      "en": "No internet access on DJI Cellular Dongle of aircraft. Move or change network",
-      "es": "No hay acceso a Internet en el adaptador de red móvil de DJI de la aeronave. Muévete o cambia de red.",
-      "fr": "Aucun accès Internet sur le dongle cellulaire DJI de l'appareil. Déplacez-vous ou changez de réseau",
+      "de": "Kein Internetzugang auf ZIYAN Mobilfunkmodul-Dongle des Fluggeräts. Standort oder Netzwerk wechseln",
+      "en": "No internet access on ZIYAN Cellular Dongle of aircraft. Move or change network",
+      "es": "No hay acceso a Internet en el adaptador de red móvil de ZIYAN de la aeronave. Muévete o cambia de red.",
+      "fr": "Aucun accès Internet sur le dongle cellulaire ZIYAN de l'appareil. Déplacez-vous ou changez de réseau",
       "ja": "機体のDJIセルラードングルがインターネットにアクセス不可。アクセス可能な場所に移動するか、ネットワークを変更してください",
-      "ko": "기체의 DJI 셀룰러 동글에서 인터넷에 액세스할 수 없음. 이동하거나 네트워크를 변경하세요.",
-      "ru": "Нет доступа в Интернет на DJI Cellular Dongle дрона. Переместите его или измените сеть",
-      "tr": "Hava aracının DJI Hücresel Dongle'ında internet erişimi yok. Hareket edin veya ağı değiştirin",
-      "zh": "飞行器 DJI Cellular 模块无法访问网络，请更换至网络更好的地点或稍后重试"
+      "ko": "기체의 ZIYAN 셀룰러 동글에서 인터넷에 액세스할 수 없음. 이동하거나 네트워크를 변경하세요.",
+      "ru": "Нет доступа в Интернет на ZIYAN Cellular Dongle дрона. Переместите его или измените сеть",
+      "tr": "Hava aracının ZIYAN Hücresel Dongle'ında internet erişimi yok. Hareket edin veya ağı değiştirin",
+      "zh": "飞行器 ZIYAN Cellular 模块无法访问网络，请更换至网络更好的地点或稍后重试"
     },
     "fpv_tip_0x1F0B0038": {
-      "de": "Kein Netz auf DJI Mobilfunk-Dongle der Fernsteuerung",
-      "en": "No network on DJI Cellular Dongle of remote controller",
-      "es": "No hay red en el adaptador de red móvil de DJI del control remoto",
-      "fr": "Pas de réseau sur le dongle cellulaire DJI de la radiocommande",
+      "de": "Kein Netz auf ZIYAN Mobilfunk-Dongle der Fernsteuerung",
+      "en": "No network on ZIYAN Cellular Dongle of remote controller",
+      "es": "No hay red en el adaptador de red móvil de ZIYAN del control remoto",
+      "fr": "Pas de réseau sur le dongle cellulaire ZIYAN de la radiocommande",
       "ja": "送信機のDJIセルラードングルでネットワークを利用できません",
-      "ko": "조종기 DJI 셀룰러 동글이 네트워크에 연결되어 있지 않습니다",
-      "ru": "Нет сети на DJI Cellular Dongle пульта дистанционного управления",
-      "tr": "Uzaktan kumandanın DJI Hücresel Dongle'ında ağ yok",
-      "zh": "遥控器 DJI Cellular 模块无法访问网络"
+      "ko": "조종기 ZIYAN 셀룰러 동글이 네트워크에 연결되어 있지 않습니다",
+      "ru": "Нет сети на ZIYAN Cellular Dongle пульта дистанционного управления",
+      "tr": "Uzaktan kumandanın ZIYAN Hücresel Dongle'ında ağ yok",
+      "zh": "遥控器 ZIYAN Cellular 模块无法访问网络"
     },
     "fpv_tip_0x1F0B0039": {
       "ar": "",
@@ -28491,26 +28491,26 @@
       "zh-Hant": ""
     },
     "fpv_tip_0x1F0B003A": {
-      "de": "Kein Internetzugang auf DJI Mobilfunkmodul-Dongle des Fluggeräts. Netzanbieter wechseln",
-      "en": "No internet access on DJI Cellular Dongle of aircraft. Change network provider",
-      "es": "No hay acceso a Internet en el adaptador de red móvil de DJI de la aeronave. Cambia de proveedor de red.",
-      "fr": "Aucun accès Internet sur le dongle cellulaire DJI de l'appareil. Changez de fournisseur de réseau",
+      "de": "Kein Internetzugang auf ZIYAN Mobilfunkmodul-Dongle des Fluggeräts. Netzanbieter wechseln",
+      "en": "No internet access on ZIYAN Cellular Dongle of aircraft. Change network provider",
+      "es": "No hay acceso a Internet en el adaptador de red móvil de ZIYAN de la aeronave. Cambia de proveedor de red.",
+      "fr": "Aucun accès Internet sur le dongle cellulaire ZIYAN de l'appareil. Changez de fournisseur de réseau",
       "ja": "機体のDJIセルラードングルがインターネットにアクセス不可。ネットワークプロバイダーを変更してください",
-      "ko": "기체의 DJI 셀룰러 동글에서 인터넷에 액세스할 수 없음. 네트워크 공급자를 변경하세요.",
-      "ru": "Нет доступа в Интернет на DJI Cellular Dongle дрона. Выберите другого оператора связи",
-      "tr": "Hava aracının DJI Hücresel Dongle'ında internet erişimi yok. Ağ sağlayıcısını değiştirin",
-      "zh": "飞行器 DJI Cellular 模块无法访问网络，请尝试使用其他运营商网络"
+      "ko": "기체의 ZIYAN 셀룰러 동글에서 인터넷에 액세스할 수 없음. 네트워크 공급자를 변경하세요.",
+      "ru": "Нет доступа в Интернет на ZIYAN Cellular Dongle дрона. Выберите другого оператора связи",
+      "tr": "Hava aracının ZIYAN Hücresel Dongle'ında internet erişimi yok. Ağ sağlayıcısını değiştirin",
+      "zh": "飞行器 ZIYAN Cellular 模块无法访问网络，请尝试使用其他运营商网络"
     },
     "fpv_tip_0x1F0B003B": {
-      "de": "Kein Netz auf DJI Mobilfunk-Dongle der Fernsteuerung",
-      "en": "No network on DJI Cellular Dongle of remote controller",
-      "es": "No hay red en el adaptador de red móvil de DJI del control remoto",
-      "fr": "Pas de réseau sur le dongle cellulaire DJI de la radiocommande",
+      "de": "Kein Netz auf ZIYAN Mobilfunk-Dongle der Fernsteuerung",
+      "en": "No network on ZIYAN Cellular Dongle of remote controller",
+      "es": "No hay red en el adaptador de red móvil de ZIYAN del control remoto",
+      "fr": "Pas de réseau sur le dongle cellulaire ZIYAN de la radiocommande",
       "ja": "送信機のDJIセルラードングルでネットワークを利用できません",
-      "ko": "조종기 DJI 셀룰러 동글이 네트워크에 연결되어 있지 않습니다",
-      "ru": "Нет сети на DJI Cellular Dongle пульта дистанционного управления",
-      "tr": "Uzaktan kumandanın DJI Hücresel Dongle'ında ağ yok",
-      "zh": "遥控器 DJI Cellular 模块无法访问网络"
+      "ko": "조종기 ZIYAN 셀룰러 동글이 네트워크에 연결되어 있지 않습니다",
+      "ru": "Нет сети на ZIYAN Cellular Dongle пульта дистанционного управления",
+      "tr": "Uzaktan kumandanın ZIYAN Hücresel Dongle'ında ağ yok",
+      "zh": "遥控器 ZIYAN Cellular 模块无法访问网络"
     },
     "fpv_tip_0x1F0B003C": {
       "ar": "",
@@ -28546,14 +28546,14 @@
       "zh": "无法访问网络"
     },
     "fpv_tip_0x1F0B003E": {
-      "de": "Kein Netz für SIM-Karte des DJI Mobilfunkmodul-Dongles der Fernsteuerung. SIM-Karte prüfen oder ersetzen",
-      "en": "No network on SIM card of DJI Cellular Dongle of remote controller. Check or replace SIM card",
-      "es": "No hay red en la tarjeta SIM del adaptador de red móvil de DJI del control remoto. Compruebe o sustituya la tarjeta SIM",
-      "fr": "Pas de réseau sur la carte SIM du dongle cellulaire de radiocommande DJI. Vérifiez ou remplacez la carte SIM",
+      "de": "Kein Netz für SIM-Karte des ZIYAN Mobilfunkmodul-Dongles der Fernsteuerung. SIM-Karte prüfen oder ersetzen",
+      "en": "No network on SIM card of ZIYAN Cellular Dongle of remote controller. Check or replace SIM card",
+      "es": "No hay red en la tarjeta SIM del adaptador de red móvil de ZIYAN del control remoto. Compruebe o sustituya la tarjeta SIM",
+      "fr": "Pas de réseau sur la carte SIM du dongle cellulaire de radiocommande ZIYAN. Vérifiez ou remplacez la carte SIM",
       "ja": "送信機のDJIセルラードングルのSIMカードでネットワークを利用できません。SIMカードを確認または交換してください",
-      "ko": "조종기 DJI 셀룰러 동글의 SIM 카드에 네트워크가 없습니다. SIM 카드를 확인하거나 교체하세요",
-      "ru": "Нет сети на SIM-карте DJI Cellular Dongle пульта дистанционного управления. Проверьте или замените SIM-карту",
-      "tr": "Uzaktan kumandanın DJI Hücresel Dongle öğesi SIM kartında ağ bağlantısı yok. SIM kartı kontrol edin veya değiştirin",
+      "ko": "조종기 ZIYAN 셀룰러 동글의 SIM 카드에 네트워크가 없습니다. SIM 카드를 확인하거나 교체하세요",
+      "ru": "Нет сети на SIM-карте ZIYAN Cellular Dongle пульта дистанционного управления. Проверьте или замените SIM-карту",
+      "tr": "Uzaktan kumandanın ZIYAN Hücresel Dongle öğesi SIM kartında ağ bağlantısı yok. SIM kartı kontrol edin veya değiştirin",
       "zh": "遥控器 DJI Cellular SIM卡暂时无法获取网络服务，建议检查或更换SIM卡"
     },
     "fpv_tip_0x1F0B0040": {
@@ -28568,14 +28568,14 @@
       "zh": "遥控器无法访问网络"
     },
     "fpv_tip_0x1F0B0040_in_the_sky": {
-      "de": "Kein Internet auf der Fernsteuerung. Status des DJI Mobilfunk-Dongles oder der Wi-Fi-Verbindung prüfen",
-      "en": "No internet on remote controller. Check DJI Cellular Dongle or Wi-Fi connection status",
-      "es": "No hay internet en el control remoto. Compruebe el estado de la conexión Wi-Fi o del adaptador de red móvil de DJI",
-      "fr": "Pas d’Internet sur la radiocommande. Vérifiez le dongle cellulaire DJI ou l'état de la connexion Wi-Fi",
+      "de": "Kein Internet auf der Fernsteuerung. Status des ZIYAN Mobilfunk-Dongles oder der Wi-Fi-Verbindung prüfen",
+      "en": "No internet on remote controller. Check ZIYAN Cellular Dongle or Wi-Fi connection status",
+      "es": "No hay internet en el control remoto. Compruebe el estado de la conexión Wi-Fi o del adaptador de red móvil de ZIYAN",
+      "fr": "Pas d’Internet sur la radiocommande. Vérifiez le dongle cellulaire ZIYAN ou l'état de la connexion Wi-Fi",
       "ja": "送信機にインターネット接続なし。DJIセルラードングルまたはWi-Fi接続ステータスを確認してください",
-      "ko": "조종기가 인터넷에 연결되어 있지 않습니다. DJI 셀룰러 동글 또는 Wi-Fi 연결 상태를 확인하세요",
-      "ru": "Отсутствие сети Интернет на пульте. Проверьте DJI Cellular Dongle или статус подключения Wi-Fi",
-      "tr": "Uzaktan kumandada internet yok. DJI Hücresel Dongle veya Wi-Fi bağlantı durumunu kontrol edin",
+      "ko": "조종기가 인터넷에 연결되어 있지 않습니다. ZIYAN 셀룰러 동글 또는 Wi-Fi 연결 상태를 확인하세요",
+      "ru": "Отсутствие сети Интернет на пульте. Проверьте ZIYAN Cellular Dongle или статус подключения Wi-Fi",
+      "tr": "Uzaktan kumandada internet yok. ZIYAN Hücresel Dongle veya Wi-Fi bağlantı durumunu kontrol edin",
       "zh": "遥控器无法访问网络，请检查DJI Cellular模块或Wi-Fi连接状态"
     },
     "fpv_tip_0x1F0B0045": {
@@ -29137,7 +29137,7 @@
       "zh": "Remote ID 播报异常，无法获取遥控器位置"
     },
     "fpv_tip_0x1b080002": {
-      "en": "Remote ID module error. Contact DJI Support",
+      "en": "Remote ID module error. Contact ZIYAN Support",
       "zh": "Remote ID 模块异常，请联系售后服务"
     },
     "fpv_tip_0x1c000603": {
@@ -30263,7 +30263,7 @@
       "es": "La aplicación ha solicitado el aterrizaje forzoso.",
       "fr": "Forcer la demande d\\'atterrissage depuis l\\'appli.",
       "ja": "アプリが強制着陸を要求。",
-      "ko": "DJI Pilot 요청으로 강제 착륙",
+      "ko": "ZIYAN GCS 요청으로 강제 착륙",
       "ru": "Принудительная посадка через приложение",
       "tr": "Uygulama, Zorunlu İniş talebinde bulundu.",
       "zh": "App请求强制降落"
@@ -30307,7 +30307,7 @@
       "es": "Se ha detectado una batería no oficial. La aeronave está aterrizando.",
       "fr": "Batterie non officielle détectée. L\\'appareil atterrit.",
       "ja": "純正でないバッテリーを検出。機体は着陸中です。",
-      "ko": "비순정 DJI 배터리 감지됨. 기체 착륙 중...",
+      "ko": "비순정 ZIYAN 배터리 감지됨. 기체 착륙 중...",
       "ru": "Обнаружена нелицензионная батарея. Дрон садится.",
       "tr": "Lisanssız pil tespit edildi. Araç iniş yapıyor.",
       "zh": "检测到非法电池，正在降落"
@@ -30950,14 +30950,14 @@
       "zh": "标定失败，请尝试重新标定。"
     },
     "fpv_tip_0x20040D01": {
-      "de": "Kalibrierung fehlgeschlagen. Wenden dich bitte an DJI Support",
-      "en": "Calibration failed. Contact DJI Support",
-      "es": "Error de calibración. Contacta con Asistencia DJI",
-      "fr": "Étalonnage échoué. Veuillez contacter le service client DJI",
+      "de": "Kalibrierung fehlgeschlagen. Wenden dich bitte an ZIYAN Support",
+      "en": "Calibration failed. Contact ZIYAN Support",
+      "es": "Error de calibración. Contacta con Asistencia ZIYAN",
+      "fr": "Étalonnage échoué. Veuillez contacter le service client ZIYAN",
       "ja": "キャリブレーション失敗。DJIサポートにご連絡ください",
-      "ko": "캘리브레이션 실패. DJI 고객지원으로 문의해주세요",
-      "ru": "Сбой калибровка. Обратитесь в службу поддержки DJI",
-      "tr": "Kalibrasyon başarısız. DJI Destek ile iletişime geçin",
+      "ko": "캘리브레이션 실패. ZIYAN 고객지원으로 문의해주세요",
+      "ru": "Сбой калибровка. Обратитесь в службу поддержки ZIYAN",
+      "tr": "Kalibrasyon başarısız. ZIYAN Destek ile iletişime geçin",
       "zh": "标定失败，请联系大疆售后服务。"
     },
     "fpv_tip_0x20040E00": {
@@ -31683,14 +31683,14 @@
       "zh": "获取移动设备GPS失败"
     },
     "fpv_tip_0x20120001": {
-      "de": "Zugriff auf die GPS-Informationen des DJI Geräts fehlgeschlagen.",
-      "en": "Fail to access DJI device GPS information.",
-      "es": "No se pudo acceder al GPS del dispositivo DJI.",
-      "fr": "Impossible d\\'accéder aux informations GPS de votre appareil DJI.",
-      "ja": "DJI デバイスの GPS 情報へのアクセスに失敗しました。",
-      "ko": "DJI 기기 GPS 정보 액세스 실패",
-      "ru": "Не удалось получить доступ к информации о GPS устройства DJI.",
-      "tr": "DJI cihaz GPS bilgilerine erişilemedi.",
+      "de": "Zugriff auf die GPS-Informationen des ZIYAN Geräts fehlgeschlagen.",
+      "en": "Fail to access ZIYAN device GPS information.",
+      "es": "No se pudo acceder al GPS del dispositivo ZIYAN.",
+      "fr": "Impossible d\\'accéder aux informations GPS de votre appareil ZIYAN.",
+      "ja": "ZIYAN デバイスの GPS 情報へのアクセスに失敗しました。",
+      "ko": "ZIYAN 기기 GPS 정보 액세스 실패",
+      "ru": "Не удалось получить доступ к информации о GPS устройства ZIYAN.",
+      "tr": "ZIYAN cihaz GPS bilgilerine erişilemedi.",
       "zh": "获取DJI设备GPS失败"
     },
     "fpv_tip_0x20120200": {
@@ -32107,7 +32107,7 @@
       "zh": "启用视觉定位"
     },
     "fpv_tip_0x20120C02": {
-      "en": "Cloud control from DJI DeliveryHub enabled",
+      "en": "Cloud control from ZIYAN DeliveryHub enabled",
       "zh": "已允许大疆司运指令"
     },
     "fpv_tip_0x20120C03": {
@@ -32135,7 +32135,7 @@
       "zh": "执行云端航线指令"
     },
     "fpv_tip_0x20120C09": {
-      "en": "Cloud control from DJI DeliveryHub disabled",
+      "en": "Cloud control from ZIYAN DeliveryHub disabled",
       "zh": "已撤销云端指令许可"
     },
     "fpv_tip_0x20120C0A": {

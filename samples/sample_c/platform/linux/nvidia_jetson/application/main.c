@@ -305,7 +305,7 @@ int main(int argc, char **argv)
 #endif
 //     }
 
-    // /*!< Step 5: Tell the ZIYAN Pilot you are ready. */
+    // /*!< Step 5: Tell the ZIYAN GCS you are ready. */
     returnCode = ZiyanCore_ApplicationStart();
     if (returnCode != ZIYAN_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
         USER_LOG_ERROR("start sdk application error");

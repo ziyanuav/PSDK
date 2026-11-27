@@ -70,7 +70,7 @@ T_ZiyanReturnCode ZiyanCore_Init(const T_ZiyanUserInfo *userInfo);
 
 /**
  * @brief Sets an alias for a ZIYAN application or product that meets the condition for ZIYAN application or product.
- * If an alias exists, it will be displayed in ZIYAN Pilot.
+ * If an alias exists, it will be displayed in ZIYAN GCS.
  * @note Still need to pass in correct ZIYAN APP name that is obtained from ZIYAN SDK developer website to ZiyanCore_Init()
  * interface. The ZIYAN APP name will be used to bind and verification.
  * The alias will take effect after a short delay, up to a maximum of 1 second.
@@ -82,7 +82,7 @@ T_ZiyanReturnCode ZiyanCore_SetAlias(const char *productAlias);
 
 /**
  * @brief Set custom firmware version for ZIYAN application or product.
- * @details Payload firmware version will always display in ZIYAN Pilot payload settings interface.
+ * @details Payload firmware version will always display in ZIYAN GCS payload settings interface.
  * @param version: the custom firmware version to be set.
  * @return Execution result.
  */
@@ -90,7 +90,7 @@ T_ZiyanReturnCode ZiyanCore_SetFirmwareVersion(T_ZiyanFirmwareVersion version);
 
 /**
  * @brief Set custom serial number for ZIYAN application or product.
- * @details Payload custom serial number will always display in ZIYAN Pilot payload settings interface.
+ * @details Payload custom serial number will always display in ZIYAN GCS payload settings interface.
  * @param productSerialNumber: the custom serial number to be set, needs to be no larger than 32 bytes.
  * @return Execution result.
  */
